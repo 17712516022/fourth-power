@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bw8d0p12awse7"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://b386ntge28go" path="res://art/政府-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/GovernmentSuppress.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "防守营奉命分驻四乡"
+body = "防守营奉令拨队分驻四乡要隘，各乡设卡盘查。署中并传谕各乡绅董，凡有聚众之事，即行飞报，隐匿不报者一并查究。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://xnh24obe8cx"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_8xqk5"]
+[ext_resource type="Texture2D" uid="uid://blsgcketaof38" path="res://art/其他_5-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_8xqk5")
+headline = "讽刺画：新衣"
+body = "本报特约画师绘讽刺画一幅：一人身着簇新长衫立于田埂之上，四围禾苗尽枯，其人犹自低头顾盼衣袖。画下无题字。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

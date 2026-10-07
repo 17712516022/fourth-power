@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://cvilsxvd0hppa"]
+
+[ext_resource type="Script" uid="uid://d2x4gpkm0rnbs" path="res://Scripts/AttributeUi.gd" id="1_rj0c7"]
+[ext_resource type="Theme" uid="uid://b52r5ij0wdme0" path="res://theme/Font2.tres" id="1_y3dm0"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="3_4iisb"]
+
+[node name="AttributeUi" type="VBoxContainer" unique_id=1613247297]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -152.0
+offset_bottom = 501.0
+grow_horizontal = 0
+script = ExtResource("1_rj0c7")
+
+[node name="TimeUi" type="RichTextLabel" parent="." unique_id=687663030]
+unique_name_in_owner = true
+layout_mode = 2
+offset_transform_position = Vector2(0, 4)
+theme = ExtResource("1_y3dm0")
+theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406286, 1)
+theme_override_constants/outline_size = 9
+theme_override_constants/underline_alpha = 100
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "
+[u]Day[/u]"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NewsPaperInflenceUi" type="RichTextLabel" parent="." unique_id=1319679907]
+unique_name_in_owner = true
+layout_mode = 2
+offset_transform_position = Vector2(0, 4)
+theme = ExtResource("3_4iisb")
+theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406286, 1)
+theme_override_constants/outline_size = 9
+theme_override_constants/underline_alpha = 100
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "报纸影响力"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FarmerStateUi" type="RichTextLabel" parent="." unique_id=1199384130]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_4iisb")
+theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406286, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "农民：正常"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WorkerStateUi" type="RichTextLabel" parent="." unique_id=1884743468]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_4iisb")
+theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406286, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "工人：正常"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MerchantStateUi" type="RichTextLabel" parent="." unique_id=1182343897]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_4iisb")
+theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406286, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "商人：正常"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SoldierStateUi" type="RichTextLabel" parent="." unique_id=1762769438]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_4iisb")
+theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406286, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "士兵：正常"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GovernmentStateUi" type="RichTextLabel" parent="." unique_id=1685326206]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_4iisb")
+theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406286, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "政府：观望"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreateFakeButton" type="Button" parent="." unique_id=2146547914]
+unique_name_in_owner = true
+layout_mode = 2
+text = "制造假的新闻"

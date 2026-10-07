@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cnnn3wuiakmt6"
+path="res://.godot/imported/miscellaneous_7_sean.wav-047a0ac2c8d5bb0e526f6e756b5b28c1.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/6 - Miscellaneous/Male/Sean Lenhart/miscellaneous_7_sean.wav"
+dest_files=["res://.godot/imported/miscellaneous_7_sean.wav-047a0ac2c8d5bb0e526f6e756b5b28c1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

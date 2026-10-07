@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dmrbuxwnoapx5"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/政府_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/GovernmentConciliate.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "实业司劝谕各业安业"
+body = "实业司昨日出示，劝谕工商各业照常营业，勿听浮言。并称省宪轸念民艰，凡有疾苦，准由商会据实呈报，不得聚众要挟。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

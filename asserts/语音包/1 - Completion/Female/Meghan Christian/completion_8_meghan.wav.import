@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cwpask8c7bclx"
+path="res://.godot/imported/completion_8_meghan.wav-ea5eae7c7297efe2b50f756a36186a37.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/1 - Completion/Female/Meghan Christian/completion_8_meghan.wav"
+dest_files=["res://.godot/imported/completion_8_meghan.wav-ea5eae7c7297efe2b50f756a36186a37.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cilf412d3fetk"
+path="res://.godot/imported/completion_2_meghan.wav-ba32c7812bce1edf560190aba3324840.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/1 - Completion/Female/Meghan Christian/completion_2_meghan.wav"
+dest_files=["res://.godot/imported/completion_2_meghan.wav-ba32c7812bce1edf560190aba3324840.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

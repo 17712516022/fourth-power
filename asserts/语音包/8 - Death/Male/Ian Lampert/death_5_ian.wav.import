@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://pugar6an5rtc"
+path="res://.godot/imported/death_5_ian.wav-74306fee6123a38bceb5c0ecf559bdfc.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/8 - Death/Male/Ian Lampert/death_5_ian.wav"
+dest_files=["res://.godot/imported/death_5_ian.wav-74306fee6123a38bceb5c0ecf559bdfc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

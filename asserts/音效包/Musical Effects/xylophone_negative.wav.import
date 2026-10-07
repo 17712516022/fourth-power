@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://04w5m37v0l8i"
+path="res://.godot/imported/xylophone_negative.wav-43d43eb9f75c8860b49f5ffb5a219e52.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Musical Effects/xylophone_negative.wav"
+dest_files=["res://.godot/imported/xylophone_negative.wav-43d43eb9f75c8860b49f5ffb5a219e52.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://b52r5ij0wdme0"]
+
+[ext_resource type="FontFile" uid="uid://dyjys1nvmbgb8" path="res://asserts/MyDearestBit.ttf" id="1_4r40w"]
+
+[resource]
+default_font = ExtResource("1_4r40w")

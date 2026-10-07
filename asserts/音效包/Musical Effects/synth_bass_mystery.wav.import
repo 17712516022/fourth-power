@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bllyxbdbawanc"
+path="res://.godot/imported/synth_bass_mystery.wav-2bff56ae08be83e2302e13ca3f1076e3.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Musical Effects/synth_bass_mystery.wav"
+dest_files=["res://.godot/imported/synth_bass_mystery.wav-2bff56ae08be83e2302e13ca3f1076e3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ds0omgq5mmw21"
+path="res://.godot/imported/confirmation_5_sean.wav-6a0b403d1e3816c569a9c52f61183c80.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/2 - Confirmation/Male/Sean Lenhart/confirmation_5_sean.wav"
+dest_files=["res://.godot/imported/confirmation_5_sean.wav-6a0b403d1e3816c569a9c52f61183c80.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

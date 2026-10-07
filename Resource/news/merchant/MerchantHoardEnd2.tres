@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://daxqpseegcpdr"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://clcfe2ny28kf5" path="res://art/商人-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/MerchantHoardEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "粮行纷纷出货"
+body = "本埠各粮行今日纷纷出货，栈房米袋络绎运至店前。价虽未大跌，而买者已不虑无市。闻系同业公议，先行开秤。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

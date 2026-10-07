@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="权利"
+run/main_scene="uid://c0rmycd4q6n0m"
+config/features=PackedStringArray("4.7", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Modifer="*uid://b8lpvde0h2dq"
+GroupData="*uid://cbrrv44ei3cwc"
+EventBus="*uid://cmaxutt8dwpvu"
+NewsData="*uid://dab36mk8pf80s"
+RawMaterialGenerater="*uid://bvaaa57jgj3a"
+NewsPaperManager="*uid://dexv8bt1gwwi8"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"

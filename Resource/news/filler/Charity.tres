@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dtar8rw55xfsv"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dr877cns63msw" path="res://art/其他-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "红十字会设所施粥"
+body = "本埠红十字会于城隍庙前设厂施粥，每日上午八时至十时，每人一大碗，老弱另给米半升。会中声明经费支绌，尚望各界慨助。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

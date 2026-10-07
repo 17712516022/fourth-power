@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c0bjoc8k2crms"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://cmujwwnsfinr1" path="res://art/农民_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/FarmerResistStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "风闻四乡佃户延不缴租"
+body = "近日四乡风传，多有佃户相约延不缴租，以诉租额过重。然此说散漫无据，既无首事之人，亦无呈词可查。本埠粮价未见波动。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

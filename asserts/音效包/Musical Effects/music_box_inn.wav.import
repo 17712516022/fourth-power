@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dex7ax77d4pq2"
+path="res://.godot/imported/music_box_inn.wav-45f4761d9ea74b6dc888700adf0fae05.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Musical Effects/music_box_inn.wav"
+dest_files=["res://.godot/imported/music_box_inn.wav-45f4761d9ea74b6dc888700adf0fae05.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

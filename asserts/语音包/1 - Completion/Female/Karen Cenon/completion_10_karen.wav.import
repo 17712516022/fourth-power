@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://csk4u4ycn2ick"
+path="res://.godot/imported/completion_10_karen.wav-b6c99856cc0f80ab1d117e5aacdce0fd.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/1 - Completion/Female/Karen Cenon/completion_10_karen.wav"
+dest_files=["res://.godot/imported/completion_10_karen.wav-b6c99856cc0f80ab1d117e5aacdce0fd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

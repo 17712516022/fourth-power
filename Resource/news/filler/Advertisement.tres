@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c6scthc7wgtyw"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://fpt0r1jf0tti" path="res://art/其他_6-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "英商老晋隆洋行启事"
+body = "本行新到各式洋货：钟表、呢绒、洋烛、煤油、洋钉、颜料。另有缝纫机器数架，价廉物美。批发零售，格外从廉。铺址：本埠大马路第一百二十八号。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

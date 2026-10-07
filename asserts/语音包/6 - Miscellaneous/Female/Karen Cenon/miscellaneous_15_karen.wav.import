@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cjy50818k3dhk"
+path="res://.godot/imported/miscellaneous_15_karen.wav-a8b8b257e43d1cc722cab9e0bb44beb0.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/6 - Miscellaneous/Female/Karen Cenon/miscellaneous_15_karen.wav"
+dest_files=["res://.godot/imported/miscellaneous_15_karen.wav-a8b8b257e43d1cc722cab9e0bb44beb0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

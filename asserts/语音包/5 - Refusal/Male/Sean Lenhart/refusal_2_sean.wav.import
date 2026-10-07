@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://vqafl1olkakj"
+path="res://.godot/imported/refusal_2_sean.wav-5a5dd00a5257d1e3ec654445040d2f9e.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/5 - Refusal/Male/Sean Lenhart/refusal_2_sean.wav"
+dest_files=["res://.godot/imported/refusal_2_sean.wav-5a5dd00a5257d1e3ec654445040d2f9e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

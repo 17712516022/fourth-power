@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://tr5yquj30boa"
+path="res://.godot/imported/farewell_8_meghan.wav-91fc688161c43c1accf5a16327554dad.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/4 - Farewell/Female/Meghan Christian/farewell_8_meghan.wav"
+dest_files=["res://.godot/imported/farewell_8_meghan.wav-91fc688161c43c1accf5a16327554dad.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

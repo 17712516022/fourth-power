@@ -1,0 +1,189 @@
+[gd_scene format=3 uid="uid://c0rmycd4q6n0m"]
+
+[ext_resource type="Script" uid="uid://bd0ljvxfn2pkh" path="res://Scripts/StartMenu.gd" id="1_menu"]
+[ext_resource type="Shader" uid="uid://c4ltslyymrvui" path="res://shaders/paper_menu.gdshader" id="2_paper"]
+[ext_resource type="Texture2D" uid="uid://cobiemb12evlt" path="res://asserts/背景包/JPGS/Paper-Texture6-pixelart-2x.png" id="3_base"]
+[ext_resource type="Texture2D" uid="uid://blqxtwbab20t5" path="res://asserts/背景包/JPGS/Paper-Texture3-pixelart-2x.png" id="4_drift"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="5_font"]
+[ext_resource type="StyleBox" uid="uid://cugkqalimldlt" path="res://theme/ButtonNormal.tres" id="6_btn_n"]
+[ext_resource type="StyleBox" uid="uid://b4jcb2d6r80nj" path="res://theme/ButtonHover.tres" id="7_btn_h"]
+[ext_resource type="StyleBox" uid="uid://dsurvwxjrgiti" path="res://theme/ButtonPressed.tres" id="8_btn_p"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_paper"]
+shader = ExtResource("2_paper")
+shader_parameter/vignette_strength = 0.42
+shader_parameter/vignette_breath = 0.5
+shader_parameter/breath_period = 9.0
+shader_parameter/sweep_color = Color(1, 0.97, 0.86, 1)
+shader_parameter/sweep_strength = 0.16
+shader_parameter/sweep_period = 10.0
+shader_parameter/sweep_tilt = 0.28
+
+[node name="StartMenu" type="Control" unique_id=38318387]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("5_font")
+script = ExtResource("1_menu")
+
+[node name="Background" type="TextureRect" parent="." unique_id=111720709]
+material = SubResource("ShaderMaterial_paper")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_base")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="DriftLayer" type="TextureRect" parent="." unique_id=1051663906]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.17)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_drift")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="DustLayer" type="Control" parent="." unique_id=1980312280]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Darken" type="ColorRect" parent="." unique_id=534597641]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.05882353, 0.05098039, 0.04313726, 0.38)
+
+[node name="TitleBox" type="VBoxContainer" parent="." unique_id=52796268]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_top = 0.3
+anchor_right = 0.77
+anchor_bottom = 0.3
+offset_left = -250.0
+offset_top = -84.0
+offset_right = 250.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="TitleBox" unique_id=1384297714]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16078432, 0.9019608, 0.8509804, 1)
+theme_override_colors/font_outline_color = Color(0.05098039, 0.0627451, 0.07058824, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 96
+text = "权利"
+horizontal_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="TitleBox" unique_id=1760051283]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8862745, 0.39215687, 1)
+theme_override_colors/font_outline_color = Color(0.05098039, 0.0627451, 0.07058824, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "一份报纸，一座城"
+horizontal_alignment = 1
+
+[node name="Menu" type="VBoxContainer" parent="." unique_id=715903462]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_top = 0.58
+anchor_right = 0.77
+anchor_bottom = 0.58
+offset_left = -150.0
+offset_top = -40.0
+offset_right = 150.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="StartButton" type="Button" parent="Menu" unique_id=2107119583]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 62)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16078432, 0.9019608, 0.8509804, 1)
+theme_override_colors/font_pressed_color = Color(0.10196079, 0.10196079, 0.10196079, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0.9333334, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("6_btn_n")
+theme_override_styles/pressed = ExtResource("8_btn_p")
+theme_override_styles/hover = ExtResource("7_btn_h")
+text = "开 始"
+
+[node name="QuitButton" type="Button" parent="Menu" unique_id=1271610308]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 62)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8862745, 0.39215687, 1)
+theme_override_colors/font_pressed_color = Color(0.10196079, 0.10196079, 0.10196079, 1)
+theme_override_colors/font_hover_color = Color(1, 0.9607844, 0.6431373, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("6_btn_n")
+theme_override_styles/pressed = ExtResource("8_btn_p")
+theme_override_styles/hover = ExtResource("7_btn_h")
+text = "退 出"
+
+[node name="TypeText" type="Label" parent="." unique_id=849858046]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.055
+anchor_right = 0.5
+anchor_bottom = 0.86
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.92941177, 0.8980392, 0.8392157, 0.9019608)
+theme_override_colors/font_outline_color = Color(0.07058824, 0.0627451, 0.05490196, 1)
+theme_override_constants/line_spacing = 8
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Version" type="Label" parent="." unique_id=1309553928]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -260.0
+offset_top = -42.0
+offset_right = -18.0
+offset_bottom = -14.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.75, 0.72, 0.66, 0.55)
+theme_override_font_sizes/font_size = 12
+text = "v0.1  原型"
+horizontal_alignment = 2

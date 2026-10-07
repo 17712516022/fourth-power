@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bpro4pi5tg38v"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://clcfe2ny28kf5" path="res://art/商人-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/MerchantHoardEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "米市复见平粜"
+body = "米市今日复见平粜，价较上旬回跌二角。小户闻讯争购，行前排队至午。有言此番放货，实因栈租日重，囤积者亦不能久持。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

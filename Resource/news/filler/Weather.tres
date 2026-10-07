@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://v3gbxdwkwbef"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_tjmaw"]
+[ext_resource type="Texture2D" uid="uid://cfpyqoicen5fo" path="res://art/其他_4-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_tjmaw")
+headline = "连日阴雨，街市泥泞"
+body = "本埠自入秋以来阴雨连绵，城南数处街面积水未消，行人往来多持油伞。四乡农事亦受牵累，田亩待晴方得收割。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

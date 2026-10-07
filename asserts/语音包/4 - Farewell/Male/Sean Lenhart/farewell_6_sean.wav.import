@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cbehxy7vfad1a"
+path="res://.godot/imported/farewell_6_sean.wav-91e72756c8f6998ef63414aac6f3142d.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/4 - Farewell/Male/Sean Lenhart/farewell_6_sean.wav"
+dest_files=["res://.godot/imported/farewell_6_sean.wav-91e72756c8f6998ef63414aac6f3142d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cjoks0vnyycem"
+path="res://.godot/imported/grunting_3_karen.wav-a5e3c2aae22a4d436ba45b27cd56255c.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/9 - Grunting/Female/Karen Cenon/grunting_3_karen.wav"
+dest_files=["res://.godot/imported/grunting_3_karen.wav-a5e3c2aae22a4d436ba45b27cd56255c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

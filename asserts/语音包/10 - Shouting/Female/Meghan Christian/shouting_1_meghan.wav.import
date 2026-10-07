@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://btt00nnnss1cm"
+path="res://.godot/imported/shouting_1_meghan.wav-f39c1588e25009009609de4ef08ad8cf.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/10 - Shouting/Female/Meghan Christian/shouting_1_meghan.wav"
+dest_files=["res://.godot/imported/shouting_1_meghan.wav-f39c1588e25009009609de4ef08ad8cf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,170 @@
+[gd_scene format=3 uid="uid://ccbuk5e5840cv"]
+
+[ext_resource type="Script" uid="uid://qgwlyjflkm1k" path="res://Scripts/RawMaterial/RawMaterialDetail.gd" id="1_40664"]
+[ext_resource type="StyleBox" uid="uid://br4mr4i8oqk35" path="res://theme/materialpanel.tres" id="1_ewgx4"]
+[ext_resource type="StyleBox" uid="uid://crxuy53cuwf6j" path="res://theme/TitlePanel.tres" id="3_fnqu0"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="4_f553q"]
+[ext_resource type="StyleBox" uid="uid://blith5qtrktn8" path="res://theme/TitleLabel.tres" id="5_ugy3l"]
+[ext_resource type="StyleBox" uid="uid://c1x6r1ewypcr3" path="res://theme/TextPanel.tres" id="6_dl881"]
+[ext_resource type="StyleBox" uid="uid://c1j1ppf3cvdn3" path="res://theme/TextLabel.tres" id="7_yfggo"]
+[ext_resource type="StyleBox" uid="uid://bplckx62iew2h" path="res://theme/PhotoPanel.tres" id="8_3rt2u"]
+[ext_resource type="Texture2D" uid="uid://gwu5suxtbslf" path="res://art/商人_2-pixelart-2x.png" id="9_ugy3l"]
+[ext_resource type="StyleBox" uid="uid://cugkqalimldlt" path="res://theme/ButtonNormal.tres" id="10_ugy3l"]
+[ext_resource type="StyleBox" uid="uid://dsurvwxjrgiti" path="res://theme/ButtonPressed.tres" id="11_dl881"]
+[ext_resource type="StyleBox" uid="uid://b4jcb2d6r80nj" path="res://theme/ButtonHover.tres" id="12_yfggo"]
+[ext_resource type="StyleBox" uid="uid://0k65olt1yrrb" path="res://theme/ButtonUnable.tres" id="13_3rt2u"]
+[ext_resource type="Theme" uid="uid://b52r5ij0wdme0" path="res://theme/Font2.tres" id="14_dl881"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fpkcc"]
+
+[node name="RawMaterialDetail" type="Panel" unique_id=2015462683]
+self_modulate = Color(0.36, 0.36, 0.36, 0.827451)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fpkcc")
+script = ExtResource("1_40664")
+
+[node name="Panel" type="Panel" parent="." unique_id=1779210319]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -267.0
+offset_right = 266.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1344922148]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -268.0
+offset_top = -240.5
+offset_right = 268.0
+offset_bottom = 240.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("1_ewgx4")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1536389344]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1633396520]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=182699457]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("3_fnqu0")
+
+[node name="RawMaterialDetailLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/PanelContainer" unique_id=259285601]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("4_f553q")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("5_ugy3l")
+text = "项目发布首篇开发日志"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=842471261]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("6_dl881")
+
+[node name="RawMaterialDetailRichTextLabel" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer/PanelContainer2" unique_id=1235720733]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("4_f553q")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.33333334)
+theme_override_constants/outline_size = 3
+theme_override_styles/normal = ExtResource("7_yfggo")
+bbcode_enabled = true
+text = "  本次参赛项目正式发布第一篇开发者日志。
+  日志对外公开了本作完整的核心设计框架：以涌现式社会模拟为核心，搭建民众群体与政府的自主推演系统，同时明确了报社舆论主导的游玩模式。
+  目前游戏整体循环机制、群体逻辑、社会涌现规则已全部定型，开发工作进入稳步推进阶段。"
+fit_content = true
+horizontal_alignment = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1827111699]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 10
+
+[node name="Panel" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer" unique_id=192975405]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("8_3rt2u")
+
+[node name="RawMaterialDetailTextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer/Panel" unique_id=613197676]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(480, 270)
+custom_maximum_size = Vector2(480, 270)
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("9_ugy3l")
+expand_mode = 1
+
+[node name="IknowButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1620900999]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("4_f553q")
+theme_override_colors/font_color = Color(0.6595192, 0.92426866, 0.99999994, 1)
+theme_override_constants/outline_size = 5
+theme_override_styles/normal = ExtResource("10_ugy3l")
+theme_override_styles/pressed = ExtResource("11_dl881")
+theme_override_styles/hover = ExtResource("12_yfggo")
+theme_override_styles/disabled = ExtResource("13_3rt2u")
+text = "我知道了"
+
+[node name="Control" type="Control" parent="PanelContainer" unique_id=1186262820]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="IsFake" type="RichTextLabel" parent="PanelContainer/Control" unique_id=812358402]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -227.0
+offset_top = -89.00006
+offset_right = 28.858276
+offset_bottom = 37.780457
+grow_horizontal = 0
+grow_vertical = 0
+rotation = -0.64534324
+mouse_filter = 2
+theme = ExtResource("14_dl881")
+theme_override_colors/default_color = Color(0.74509805, 0.42352942, 0.6156863, 1)
+theme_override_colors/font_outline_color = Color(0.3950858, 0.03999396, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 0.2627451)
+theme_override_constants/shadow_outline_size = 10
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "Fake"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1

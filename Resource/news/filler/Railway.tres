@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://fvbcnqjkj3fm"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://ij6qmho02s0k" path="res://art/其他_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "铁路加开区间车"
+body = "本路自本月十六日起，每日加开区间车两对，早七时、午后四时各开一班。三等票价仍旧，头二等照章加价。车至本埠约行一时四十分。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

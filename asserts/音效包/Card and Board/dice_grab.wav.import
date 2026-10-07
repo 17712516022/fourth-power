@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bfc4x4116ino5"
+path="res://.godot/imported/dice_grab.wav-70d42b1fe9ad626b2262b746663a09ce.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Card and Board/dice_grab.wav"
+dest_files=["res://.godot/imported/dice_grab.wav-70d42b1fe9ad626b2262b746663a09ce.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

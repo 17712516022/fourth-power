@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://do58jy5h4t3sw"
+path="res://.godot/imported/xylophone_chime_positive.wav-cb7445f068d194f061f1a6d73e9846cd.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Musical Effects/xylophone_chime_positive.wav"
+dest_files=["res://.godot/imported/xylophone_chime_positive.wav-cb7445f068d194f061f1a6d73e9846cd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

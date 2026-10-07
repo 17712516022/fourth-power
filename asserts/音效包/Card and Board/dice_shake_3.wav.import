@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c41vmlgfmmg74"
+path="res://.godot/imported/dice_shake_3.wav-ed3610e1bea375b22d9f922f3ff8adaf.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Card and Board/dice_shake_3.wav"
+dest_files=["res://.godot/imported/dice_shake_3.wav-ed3610e1bea375b22d9f922f3ff8adaf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

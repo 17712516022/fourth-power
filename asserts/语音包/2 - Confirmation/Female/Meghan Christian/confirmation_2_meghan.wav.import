@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bp3eda2hlonua"
+path="res://.godot/imported/confirmation_2_meghan.wav-77dafbc736d75ea9b51da2bc173d3531.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/2 - Confirmation/Female/Meghan Christian/confirmation_2_meghan.wav"
+dest_files=["res://.godot/imported/confirmation_2_meghan.wav-77dafbc736d75ea9b51da2bc173d3531.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

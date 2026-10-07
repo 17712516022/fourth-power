@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://jwwyntbvootb"
+path="res://.godot/imported/completion_6_alex.wav-c455cab59121ae7e70cb32e6cfc1a8fe.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/1 - Completion/Male/Alex Brodie/completion_6_alex.wav"
+dest_files=["res://.godot/imported/completion_6_alex.wav-c455cab59121ae7e70cb32e6cfc1a8fe.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

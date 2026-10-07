@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dhxqjr5pbttbj"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://mmgprr4trvml" path="res://art/其他_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "城东纱厂添招女工"
+body = "城东纱厂因添置纺机，添招女工六十名，粗工四十名。女工日给洋一角二分，粗工一角。管午饭一顿，工房可寄宿。每日午后二时至六时在厂门口报名。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://4bo6ab47rns0"
+path="res://.godot/imported/greeting_4_sean.wav-30127c6a723f0209046d802164f34d22.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/3 - Greeting/Male/Sean Lenhart/greeting_4_sean.wav"
+dest_files=["res://.godot/imported/greeting_4_sean.wav-30127c6a723f0209046d802164f34d22.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

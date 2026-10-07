@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bt3koie5pgasm"
+path="res://.godot/imported/brass_negative.wav-71dbeb2e3bd8d192d94559db6de31229.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Musical Effects/brass_negative.wav"
+dest_files=["res://.godot/imported/brass_negative.wav-71dbeb2e3bd8d192d94559db6de31229.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

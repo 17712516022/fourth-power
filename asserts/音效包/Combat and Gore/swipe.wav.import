@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://yb1mnxm7bdp3"
+path="res://.godot/imported/swipe.wav-5dddb8e23c22663112d8f8df7a9be14b.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Combat and Gore/swipe.wav"
+dest_files=["res://.godot/imported/swipe.wav-5dddb8e23c22663112d8f8df7a9be14b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

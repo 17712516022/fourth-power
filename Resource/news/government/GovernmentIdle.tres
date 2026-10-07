@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b8dqf03ml4f15"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bopirt18w1i55" path="res://art/政府_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/GovernmentIdle.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "驻城防营已撤回原防"
+body = "前调入城之防营兵丁，已于昨日撤归原防，各城门岗哨亦复常额。县署未说明撤防之由。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

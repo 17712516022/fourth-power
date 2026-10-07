@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InfluenceGroup" format=3]
+
+[ext_resource type="Script" uid="uid://vm70pl4x7rdw" path="res://Resource/news/InflunceGroup/InflunceGroupResource.gd" id="1_infl"]
+
+[resource]
+script = ExtResource("1_infl")
+happy_influnce = 0.03
+fear_influnce = -0.05
+angry_influnce = -0.03
+power_influnce = 0

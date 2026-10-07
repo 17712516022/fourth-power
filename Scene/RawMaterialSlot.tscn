@@ -1,0 +1,190 @@
+[gd_scene format=3 uid="uid://cec4kv28lktiw"]
+
+[ext_resource type="StyleBox" uid="uid://8bobrcv7hrwd" path="res://theme/RawMaterialSlot.tres" id="1_w5hll"]
+[ext_resource type="Script" uid="uid://cckgc5pgsua3x" path="res://Scripts/RawMaterial/RawMaterialSlot.gd" id="2_lwsp0"]
+[ext_resource type="Texture2D" uid="uid://bqr40ic3x0u66" path="res://art/士兵-pixelart-2x.png" id="3_lwsp0"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="4_slot"]
+[ext_resource type="StyleBox" uid="uid://dfd0exvhpfmh8" path="res://theme/SoltsPicture.tres" id="4_vwyow"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vkqoe"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7, 0.7, 0.7, 0.5137255)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwyow"]
+bg_color = Color(0.6715552, 0.5819639, 0.50486726, 0.36078432)
+skew = Vector2(0.2, 0)
+border_width_top = 5
+border_width_bottom = 5
+border_color = Color(0.66, 0.66, 0.66, 1)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 3
+
+[node name="RawMaterialSlot" type="PanelContainer" unique_id=2029925539]
+self_modulate = Color(0.63529414, 1, 1, 1)
+custom_minimum_size = Vector2(460, 350)
+custom_maximum_size = Vector2(460, 350)
+offset_right = 460.0
+offset_bottom = 350.0
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("1_w5hll")
+script = ExtResource("2_lwsp0")
+
+[node name="Panel" type="Panel" parent="." unique_id=1503722040]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vkqoe")
+
+[node name="VBoxContainer" type="Control" parent="." unique_id=1026344308]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="SlotTexture" type="TextureRect" parent="VBoxContainer" unique_id=190409683]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -102.0
+offset_top = 50.0
+offset_right = 105.0
+offset_bottom = 181.0
+grow_horizontal = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.4
+mouse_filter = 2
+texture = ExtResource("3_lwsp0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="VBoxContainer/SlotTexture" unique_id=667245025]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.5
+offset_right = 105.5
+offset_bottom = 133.0
+grow_horizontal = 2
+theme_override_styles/panel = ExtResource("4_vwyow")
+
+[node name="SlotColumns" type="Control" parent="VBoxContainer" unique_id=1738563685]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_top = 159.0
+offset_right = 466.0
+offset_bottom = 344.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.6
+mouse_filter = 2
+
+[node name="SlotColumn1" type="Label" parent="VBoxContainer/SlotColumns" unique_id=1041223877]
+custom_minimum_size = Vector2(100, 290)
+custom_maximum_size = Vector2(100, 290)
+clip_contents = true
+layout_mode = 0
+offset_left = 21.0
+offset_top = -110.0
+offset_right = 121.0
+offset_bottom = 167.0
+size_flags_horizontal = 3
+theme = ExtResource("4_slot")
+theme_override_constants/line_spacing = 2
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "今天大半时间都在跟\"点不动\"这三个字较劲。
+早上先把开始菜单收了尾——按下\"开始\"之后，素材池里立刻就有六条东西可以挑，不用再白点一次\"决定\"才能拿到第一条。顺手把之前手工填的素材配图也理清了，八十个素材文件现在都带着图。
+中间一大块在折腾素材池怎么摆。本来想一行排开、滚轮看后面的，试了好几种摆法都别扭——有一次还把\"滚动条\"当成了\"能装东西的格子\"来用，六张卡片全堆在左上角糊成一团。最后定下来是\"外面套一层能滚动的窗口，里面横着排一行\"，滚轮上下滚会自己变成左右滚，凑合能用。
+下半天的重头戏是那个弹出来的详情面板。弹出来之后，鼠标点它背后的素材，居然还能点中。这个过程走得"
+autowrap_mode = 1
+
+[node name="SlotColumn2" type="Label" parent="VBoxContainer/SlotColumns" unique_id=1318455602]
+custom_minimum_size = Vector2(97, 150)
+custom_maximum_size = Vector2(97, 150)
+clip_contents = true
+layout_mode = 0
+offset_left = 131.0
+offset_top = 34.0
+offset_right = 228.0
+offset_bottom = 184.0
+size_flags_horizontal = 3
+theme = ExtResource("4_slot")
+theme_override_constants/line_spacing = 2
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "挺曲折：我先想的是\"每次点鼠标之前问一句，现在鼠标底下是不是我自己\"，你说太绕；改成\"等别人都不要了再给我\"，结果连正常拖拽都没了——因为那个能滚动的窗口会把左键收走自己用；最后你指出来，问题根本不在代码，而是整条界面链上每一层都太\"贪\"了，把鼠标事件全截住了，该放行的没放行。补完之后一次就通了，而且面板的拦截"
+autowrap_mode = 1
+
+[node name="SlotColumn3" type="Label" parent="VBoxContainer/SlotColumns" unique_id=1608284193]
+custom_minimum_size = Vector2(97, 150)
+custom_maximum_size = Vector2(97, 150)
+clip_contents = true
+layout_mode = 0
+offset_left = 236.0
+offset_top = 34.0
+offset_right = 333.0
+offset_bottom = 171.0
+size_flags_horizontal = 3
+theme = ExtResource("4_slot")
+theme_override_constants/line_spacing = 2
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "也变成天然的——它在最上层，占住鼠标，底下的一概收不到。
+版位那边按你的要求做成了报纸一样的四栏。这里绕了个弯：文字框本身有个\"分几栏\"的开关，看着是现成的，实际用起来却是一行一行横着铺，跟报纸正好相反，只能自己算。第一版是一个字一个字量宽度、往下累加，够用但不准；后来改成让排版系统自己算\"这么宽"
+autowrap_mode = 1
+
+[node name="SlotColumn4" type="Label" parent="VBoxContainer/SlotColumns" unique_id=1874102650]
+custom_minimum_size = Vector2(100, 290)
+custom_maximum_size = Vector2(100, 290)
+clip_contents = true
+layout_mode = 0
+offset_left = 343.0
+offset_top = -109.0
+offset_right = 443.0
+offset_bottom = 168.0
+size_flags_horizontal = 3
+theme = ExtResource("4_slot")
+theme_override_constants/line_spacing = 2
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "能放几个字\"，切出来的位置就和眼睛看到的一模一样。再往后你说干脆用你数出来的字数——装满了就跳下一栏——确实简单十倍，就换成了这个。现在正文是一个字一个字浮出来的，四栏一起往下长。
+问题分几类。 一类是\"东西还没准备好就被用了\"：界面上的零件是挂上去之后才认得自己肚子里有什么，可外面的代码习惯先往它肚子里塞东西、再挂上去，撞了好几次。还有一类是\"复制文件带出来的乱子\"：复制一个脚本的时候，跟着它一起复制的那个小编号文件也跟了过来，两个文件撞了同一个编号，系统就把一处引用悄悄指到了新文件上，报了个莫名其妙的错。最后一类是编辑器自己的脾气：你改了一个零件是什么类型，它会顺手去改引用它的代码；你在编辑器开着的时候从外面改文件，它重新保存时又会拿内存里的旧内容盖回去——我好几处改好的设置就是这么丢的，来回补了两遍。
+风险有三条。 第一条是\"谁接鼠标\"这件事靠自觉：规矩是\"凡是只用来摆设、不给人点的东西，都得记得标一声'别接鼠标'\"，漏一个就静悄悄失效——不报错，只表现成\"点了没反应\"，跟今天查了半天的那堆毛病一模一样难找。第二条是分栏的字数是数出来的死数字，只对眼下这个大小的版位和这个字号成立，换个大小就得重新数；而且现在四栏宽度其实还是一样的，那个\"宽栏能多放一倍\"的数字到底对不对，还没真验证过。第三条是打字速度，一个字 0.03 秒，最长那栏三百多个字要打将近十秒，可能偏慢。
+但真正的问题不在这些细节上，而是——这个游戏最要紧的那个假设，到今天一次都没验过。 我们一直在解决\"玩家能不能把报纸排出来\"，可\"排出来的报纸到底会不会让世界换个走向\"，从来没跑过一次对照。素材、配图、菜单、版位、打字机，全是在给这件事搭台子。
+所以下期开始做报纸影响力。现在报纸身上只有一个数字，表示它说话有多少人信，算出来之后就摆在那儿，除了给报纸的力道当个系数，看不出它对世界做了什么。要做的第一件事大概是让它看得见——玩家得能看见\"我今天登了这一条，让谁往哪边挪了多少\"，不然调起来只能靠猜。等这一步通了，能跑一次\"每天排满真事\"和\"天天排空报纸\"的对照，才算真正回答了那个问题。"
+autowrap_mode = 1
+
+[node name="Panel" type="Panel" parent="VBoxContainer" unique_id=1013164770]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = -9.0
+offset_bottom = -309.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vwyow")
+
+[node name="TitleSlotLabel" type="Label" parent="VBoxContainer" unique_id=1820034751]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 6.0
+offset_right = 459.0
+offset_bottom = 41.0
+theme = ExtResource("4_slot")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 24
+text = "开发者日志02重磅来袭"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://c8a0gcodyccb1"]
+
+[ext_resource type="FontFile" uid="uid://djmbj5don7rw1" path="res://asserts/VonwaonBitmap-12px.ttf" id="1_ojtoc"]
+
+[resource]
+default_font = ExtResource("1_ojtoc")
+default_font_size = 20

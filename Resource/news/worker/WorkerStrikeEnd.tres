@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dfo7x0hj310yd"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://ch1n52vlprfr5" path="res://art/工人2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/WorkerStrikeEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "城东纱厂工人已复工"
+body = "城东某纱厂工人停工三日，昨日午后已经复工。据厂中人说，工钱未加，但答应下月起每日缩短工时半小时。此事遂了。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

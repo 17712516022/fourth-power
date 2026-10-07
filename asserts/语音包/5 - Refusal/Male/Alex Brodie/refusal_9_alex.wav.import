@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://jwcewa4vkh1n"
+path="res://.godot/imported/refusal_9_alex.wav-1ac6f861a87882137b48a16fa77b2653.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/5 - Refusal/Male/Alex Brodie/refusal_9_alex.wav"
+dest_files=["res://.godot/imported/refusal_9_alex.wav-1ac6f861a87882137b48a16fa77b2653.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

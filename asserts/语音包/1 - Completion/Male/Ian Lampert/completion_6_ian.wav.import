@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cukwid364l5cs"
+path="res://.godot/imported/completion_6_ian.wav-e934263cf1cfe77779b4fdd9768c5d2c.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/1 - Completion/Male/Ian Lampert/completion_6_ian.wav"
+dest_files=["res://.godot/imported/completion_6_ian.wav-e934263cf1cfe77779b4fdd9768c5d2c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

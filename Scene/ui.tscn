@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cpp6bw3qw8r1x"]
+
+[ext_resource type="PackedScene" uid="uid://cupcjaiuqftlo" path="res://Scene/pressure.tscn" id="1_3i1b0"]
+[ext_resource type="Script" uid="uid://dhoj7fhdttxpg" path="res://Scripts/Ui.gd" id="1_bpjw8"]
+[ext_resource type="Script" uid="uid://483qndo4lw85" path="res://Scripts/RawMaterial/RawMaterialFactory.gd" id="3_lfpiq"]
+[ext_resource type="PackedScene" uid="uid://wxyoebmorudd" path="res://Scene/World.tscn" id="4_urowa"]
+[ext_resource type="PackedScene" uid="uid://ccbuk5e5840cv" path="res://Scene/raw_material_detail.tscn" id="5_ls17r"]
+[ext_resource type="PackedScene" uid="uid://cvilsxvd0hppa" path="res://Scene/AttributeUi.tscn" id="6_thkpk"]
+[ext_resource type="PackedScene" uid="uid://bmutt1crsx7dc" path="res://Scene/FakeNewsList.tscn" id="7_3cm36"]
+[ext_resource type="PackedScene" uid="uid://b87qykktqr6rd" path="res://Scene/popmenu.tscn" id="8_mqc2b"]
+
+[node name="Ui" type="CanvasLayer" unique_id=1387071059]
+script = ExtResource("1_bpjw8")
+
+[node name="pressure" parent="." unique_id=286129864 instance=ExtResource("1_3i1b0")]
+unique_name_in_owner = true
+
+[node name="RawMaterialFactory" type="Node" parent="." unique_id=1502142407]
+script = ExtResource("3_lfpiq")
+metadata/_custom_type_script = "uid://483qndo4lw85"
+
+[node name="World" parent="." unique_id=2104347567 instance=ExtResource("4_urowa")]
+visible = true
+
+[node name="RawMaterialDetail" parent="." unique_id=1594491410 instance=ExtResource("5_ls17r")]
+visible = false
+
+[node name="AttributeUi" parent="." unique_id=1613247297 instance=ExtResource("6_thkpk")]
+unique_name_in_owner = true
+
+[node name="FakeNewsList" parent="." unique_id=522601072 instance=ExtResource("7_3cm36")]
+unique_name_in_owner = true
+
+[node name="Popmenu" parent="." unique_id=1340100765 instance=ExtResource("8_mqc2b")]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -22.0
+offset_top = -735.0
+offset_right = -22.0
+offset_bottom = -735.0
+grow_horizontal = 2

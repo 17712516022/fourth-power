@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://d6fcjhojag1k"]
+
+[ext_resource type="Script" uid="uid://db0gw5k7yp5pu" path="res://Scripts/RawMaterial/RawMaterial.gd" id="1_0y1ls"]
+[ext_resource type="Texture2D" uid="uid://cobiemb12evlt" path="res://asserts/背景包/JPGS/Paper-Texture6-pixelart-2x.png" id="1_ao6ot"]
+[ext_resource type="StyleBox" uid="uid://crxuy53cuwf6j" path="res://theme/TitlePanel.tres" id="2_48lt1"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="3_yuu4k"]
+[ext_resource type="StyleBox" uid="uid://blith5qtrktn8" path="res://theme/TitleLabel.tres" id="4_hhlxo"]
+[ext_resource type="StyleBox" uid="uid://bplckx62iew2h" path="res://theme/PhotoPanel.tres" id="7_mcq3a"]
+[ext_resource type="Theme" uid="uid://b52r5ij0wdme0" path="res://theme/Font2.tres" id="8_48lt1"]
+[ext_resource type="Texture2D" uid="uid://dr877cns63msw" path="res://art/其他-pixelart-2x.png" id="8_qi3np"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_48lt1"]
+texture = ExtResource("1_ao6ot")
+
+[node name="RawMaterial" type="PanelContainer" unique_id=710184364]
+self_modulate = Color(0.21176471, 1, 1, 1)
+offset_right = 164.0
+offset_bottom = 147.0
+offset_transform_scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_48lt1")
+script = ExtResource("1_0y1ls")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=54662296]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=505631298]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=925857061]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("2_48lt1")
+
+[node name="RawMaterialLabel" type="Label" parent="MarginContainer/VBoxContainer/PanelContainer" unique_id=2098223538]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_yuu4k")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = ExtResource("4_hhlxo")
+text = "Big hellom"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1926777854]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 8
+
+[node name="Panel" type="PanelContainer" parent="MarginContainer/VBoxContainer/MarginContainer" unique_id=1939380447]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("7_mcq3a")
+
+[node name="RawMaterialTextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/Panel" unique_id=2029459175]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 72)
+custom_maximum_size = Vector2(128, 72)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+texture = ExtResource("8_qi3np")
+expand_mode = 1
+
+[node name="Control" type="Control" parent="." unique_id=1965827764]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="IsFake" type="RichTextLabel" parent="Control" unique_id=640317033]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -88.0
+offset_top = -17.000015
+offset_right = 12.3559265
+offset_bottom = 29.616623
+grow_horizontal = 0
+grow_vertical = 0
+rotation = -0.64534324
+mouse_filter = 2
+theme = ExtResource("8_48lt1")
+theme_override_colors/default_color = Color(0.74509805, 0.42352942, 0.6156863, 1)
+theme_override_colors/font_outline_color = Color(0.3950858, 0.03999396, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 0.2627451)
+theme_override_constants/shadow_outline_size = 7
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "Fake"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1

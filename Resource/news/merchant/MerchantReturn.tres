@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://f0pogdquglf5"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bxfalxkceb1fl" path="res://art/商人_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/MerchantReturn.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "赴外商号渐有回埠"
+body = "前此携资他往之商户，近日有数家回埠复业。闻因外埠生意亦淡，而本埠地价已落，反易置产。惟回者尚少，市面未复旧观。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

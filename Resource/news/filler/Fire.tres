@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cyk2hmk3a6uui"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://cfpyqoicen5fo" path="res://art/其他_4-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "城南火警，焚屋十余间"
+body = "昨晚十一时，城南草鞋巷某小户遗火于灶，风急延烧，焚去平房十余间，幸未伤人。水会驰救至天明始熄。起火之由尚在查究。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

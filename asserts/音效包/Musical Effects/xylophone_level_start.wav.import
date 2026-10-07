@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ckogxk5n1q63f"
+path="res://.godot/imported/xylophone_level_start.wav-463b6be48d9aa5612d1798c0c882cc31.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Musical Effects/xylophone_level_start.wav"
+dest_files=["res://.godot/imported/xylophone_level_start.wav-463b6be48d9aa5612d1798c0c882cc31.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

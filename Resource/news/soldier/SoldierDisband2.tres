@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dl1ydqk0nt8r7"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bqr40ic3x0u66" path="res://art/士兵-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierDisband.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "某营番号裁撤"
+body = "驻西郊某营番号已奉文裁撤。所余兵士或散或并，旧日棚舍多已空置，门额亦经撤去。镇署另调他营填防，然人数不足。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

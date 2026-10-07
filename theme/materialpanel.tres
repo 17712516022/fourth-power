@@ -1,0 +1,7 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://br4mr4i8oqk35"]
+
+[ext_resource type="Texture2D" uid="uid://cobiemb12evlt" path="res://asserts/背景包/JPGS/Paper-Texture6-pixelart-2x.png" id="1_cp4ta"]
+
+[resource]
+texture = ExtResource("1_cp4ta")
+modulate_color = Color(0.6, 0.6, 0.6, 1)

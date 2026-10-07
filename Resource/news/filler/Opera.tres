@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b771kkpbxlovc"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://h8q5kpuxudy" path="res://art/其他_7-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "同乐戏园今晚开演"
+body = "同乐戏园自今晚起排演全本《玉堂春》，连演三日，包厢已定去大半。园中加设电灯，散戏后另辟夜场。票价楼上四角，楼下二角。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

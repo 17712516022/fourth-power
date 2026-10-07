@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://d01bfv681vswj"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://fpt0r1jf0tti" path="res://art/其他_6-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "警察厅布告防疫"
+body = "现值时序更迭，警察厅通谕各街巷：沟渠须逐日疏浚，井水须加石灰，染疫之家即报该管警区，勿得隐匿。凡售卖不洁瓜果者，一律禁止。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

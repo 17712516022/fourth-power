@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c4ercej0qmrni"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bpp5lb0bp846k" path="res://art/士兵_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierDesert.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "道上多败兵，行李狼藉"
+body = "连日往来官道上，多见败兵北去，军装不整，行李狼藉。有售其枪械于乡间者，价极廉。关卡问之，则曰遣散回籍。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

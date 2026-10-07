@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://gnjnxbmw0cxf"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://c1ctrn8qwbv8n" path="res://art/农民_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/FarmerFlee.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+type = null
+headline = "西北两乡田亩多荒"
+body = "西北两乡自去冬以来，佃户弃田者日众。今春田亩抛荒者已及十之三四，业户欲另招佃种，应者寥寥。所遗草棚多已塌坏。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = null

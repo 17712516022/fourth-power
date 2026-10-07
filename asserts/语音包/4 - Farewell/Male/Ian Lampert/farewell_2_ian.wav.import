@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cyedno2rx75sg"
+path="res://.godot/imported/farewell_2_ian.wav-6d710b74b5cb2e8fc6d3fb59dfb1b165.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/4 - Farewell/Male/Ian Lampert/farewell_2_ian.wav"
+dest_files=["res://.godot/imported/farewell_2_ian.wav-6d710b74b5cb2e8fc6d3fb59dfb1b165.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

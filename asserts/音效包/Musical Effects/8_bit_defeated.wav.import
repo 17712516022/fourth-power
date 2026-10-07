@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bbpl4un1rg1kl"
+path="res://.godot/imported/8_bit_defeated.wav-d569f1b51937297e52d6a865439fc4fb.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Musical Effects/8_bit_defeated.wav"
+dest_files=["res://.godot/imported/8_bit_defeated.wav-d569f1b51937297e52d6a865439fc4fb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

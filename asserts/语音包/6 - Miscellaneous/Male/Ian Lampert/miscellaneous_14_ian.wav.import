@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ca58vn78sv37r"
+path="res://.godot/imported/miscellaneous_14_ian.wav-608f7b68e7a49ff8bcc2edc64568e312.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/6 - Miscellaneous/Male/Ian Lampert/miscellaneous_14_ian.wav"
+dest_files=["res://.godot/imported/miscellaneous_14_ian.wav-608f7b68e7a49ff8bcc2edc64568e312.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

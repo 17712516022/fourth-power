@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://8rpkrjcvr2ki"
+path="res://.godot/imported/refusal_3_meghan.wav-200d3b439e6133d652ef421f86c85d92.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/5 - Refusal/Female/Meghan Christian/refusal_3_meghan.wav"
+dest_files=["res://.godot/imported/refusal_3_meghan.wav-200d3b439e6133d652ef421f86c85d92.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

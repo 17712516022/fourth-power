@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b58qrm4j16n4v"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://868tmktpcu16" path="res://art/农民-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/FarmerResistEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "四乡租事渐息"
+body = "前传四乡佃户延不缴租一节，近日据各乡来人言，租米已陆续送仓，旧欠亦多有补缴。前说或系一时之讹传。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

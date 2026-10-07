@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bx8ubksi3win3"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bqr40ic3x0u66" path="res://art/士兵-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierDisband.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "溃散之兵，招补无着"
+body = "前此溃散之营，虽经出示招补，而来投者寥寥。营门外招兵旗设已半月，登记者不过十余人。有旧兵言：饷既不继，谁肯再入。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

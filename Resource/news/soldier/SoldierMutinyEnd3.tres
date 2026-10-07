@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bhxu0m2q4wtsk"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dc0xb0y25wsns" path="res://art/士兵_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierMutinyEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "哗变之兵已归队听候查办"
+body = "哗变之兵经镇署差人劝谕，已于昨晚归队，各回本棚。枪械清点无缺。镇署传谕：此次从宽，再有此事，一律军法从事。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

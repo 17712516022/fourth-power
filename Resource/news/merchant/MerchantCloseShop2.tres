@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://x1xjl0386dp7"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://gwu5suxtbslf" path="res://art/商人_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/MerchantCloseShopStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "大街商铺十停六七"
+body = "本埠自大街至南门一带，商铺十停六七，闭门者皆贴「清理帐目」纸条。未闭者亦半掩门板。街中行人寥落，惟巡警往来。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

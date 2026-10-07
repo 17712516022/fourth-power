@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://uf4e8yohgpuh"
+path="res://.godot/imported/card_fan_2.wav-ed14e3caaed035b40df02420ffe4de4c.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Card and Board/card_fan_2.wav"
+dest_files=["res://.godot/imported/card_fan_2.wav-ed14e3caaed035b40df02420ffe4de4c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c0wckacyk1pwn"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dc0xb0y25wsns" path="res://art/士兵_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierMutinyEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "西郊哗变之兵已收械归营"
+body = "西郊某营哗变一事，昨经该旅旅长亲往弹压，变兵已收械归营，首事者数人待查。城中戒严已撤。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

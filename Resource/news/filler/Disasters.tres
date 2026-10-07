@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://7npnkb0obkci"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_7kmgn"]
+[ext_resource type="Texture2D" uid="uid://cfpyqoicen5fo" path="res://art/其他_4-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_7kmgn")
+headline = "邻省水患，灾民南下"
+body = "据本埠商旅来报，邻省入夏大雨，江河水溢，淹没田亩十数万亩。已有灾民结队南下，沿途乞食，近日城中亦渐见其踪迹。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

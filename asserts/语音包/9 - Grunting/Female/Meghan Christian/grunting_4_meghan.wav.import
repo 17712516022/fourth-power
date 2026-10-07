@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d0b2lamywblvo"
+path="res://.godot/imported/grunting_4_meghan.wav-4a08813f3036de201b512822e9e78743.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/9 - Grunting/Female/Meghan Christian/grunting_4_meghan.wav"
+dest_files=["res://.godot/imported/grunting_4_meghan.wav-4a08813f3036de201b512822e9e78743.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

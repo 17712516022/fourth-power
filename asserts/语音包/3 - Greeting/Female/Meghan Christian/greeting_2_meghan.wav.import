@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b2sb6g1m13o08"
+path="res://.godot/imported/greeting_2_meghan.wav-37f14b1a20a23ee0fd5d0461c0e1cf16.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/3 - Greeting/Female/Meghan Christian/greeting_2_meghan.wav"
+dest_files=["res://.godot/imported/greeting_2_meghan.wav-37f14b1a20a23ee0fd5d0461c0e1cf16.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d0fiob4v5cq33"
+path="res://.godot/imported/death_10_alex.wav-ced63b8ec6b0d24dca92bdcceeb8afa7.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/8 - Death/Male/Alex Brodie/death_10_alex.wav"
+dest_files=["res://.godot/imported/death_10_alex.wav-ced63b8ec6b0d24dca92bdcceeb8afa7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

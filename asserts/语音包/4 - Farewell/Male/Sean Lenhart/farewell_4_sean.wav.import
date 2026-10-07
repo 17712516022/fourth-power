@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cdgady3wr4yep"
+path="res://.godot/imported/farewell_4_sean.wav-c4abf0bcd292af98a708fad13b776828.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/4 - Farewell/Male/Sean Lenhart/farewell_4_sean.wav"
+dest_files=["res://.godot/imported/farewell_4_sean.wav-c4abf0bcd292af98a708fad13b776828.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

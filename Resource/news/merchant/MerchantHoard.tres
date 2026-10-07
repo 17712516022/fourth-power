@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b5c5lcs2g2aup"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://nkandf67x34g" path="res://art/商人_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/MerchantHoardStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "米价暗涨，或有人囤积"
+body = "本埠米价旬日之内涨逾一成，而四乡新谷入市未见短少。市中传有数家粮行闭仓不粜，俟价再高。此事无人出首，本埠商会亦未置一词。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

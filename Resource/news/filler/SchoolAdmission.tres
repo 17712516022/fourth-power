@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://drcyniano68up"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://0otkxv2jqeqm" path="res://art/其他_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "县立两等小学堂招考插班"
+body = "本县小学堂定于下月初一甄别插班生，额收四十名。年自八岁至十四岁，须认字略多者方准报名。学费每学期一元二角，贫寒子弟准予酌减。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

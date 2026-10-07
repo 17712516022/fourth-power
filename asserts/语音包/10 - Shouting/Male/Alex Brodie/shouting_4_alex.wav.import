@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cbmaw0c175rvn"
+path="res://.godot/imported/shouting_4_alex.wav-d1349f77ac4afb46cc87969593641c1d.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/10 - Shouting/Male/Alex Brodie/shouting_4_alex.wav"
+dest_files=["res://.godot/imported/shouting_4_alex.wav-d1349f77ac4afb46cc87969593641c1d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

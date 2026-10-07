@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://3cwdrt16y0df"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bpp5lb0bp846k" path="res://art/士兵_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierDesert.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "西郊溃兵四散，乡间屡有劫案"
+body = "西郊某营溃散之兵多半未归，散入邻近各县。近日四乡屡报劫案，多者三五成群，持械夜入民家。各地团防已加紧巡缉。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

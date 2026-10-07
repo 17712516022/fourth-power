@@ -1,0 +1,7 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://8bobrcv7hrwd"]
+
+[ext_resource type="Texture2D" uid="uid://2iemoyo88w1x" path="res://asserts/ui包/UI_TravelBook_BookCover01a.png" id="1_dffau"]
+
+[resource]
+texture = ExtResource("1_dffau")
+modulate_color = Color(0.72156864, 1, 1, 0.23529412)

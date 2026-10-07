@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://uakxjoy8qs5g"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/政府_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/GovernmentConciliate.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "商会奉谕，各安生业"
+body = "商会昨奉县署面谕，转告各业各安生业，勿相率效尤。署中并许将各业所陈苦况转详上宪。商会已定明日邀集各帮会议。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

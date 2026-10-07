@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://wxyoebmorudd"]
+
+[ext_resource type="Script" uid="uid://dhnk66ee7nwhg" path="res://Scripts/World.gd" id="1_wwl11"]
+[ext_resource type="Script" uid="uid://cqp8o5ml43ksr" path="res://Scripts/groups/Farm/Farmers.gd" id="2_3vc68"]
+[ext_resource type="Script" uid="uid://cv8h4iixb0pu4" path="res://Scripts/groups/Workers/Workers.gd" id="3_njlop"]
+[ext_resource type="Script" uid="uid://bw824x30oa5ix" path="res://Scripts/groups/Merchant/Merchants.gd" id="4_mrch"]
+[ext_resource type="Script" uid="uid://c3b5hp8h0y2hn" path="res://Scripts/groups/Soldier/Soldier.gd" id="5_sldr"]
+[ext_resource type="Script" uid="uid://ba5qs0rq6soc" path="res://Scripts/Government/Goverment.gd" id="6_govt"]
+
+[node name="World" type="Node2D" unique_id=2104347567]
+visible = false
+script = ExtResource("1_wwl11")
+
+[node name="Groups" type="Node" parent="." unique_id=1390217377]
+unique_name_in_owner = true
+
+[node name="Farmers" type="Node" parent="Groups" unique_id=1756784684]
+script = ExtResource("2_3vc68")
+metadata/_custom_type_script = "uid://cqp8o5ml43ksr"
+
+[node name="Workers" type="Node" parent="Groups" unique_id=303283907]
+script = ExtResource("3_njlop")
+metadata/_custom_type_script = "uid://cv8h4iixb0pu4"
+
+[node name="Merchants" type="Node" parent="Groups" unique_id=1187420953]
+script = ExtResource("4_mrch")
+metadata/_custom_type_script = "uid://bw824x30oa5ix"
+
+[node name="Soldier" type="Node" parent="Groups" unique_id=1620448917]
+script = ExtResource("5_sldr")
+metadata/_custom_type_script = "uid://c3b5hp8h0y2hn"
+
+[node name="Government" type="Node" parent="." unique_id=1748320165]
+script = ExtResource("6_govt")
+metadata/_custom_type_script = "uid://ba5qs0rq6soc"

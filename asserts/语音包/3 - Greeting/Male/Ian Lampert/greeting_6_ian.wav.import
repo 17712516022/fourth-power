@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c6o7x0w4j75ph"
+path="res://.godot/imported/greeting_6_ian.wav-2ee4d0af483dd18cfa35c6a97d0c5740.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/3 - Greeting/Male/Ian Lampert/greeting_6_ian.wav"
+dest_files=["res://.godot/imported/greeting_6_ian.wav-2ee4d0af483dd18cfa35c6a97d0c5740.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

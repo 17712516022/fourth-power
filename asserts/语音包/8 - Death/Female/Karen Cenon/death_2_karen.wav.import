@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://3gpldjyb3txv"
+path="res://.godot/imported/death_2_karen.wav-d96755c8d8f30ee10effc5a3ba8eef2f.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/8 - Death/Female/Karen Cenon/death_2_karen.wav"
+dest_files=["res://.godot/imported/death_2_karen.wav-d96755c8d8f30ee10effc5a3ba8eef2f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

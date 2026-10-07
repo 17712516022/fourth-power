@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cqnj22pr3n8oj"
+path="res://.godot/imported/confirmation_3_ian.wav-6a3684d7b7b2724dd82bc395b8f5db70.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/2 - Confirmation/Male/Ian Lampert/confirmation_3_ian.wav"
+dest_files=["res://.godot/imported/confirmation_3_ian.wav-6a3684d7b7b2724dd82bc395b8f5db70.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

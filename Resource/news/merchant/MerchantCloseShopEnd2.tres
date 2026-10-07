@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c3qf64ip6xsdh"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://clcfe2ny28kf5" path="res://art/商人-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/MerchantCloseShopEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "各铺陆续开门"
+body = "本埠各铺今日陆续开门，门板次第卸下，街面人声渐起。有铺伙言：新捐已允展缓两月，故不复相持。惟生意较往年仍清淡。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://70tbbx4rds74"
+path="res://.godot/imported/completion_5_sean.wav-2d3c98f10a45253d020325c12bd76ec8.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/1 - Completion/Male/Sean Lenhart/completion_5_sean.wav"
+dest_files=["res://.godot/imported/completion_5_sean.wav-2d3c98f10a45253d020325c12bd76ec8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

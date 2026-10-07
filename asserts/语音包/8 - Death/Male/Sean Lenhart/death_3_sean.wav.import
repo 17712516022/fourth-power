@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bd3uh58yfhf6d"
+path="res://.godot/imported/death_3_sean.wav-f72d3f8b9e50f64b836c5e64757f1d5b.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/8 - Death/Male/Sean Lenhart/death_3_sean.wav"
+dest_files=["res://.godot/imported/death_3_sean.wav-f72d3f8b9e50f64b836c5e64757f1d5b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://occjs0anfwd0"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://by4tytl41mar1" path="res://art/工人_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/WorkerSlowdownEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "各厂出纱已复常额"
+body = "前闻各纱厂工人有意减工，近日据本埠棉业公会言，各厂出纱已复原额，作息如常。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

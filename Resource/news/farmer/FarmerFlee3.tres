@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cjjsjtwifxwfd"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://c1ctrn8qwbv8n" path="res://art/农民_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/FarmerFlee.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "流民过境，乡间十室九空"
+body = "连日有流民扶老携幼过境，多称乡间无可为生。沿途村落叩门求食，十室而九空。地方已拨义仓谷石设厂暂赈，然来者日众。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

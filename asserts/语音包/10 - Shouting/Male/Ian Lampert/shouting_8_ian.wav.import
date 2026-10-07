@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2dwre7tm7oqt"
+path="res://.godot/imported/shouting_8_ian.wav-e4b65b641271f8d1af1e3e3b17c6f433.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/10 - Shouting/Male/Ian Lampert/shouting_8_ian.wav"
+dest_files=["res://.godot/imported/shouting_8_ian.wav-e4b65b641271f8d1af1e3e3b17c6f433.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dulwgtl7qc50p"
+path="res://.godot/imported/damage_2_meghan.wav-ede329c30156825b6e2f4b0eabe34d52.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/7 - Damage/Female/Meghan Christian/damage_2_meghan.wav"
+dest_files=["res://.godot/imported/damage_2_meghan.wav-ede329c30156825b6e2f4b0eabe34d52.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

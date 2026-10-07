@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dr5ubsf577ptm"
+path="res://.godot/imported/grunting_2_alex.wav-b82b58a7393cfcbf089103cded41cc2c.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/9 - Grunting/Male/Alex Brodie/grunting_2_alex.wav"
+dest_files=["res://.godot/imported/grunting_2_alex.wav-b82b58a7393cfcbf089103cded41cc2c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

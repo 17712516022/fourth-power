@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://cupcjaiuqftlo"]
+
+[ext_resource type="Script" uid="uid://ml2nljcdh1ee" path="res://Scripts/PressureUi.gd" id="1_ovauh"]
+[ext_resource type="Texture2D" uid="uid://ducjjhabhgbaa" path="res://asserts/背景包/JPGS/Paper-Texture1-pixelart-2x.png" id="2_l41nh"]
+[ext_resource type="Script" uid="uid://dbyf6rj20sbvd" path="res://Scripts/NewsPaper/NewsPaperGenerate.gd" id="3_3a0s7"]
+[ext_resource type="Texture2D" uid="uid://blqxtwbab20t5" path="res://asserts/背景包/JPGS/Paper-Texture3-pixelart-2x.png" id="3_5avgx"]
+[ext_resource type="FontFile" uid="uid://dyjys1nvmbgb8" path="res://asserts/MyDearestBit.ttf" id="3_58c2h"]
+[ext_resource type="StyleBox" uid="uid://0k65olt1yrrb" path="res://theme/ButtonUnable.tres" id="3_d8ff0"]
+[ext_resource type="StyleBox" uid="uid://cugkqalimldlt" path="res://theme/ButtonNormal.tres" id="3_onuer"]
+[ext_resource type="StyleBox" uid="uid://dsurvwxjrgiti" path="res://theme/ButtonPressed.tres" id="4_hmk63"]
+[ext_resource type="StyleBox" uid="uid://b4jcb2d6r80nj" path="res://theme/ButtonHover.tres" id="5_d8ff0"]
+[ext_resource type="Texture2D" uid="uid://tm7bdej4s6hp" path="res://asserts/图标包/no-padding/64px/white/10-editing/pen.png" id="8_58c2h"]
+[ext_resource type="PackedScene" uid="uid://cec4kv28lktiw" path="res://Scene/RawMaterialSlot.tscn" id="11_j8ath"]
+[ext_resource type="PackedScene" uid="uid://d6fcjhojag1k" path="res://Scene/RawMaterial.tscn" id="12_58c2h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1ggca"]
+texture = ExtResource("2_l41nh")
+modulate_color = Color(0.67206407, 0.67206407, 0.67206407, 1)
+
+[node name="pressure" type="Control" unique_id=286129864]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ovauh")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=466105597]
+custom_minimum_size = Vector2(1152, 648)
+custom_maximum_size = Vector2(1152, 648)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_1ggca")
+
+[node name="DecideButton" type="Button" parent="PanelContainer" unique_id=1324660716]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.16078432, 0.9019608, 0.8509804, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0.9333334, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.8862745, 0.39215687, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.81666666, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_58c2h")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("3_onuer")
+theme_override_styles/pressed = ExtResource("4_hmk63")
+theme_override_styles/hover = ExtResource("5_d8ff0")
+theme_override_styles/disabled = ExtResource("3_d8ff0")
+toggle_mode = true
+text = "Decide"
+icon = ExtResource("8_58c2h")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=217382669]
+custom_maximum_size = Vector2(1152, 648)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer" unique_id=2053682609]
+custom_minimum_size = Vector2(1000, 0)
+custom_maximum_size = Vector2(1000, -1)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/HBoxContainer/VBoxContainer" unique_id=210588479]
+custom_maximum_size = Vector2(1000, 500)
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("3_5avgx")
+
+[node name="SlotsContainer" type="Control" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect" unique_id=982306929]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("3_3a0s7")
+
+[node name="RawMaterialSlot5" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=1488380980 instance=ExtResource("11_j8ath")]
+layout_mode = 0
+offset_left = 532.0
+offset_top = 142.0
+offset_right = 992.0
+offset_bottom = 492.0
+
+[node name="RawMaterialSlot7" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=2029925539 instance=ExtResource("11_j8ath")]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 282.0
+offset_right = 468.0
+offset_bottom = 632.0
+scale = Vector2(0.5, 0.6)
+
+[node name="RawMaterialSlot8" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=1980818075 instance=ExtResource("11_j8ath")]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 57.0
+offset_right = 468.0
+offset_bottom = 407.0
+scale = Vector2(0.5, 0.6)
+
+[node name="RawMaterialSlot9" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=807710214 instance=ExtResource("11_j8ath")]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 282.0
+offset_right = 706.0
+offset_bottom = 632.0
+scale = Vector2(0.5, 0.6)
+
+[node name="RawMaterialSlot10" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=709992137 instance=ExtResource("11_j8ath")]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 57.000004
+offset_right = 706.0
+offset_bottom = 407.0
+scale = Vector2(0.5, 0.6)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/HBoxContainer/VBoxContainer" unique_id=1348016744]
+custom_maximum_size = Vector2(1000, -1)
+layout_mode = 2
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
+
+[node name="NewsContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer" unique_id=1172194408]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="RawMaterial" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer/NewsContainer" unique_id=710184364 instance=ExtResource("12_58c2h")]
+layout_mode = 2
+
+[node name="RawMaterial2" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer/NewsContainer" unique_id=560839293 instance=ExtResource("12_58c2h")]
+layout_mode = 2
+
+[node name="RawMaterial3" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer/NewsContainer" unique_id=1388218244 instance=ExtResource("12_58c2h")]
+layout_mode = 2
+
+[node name="RawMaterial4" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer/NewsContainer" unique_id=589163660 instance=ExtResource("12_58c2h")]
+layout_mode = 2
+
+[node name="RawMaterial5" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer/NewsContainer" unique_id=2009396865 instance=ExtResource("12_58c2h")]
+layout_mode = 2
+
+[node name="RawMaterial6" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer/NewsContainer" unique_id=1483050212 instance=ExtResource("12_58c2h")]
+layout_mode = 2

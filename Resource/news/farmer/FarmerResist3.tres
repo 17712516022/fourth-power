@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bieskxvocay78"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://cmujwwnsfinr1" path="res://art/农民_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/FarmerResistStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "秋租将届，各乡观望"
+body = "秋收将毕，各乡佃户多不即完租，彼此观望。业户下乡催取，十不得一。有业户言：彼等未必抗违，特欲相持以邀减让耳。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

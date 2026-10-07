@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dbaqcqfkk53fm"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://c0v345ykan040" path="res://art/士兵_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierMutinyStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "戍兵索饷，鼓噪出营"
+body = "驻防某营兵士以欠饷日久，昨夜鼓噪，结队出营，声言赴城内向镇署索饷。营官劝阻不听，反被推拥。至发稿时，该营尚无归队消息。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

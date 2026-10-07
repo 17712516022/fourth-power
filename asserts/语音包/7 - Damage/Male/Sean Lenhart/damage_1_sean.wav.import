@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bvc8qor7pm84t"
+path="res://.godot/imported/damage_1_sean.wav-2a8bce25ee19cc67d3a7ba80922d5cd6.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/7 - Damage/Male/Sean Lenhart/damage_1_sean.wav"
+dest_files=["res://.godot/imported/damage_1_sean.wav-2a8bce25ee19cc67d3a7ba80922d5cd6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://xpsey1e23oi6"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://blsgcketaof38" path="res://art/其他_5-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "旧家字画出让"
+body = "本埠西街某旧家以家用不给，出其先世所藏字画二十余件求售。中有明人山水一轴，索价颇昂。闻沪上藏家已有函询。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

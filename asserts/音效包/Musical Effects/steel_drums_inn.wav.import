@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cmrnlki0sstme"
+path="res://.godot/imported/steel_drums_inn.wav-c99728ce2a28aba8d952c30f5f6f1ae0.sample"
+
+[deps]
+
+source_file="res://asserts/音效包/Musical Effects/steel_drums_inn.wav"
+dest_files=["res://.godot/imported/steel_drums_inn.wav-c99728ce2a28aba8d952c30f5f6f1ae0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bqh71lfam1yuy"
+path="res://.godot/imported/refusal_5_ian.wav-a6649d775ca16cb10275c2acee979ea5.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/5 - Refusal/Male/Ian Lampert/refusal_5_ian.wav"
+dest_files=["res://.godot/imported/refusal_5_ian.wav-a6649d775ca16cb10275c2acee979ea5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

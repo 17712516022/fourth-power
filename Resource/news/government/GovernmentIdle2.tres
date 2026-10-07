@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dieuoxngkkulv"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bopirt18w1i55" path="res://art/政府_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/GovernmentIdle.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "调防之兵已回本营"
+body = "前次调防各队现已依次回营，沿途未闻滋扰。镇署撤回通令，各乡卡哨亦已裁撤。地方绅董多以杯酒相送。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

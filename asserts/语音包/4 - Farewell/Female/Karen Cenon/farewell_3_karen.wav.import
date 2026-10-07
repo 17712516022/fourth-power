@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cir3y4cip55h"
+path="res://.godot/imported/farewell_3_karen.wav-57e94ba7859a9b73cad16c5f0960963c.sample"
+
+[deps]
+
+source_file="res://asserts/语音包/4 - Farewell/Female/Karen Cenon/farewell_3_karen.wav"
+dest_files=["res://.godot/imported/farewell_3_karen.wav-57e94ba7859a9b73cad16c5f0960963c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
