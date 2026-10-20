@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cy1js1qbb8ub0"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://brjc6vval6wqd" path="res://art/newphoto/商人-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://m8em2pfnqtrp" path="res://temp/news_backup/InflunceGroup/MerchantSpeculateEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "粮价落回来了"
+body = "　　本城粮价从上月下旬起渐渐回落，现在已经接近常价。货栈陆续开仓出货，码头这两天一连到了三船麦子。
+　　几家先前挂着限购牌子的铺子把牌子摘了，有的还在门口写明现价出售、不限购。有个妇人说，上回买两袋的钱，这回买了三袋还有余。
+　　有店主说，先前闭仓那几家是看错了风向：外城的粮并不缺，新麦一上来，压着的货只好往外放，越放越跌。城上的饭馆今天把饭价调回了原价。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

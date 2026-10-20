@@ -1,13 +1,19 @@
 [gd_scene format=3 uid="uid://cpp6bw3qw8r1x"]
 
 [ext_resource type="PackedScene" uid="uid://cupcjaiuqftlo" path="res://Scene/pressure.tscn" id="1_3i1b0"]
-[ext_resource type="Script" uid="uid://dhoj7fhdttxpg" path="res://Scripts/Ui.gd" id="1_bpjw8"]
+[ext_resource type="Script" uid="uid://dhoj7fhdttxpg" path="res://Scripts/Ui/Ui.gd" id="1_bpjw8"]
 [ext_resource type="Script" uid="uid://483qndo4lw85" path="res://Scripts/RawMaterial/RawMaterialFactory.gd" id="3_lfpiq"]
 [ext_resource type="PackedScene" uid="uid://wxyoebmorudd" path="res://Scene/World.tscn" id="4_urowa"]
 [ext_resource type="PackedScene" uid="uid://ccbuk5e5840cv" path="res://Scene/raw_material_detail.tscn" id="5_ls17r"]
 [ext_resource type="PackedScene" uid="uid://cvilsxvd0hppa" path="res://Scene/AttributeUi.tscn" id="6_thkpk"]
 [ext_resource type="PackedScene" uid="uid://bmutt1crsx7dc" path="res://Scene/FakeNewsList.tscn" id="7_3cm36"]
-[ext_resource type="PackedScene" uid="uid://b87qykktqr6rd" path="res://Scene/popmenu.tscn" id="8_mqc2b"]
+[ext_resource type="PackedScene" uid="uid://b87qykktqr6rd" path="res://Scene/FakeNewPopMenu.tscn" id="8_mqc2b"]
+[ext_resource type="PackedScene" uid="uid://3immmjnbxfed" path="res://Scene/SettingsPanel.tscn" id="9_settings"]
+[ext_resource type="PackedScene" uid="uid://518gtixt546" path="res://Scene/MessagePanel.tscn" id="10_d0mn4"]
+[ext_resource type="PackedScene" uid="uid://bk1xvafn26hyt" path="res://Scene/HelpPanel.tscn" id="11_help"]
+[ext_resource type="Script" uid="uid://b88lj1x1darf6" path="res://Scripts/GovernmentMessage/GovernmentMessenger.gd" id="12_vacr6"]
+[ext_resource type="PackedScene" uid="uid://dgssbsg0eu6pk" path="res://Scene/GovernmentMessagePopMenu.tscn" id="13_govpop"]
+[ext_resource type="PackedScene" path="res://Scene/Toast.tscn" id="14_toast"]
 
 [node name="Ui" type="CanvasLayer" unique_id=1387071059]
 script = ExtResource("1_bpjw8")
@@ -31,7 +37,11 @@ unique_name_in_owner = true
 [node name="FakeNewsList" parent="." unique_id=522601072 instance=ExtResource("7_3cm36")]
 unique_name_in_owner = true
 
-[node name="Popmenu" parent="." unique_id=1340100765 instance=ExtResource("8_mqc2b")]
+[node name="SettingsPanel" parent="." unique_id=-879934588 instance=ExtResource("9_settings")]
+unique_name_in_owner = true
+visible = false
+
+[node name="FakeNewPopmenu" parent="." unique_id=1340100765 instance=ExtResource("8_mqc2b")]
 unique_name_in_owner = true
 anchors_preset = 5
 anchor_left = 0.5
@@ -41,3 +51,27 @@ offset_top = -735.0
 offset_right = -22.0
 offset_bottom = -735.0
 grow_horizontal = 2
+
+[node name="GovernmentMessagePopmenu" parent="." unique_id=1873402116 instance=ExtResource("13_govpop")]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -22.0
+offset_top = -735.0
+offset_right = -22.0
+offset_bottom = -735.0
+grow_horizontal = 2
+
+[node name="MessagePanel" parent="." unique_id=1394290257 instance=ExtResource("10_d0mn4")]
+
+[node name="HelpPanel" parent="." unique_id=1340192300 instance=ExtResource("11_help")]
+unique_name_in_owner = true
+visible = false
+
+[node name="GovernmentMessager" type="Node" parent="." unique_id=669928108]
+script = ExtResource("12_vacr6")
+metadata/_custom_type_script = "uid://b88lj1x1darf6"
+
+[node name="Toast" parent="." instance=ExtResource("14_toast")]
+unique_name_in_owner = true

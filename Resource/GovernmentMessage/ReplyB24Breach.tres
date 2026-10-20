@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 4
+displaying_name = "新闻检查官 柯尔"
+text = "贵报写了「男人们回来了，女人们被请出去」。这句话今日在城里传了三遍。本处不驳，驳了也是替贵报传。"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

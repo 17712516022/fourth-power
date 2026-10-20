@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://d2ijwvxj5xrhu"]
+
+[ext_resource type="Script" uid="uid://vm70pl4x7rdw" path="res://Resource/InflunceGroupResource.gd" id="1_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://kxeb73vpmejf" path="res://art/newphoto/农民-2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_infl"]
+script = ExtResource("1_infl")
+farmer_happy = 0.02
+farmer_fear = 0.03
+farmer_angry = -0.07
+worker_happy = 0.02
+worker_angry = -0.05
+merchant_happy = 0.05
+
+[resource]
+script = ExtResource("1_news")
+headline = "安桥郡收割过半"
+body = "　　安桥郡前天开镰，到昨天已经收完六成以上。田里干活的人都是自愿应募来的雇工，一天两块工钱，另外管一顿饭。
+　　据军需处报，今年这个郡入仓的粮食比去年多一成。收割队分班干活，清早下地，中午歇一个钟头，天黑收工；手脚快的另有奖励。田边插着牌子，写明班次和工钱，谁干哪一段都写得清楚。
+　　在旁边看的农夫没有提出异议，还有几个人主动要求加入。一个老农说，今年给钱痛快，比去年强。也有村民嘀咕，好地先收，自家的田还排在后头，不知道赶不赶得上雨前。"
+image = ExtResource("2_img")
+influnce = SubResource("Resource_infl")
+event_id = "b08_harvest_escort"

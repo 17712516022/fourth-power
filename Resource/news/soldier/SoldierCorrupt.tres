@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://d1ia1p7yj5n67"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bl7w8u8temqwb" path="res://art/newphoto/士兵-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://q27kakp5ejkd" path="res://temp/news_backup/InflunceGroup/SoldierCorruptStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "营里腐败，账目不清"
+body = "　　驻军各营这几天点验，军装和马匹多跟账目对不上，差的数目还不小。营里人都说，这就是腐败。
+　　据议会递来的查册，近半年军团报领的军饷跟实际点验的人数差一成上下；营里领的皮甲和长枪，库里实存比簿子上少了一百多件。
+　　有队长说，军饷每回发下来都要经过几道手，到士兵手里自然少一些，营里人人都知道，只是没人肯问。议会说，先派一名书记官入营收账，暂时不动人。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

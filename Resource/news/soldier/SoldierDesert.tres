@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://3cwdrt16y0df"]
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bkysh27fm6lnr"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://bpp5lb0bp846k" path="res://art/士兵_3-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierDesert.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://csexockmhjnem" path="res://art/newphoto/士兵-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://0sybx2tgpkgd" path="res://temp/news_backup/InflunceGroup/SoldierDesert.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "西郊溃兵四散，乡间屡有劫案"
-body = "西郊某营溃散之兵多半未归，散入邻近各县。近日四乡屡报劫案，多者三五成群，持械夜入民家。各地团防已加紧巡缉。"
+headline = "点名只到六成八"
+body = "　　这几天各营点卯，到的不到七成，眼看要溃散。各营合起来数下来，实到只剩六成八，缺得最多的两营在东门外的旧营盘，缺的已经过了三成。
+　　有队长说，走的士兵多是把军牌留在床头，人回乡下帮工去了，秋收过了再回来；也有往南边商路上给人押货的，那边一天给的工钱比军里一月的饷还多。
+　　营里夜里不上锁，军械也有丢在营房的。驻军统领说：饷不到手，喊不住人。议会说，先让各营把缺额报齐，再定是补人还是裁营。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")

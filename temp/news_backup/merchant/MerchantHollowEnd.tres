@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b88xpwn1jn5da"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://clcfe2ny28kf5" path="res://art/photo/商人-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://r7wsu4ik4a1k" path="res://Resource/news/InflunceGroup/MerchantHollowEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "老铺重新开门"
+body = "　　先前门面半掩的那几家，这几天又重新开张，店员陆续回来，早上开门的时候看得见有人拿梯子去摘门板。
+　　街上买主渐多，仓里的货陆续出清，最先走的是布和灯油，随后是糖、盐和铁器。有几家把陈货折价摆到门口，一天就卖出大半。
+　　店主说，账上的窟窿还在，只是不再往外漏了。商会今天抄了一份重新开门的名单贴在门廊上，有人站在前面数了数，说比上月少两家。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

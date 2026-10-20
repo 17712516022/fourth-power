@@ -5,9 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://cobiemb12evlt" path="res://asserts/背景包/JPGS/Paper-Texture6-pixelart-2x.png" id="3_base"]
 [ext_resource type="Texture2D" uid="uid://blqxtwbab20t5" path="res://asserts/背景包/JPGS/Paper-Texture3-pixelart-2x.png" id="4_drift"]
 [ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="5_font"]
-[ext_resource type="StyleBox" uid="uid://cugkqalimldlt" path="res://theme/ButtonNormal.tres" id="6_btn_n"]
-[ext_resource type="StyleBox" uid="uid://b4jcb2d6r80nj" path="res://theme/ButtonHover.tres" id="7_btn_h"]
-[ext_resource type="StyleBox" uid="uid://dsurvwxjrgiti" path="res://theme/ButtonPressed.tres" id="8_btn_p"]
+[ext_resource type="StyleBox" uid="uid://cfd3jotk57yhs" path="res://theme/line_style_box.tres" id="9_pff7g"]
+[ext_resource type="Environment" uid="uid://h8io6jgqmqck" path="res://theme/menu_environment.tres" id="30_env"]
+[ext_resource type="Shader" uid="uid://nqsks71pfxlk" path="res://shaders/menu_print.gdshader" id="31_print"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_paper"]
 shader = ExtResource("2_paper")
@@ -16,10 +16,26 @@ shader_parameter/vignette_breath = 0.5
 shader_parameter/breath_period = 9.0
 shader_parameter/sweep_color = Color(1, 0.97, 0.86, 1)
 shader_parameter/sweep_strength = 0.16
-shader_parameter/sweep_period = 10.0
+shader_parameter/sweep_period = 18.0
 shader_parameter/sweep_tilt = 0.28
 
-[node name="StartMenu" type="Control" unique_id=38318387]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_seal"]
+bg_color = Color(0.62, 0.14, 0.11, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_print"]
+shader = ExtResource("31_print")
+shader_parameter/paper_tint = Color(0.97, 0.92, 0.8, 1)
+shader_parameter/tint_amount = 0.3
+shader_parameter/press_edge = 0.18
+shader_parameter/press_width = 0.16
+shader_parameter/uneven_amount = 0.045
+shader_parameter/uneven_period = 80.0
+
+[node name="StartMenu" type="Control" unique_id=302575554]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -29,7 +45,7 @@ grow_vertical = 2
 theme = ExtResource("5_font")
 script = ExtResource("1_menu")
 
-[node name="Background" type="TextureRect" parent="." unique_id=111720709]
+[node name="Background" type="TextureRect" parent="." unique_id=726826011]
 material = SubResource("ShaderMaterial_paper")
 layout_mode = 1
 anchors_preset = 15
@@ -41,7 +57,7 @@ texture = ExtResource("3_base")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="DriftLayer" type="TextureRect" parent="." unique_id=1051663906]
+[node name="DriftLayer" type="TextureRect" parent="." unique_id=1009962068]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.17)
 layout_mode = 1
@@ -54,7 +70,7 @@ texture = ExtResource("4_drift")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="DustLayer" type="Control" parent="." unique_id=1980312280]
+[node name="DustLayer" type="Control" parent="." unique_id=106891209]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -64,7 +80,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Darken" type="ColorRect" parent="." unique_id=534597641]
+[node name="Darken" type="ColorRect" parent="." unique_id=84552298]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -74,116 +90,234 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0.05882353, 0.05098039, 0.04313726, 0.38)
 
-[node name="TitleBox" type="VBoxContainer" parent="." unique_id=52796268]
+[node name="TitleBox" type="VBoxContainer" parent="." unique_id=1384238479]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.77
-anchor_top = 0.3
-anchor_right = 0.77
-anchor_bottom = 0.3
-offset_left = -250.0
-offset_top = -84.0
-offset_right = 250.0
-offset_bottom = 96.0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -430.0
+offset_top = 40.0
+offset_right = 430.0
+offset_bottom = 246.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 8
-alignment = 1
+theme_override_constants/separation = 0
 
-[node name="TitleLabel" type="Label" parent="TitleBox" unique_id=1384297714]
+[node name="TopRule" type="ColorRect" parent="TitleBox" unique_id=1089129017]
+custom_minimum_size = Vector2(0, 3)
 layout_mode = 2
-theme_override_colors/font_color = Color(0.16078432, 0.9019608, 0.8509804, 1)
-theme_override_colors/font_outline_color = Color(0.05098039, 0.0627451, 0.07058824, 1)
-theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 96
-text = "权利"
+color = Color(0.13, 0.11, 0.09, 0.8)
+
+[node name="TopGap" type="Control" parent="TitleBox" unique_id=1615940459]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="TitleLabel" type="Label" parent="TitleBox" unique_id=299293042]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.115, 0.1, 0.085, 1)
+theme_override_font_sizes/font_size = 104
+text = "第四权力"
 horizontal_alignment = 1
 
-[node name="SubtitleLabel" type="Label" parent="TitleBox" unique_id=1760051283]
+[node name="SubGap" type="Control" parent="TitleBox" unique_id=56177612]
+custom_minimum_size = Vector2(0, 2)
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.8862745, 0.39215687, 1)
-theme_override_colors/font_outline_color = Color(0.05098039, 0.0627451, 0.07058824, 1)
-theme_override_constants/outline_size = 4
-theme_override_font_sizes/font_size = 24
+mouse_filter = 2
+
+[node name="SubtitleLabel" type="Label" parent="TitleBox" unique_id=614981839]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.36, 0.32, 0.27, 1)
+theme_override_font_sizes/font_size = 18
 text = "一份报纸，一座城"
 horizontal_alignment = 1
 
-[node name="Menu" type="VBoxContainer" parent="." unique_id=715903462]
+[node name="BottomGap" type="Control" parent="TitleBox" unique_id=648245072]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="BottomRule" type="ColorRect" parent="TitleBox" unique_id=1383621952]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+color = Color(0.13, 0.11, 0.09, 0.55)
+
+[node name="Seal" type="PanelContainer" parent="." unique_id=1505943892]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.77
-anchor_top = 0.58
-anchor_right = 0.77
-anchor_bottom = 0.58
-offset_left = -150.0
-offset_top = -40.0
-offset_right = 150.0
-offset_bottom = 120.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 16
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 232.0
+offset_top = 126.0
+offset_right = 294.0
+offset_bottom = 188.0
+rotation = -0.13
+theme_override_styles/panel = SubResource("StyleBoxFlat_seal")
 
-[node name="StartButton" type="Button" parent="Menu" unique_id=2107119583]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(300, 62)
+[node name="SealLabel" type="Label" parent="Seal" unique_id=1147851208]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.16078432, 0.9019608, 0.8509804, 1)
-theme_override_colors/font_pressed_color = Color(0.10196079, 0.10196079, 0.10196079, 1)
-theme_override_colors/font_hover_color = Color(0, 1, 0.9333334, 1)
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = ExtResource("6_btn_n")
-theme_override_styles/pressed = ExtResource("8_btn_p")
-theme_override_styles/hover = ExtResource("7_btn_h")
-text = "开 始"
+theme_override_colors/font_color = Color(0.96, 0.93, 0.86, 1)
+theme_override_font_sizes/font_size = 34
+text = "IV"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="QuitButton" type="Button" parent="Menu" unique_id=1271610308]
+[node name="EditorialBox" type="VBoxContainer" parent="." unique_id=1212905549]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(300, 62)
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.8862745, 0.39215687, 1)
-theme_override_colors/font_pressed_color = Color(0.10196079, 0.10196079, 0.10196079, 1)
-theme_override_colors/font_hover_color = Color(1, 0.9607844, 0.6431373, 1)
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = ExtResource("6_btn_n")
-theme_override_styles/pressed = ExtResource("8_btn_p")
-theme_override_styles/hover = ExtResource("7_btn_h")
-text = "退 出"
-
-[node name="TypeText" type="Label" parent="." unique_id=849858046]
-unique_name_in_owner = true
-clip_contents = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.055
-anchor_right = 0.5
+anchor_top = 0.4
+anchor_right = 0.45
 anchor_bottom = 0.86
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.92941177, 0.8980392, 0.8392157, 0.9019608)
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="EditorialLabel" type="Label" parent="EditorialBox" unique_id=139338184]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3, 0.27, 0.23, 0.85)
+theme_override_font_sizes/font_size = 13
+text = "EDITORIAL"
+
+[node name="EditorialRule" type="ColorRect" parent="EditorialBox" unique_id=457229313]
+custom_minimum_size = Vector2(56, 2)
+layout_mode = 2
+size_flags_horizontal = 0
+color = Color(0.13, 0.11, 0.09, 0.6)
+
+[node name="TypeText" type="Label" parent="EditorialBox" unique_id=501741323]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(-1, 260)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.928, 0.898, 0.839, 0.92)
 theme_override_colors/font_outline_color = Color(0.07058824, 0.0627451, 0.05490196, 1)
-theme_override_constants/line_spacing = 8
+theme_override_constants/line_spacing = 10
 theme_override_constants/outline_size = 4
-theme_override_font_sizes/font_size = 24
-vertical_alignment = 1
+theme_override_font_sizes/font_size = 22
 autowrap_mode = 3
 
-[node name="Version" type="Label" parent="." unique_id=1309553928]
+[node name="Menu" type="VBoxContainer" parent="." unique_id=1384719300]
+unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
+anchors_preset = -1
+anchor_left = 0.64
+anchor_top = 0.42
+anchor_right = 0.93
+anchor_bottom = 0.88
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="StartButton" type="Button" parent="Menu" unique_id=398003147]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.16, 0.14, 0.11, 1)
+theme_override_colors/font_pressed_color = Color(0.53, 0.15, 0.11, 1)
+theme_override_colors/font_hover_color = Color(0.53, 0.15, 0.11, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = ExtResource("9_pff7g")
+theme_override_styles/pressed = ExtResource("9_pff7g")
+theme_override_styles/hover = ExtResource("9_pff7g")
+text = "开 始 游 戏"
+alignment = 0
+
+[node name="ContinueButton" type="Button" parent="Menu" unique_id=169113573]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.16, 0.14, 0.11, 1)
+theme_override_colors/font_pressed_color = Color(0.53, 0.15, 0.11, 1)
+theme_override_colors/font_hover_color = Color(0.53, 0.15, 0.11, 1)
+theme_override_colors/font_disabled_color = Color(0.45, 0.42, 0.38, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = ExtResource("9_pff7g")
+theme_override_styles/pressed = ExtResource("9_pff7g")
+theme_override_styles/hover = ExtResource("9_pff7g")
+theme_override_styles/disabled = ExtResource("9_pff7g")
+text = "继 续 游 戏"
+alignment = 0
+
+[node name="ArchiveButton" type="Button" parent="Menu" unique_id=509423060]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.16, 0.14, 0.11, 1)
+theme_override_colors/font_pressed_color = Color(0.53, 0.15, 0.11, 1)
+theme_override_colors/font_hover_color = Color(0.53, 0.15, 0.11, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = ExtResource("9_pff7g")
+theme_override_styles/pressed = ExtResource("9_pff7g")
+theme_override_styles/hover = ExtResource("9_pff7g")
+text = "图 鉴"
+alignment = 0
+
+[node name="QuitButton" type="Button" parent="Menu" unique_id=322958402]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.16, 0.14, 0.11, 1)
+theme_override_colors/font_pressed_color = Color(0.53, 0.15, 0.11, 1)
+theme_override_colors/font_hover_color = Color(0.53, 0.15, 0.11, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = ExtResource("9_pff7g")
+theme_override_styles/pressed = ExtResource("9_pff7g")
+theme_override_styles/hover = ExtResource("9_pff7g")
+text = "退 出 游 戏"
+alignment = 0
+
+[node name="Colophon" type="HBoxContainer" parent="." unique_id=2016396446]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.055
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.93
 anchor_bottom = 1.0
-offset_left = -260.0
-offset_top = -42.0
-offset_right = -18.0
-offset_bottom = -14.0
-grow_horizontal = 0
+offset_top = -52.0
+offset_bottom = -22.0
+grow_horizontal = 2
 grow_vertical = 0
-theme_override_colors/font_color = Color(0.75, 0.72, 0.66, 0.55)
+mouse_filter = 2
+
+[node name="IssueLabel" type="Label" parent="Colophon" unique_id=329738881]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.3, 0.27, 0.23, 0.7)
+theme_override_font_sizes/font_size = 12
+text = "VOL. I · NO. 1"
+
+[node name="Version" type="Label" parent="Colophon" unique_id=1726663119]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3, 0.27, 0.23, 0.5)
 theme_override_font_sizes/font_size = 12
 text = "v0.1  原型"
 horizontal_alignment = 2
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=354581715]
+environment = ExtResource("30_env")
+
+[node name="PrintCopy" type="BackBufferCopy" parent="." unique_id=1070304867]
+copy_mode = 2
+
+[node name="PrintLayer" type="ColorRect" parent="." unique_id=413048438]
+material = SubResource("ShaderMaterial_print")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://b87qykktqr6rd"]
+
+[ext_resource type="Script" uid="uid://b35yk633s2n8v" path="res://Scripts/PopMenu/FakeNewPopMenu.gd" id="2_3bw8a"]
+[ext_resource type="Theme" uid="uid://b8pbn8oelecdv" path="res://theme/UiTheme.tres" id="2_font"]
+[ext_resource type="StyleBox" path="res://theme/ButtonSageNormal.tres" id="7_sage_n"]
+[ext_resource type="StyleBox" path="res://theme/ButtonSageHover.tres" id="8_sage_h"]
+[ext_resource type="StyleBox" path="res://theme/ButtonSagePressed.tres" id="9_sage_p"]
+[ext_resource type="StyleBox" path="res://theme/ButtonSageUnable.tres" id="10_sage_u"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmNormal.tres" id="11_warm_n"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmHover.tres" id="12_warm_h"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmPressed.tres" id="13_warm_p"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmUnable.tres" id="14_warm_u"]
+
+[node name="FakeNewPopmenu" type="Control" unique_id=1340100765]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("2_font")
+script = ExtResource("2_3bw8a")
+
+[node name="Panel" type="Panel" parent="." unique_id=1403836070]
+layout_mode = 0
+offset_left = -1200.0
+offset_top = -1200.0
+offset_right = 1200.0
+offset_bottom = 700.0
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1023726037]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -130.0
+offset_top = -77.5
+offset_right = 130.0
+offset_bottom = 23.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1789487908]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="FakeNewPopRichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer" unique_id=1945035364]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0.23137255, 0.18431373, 0.13333334, 1)
+theme_override_font_sizes/normal_font_size = 22
+bbcode_enabled = true
+text = "你确定吗
+这将会花费你5点影响力"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=736536112]
+layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="FakeNewPopRefuseButton" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=437396875]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(104, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.23137255, 0.18431373, 0.13333334, 1)
+theme_override_colors/font_pressed_color = Color(0.94509804, 0.92156863, 0.85882354, 1)
+theme_override_colors/font_hover_color = Color(0.09, 0.07, 0.05, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = ExtResource("7_sage_n")
+theme_override_styles/pressed = ExtResource("9_sage_p")
+theme_override_styles/hover = ExtResource("8_sage_h")
+theme_override_styles/disabled = ExtResource("10_sage_u")
+text = "算了"
+
+[node name="FakeNewPopDetermineButton" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=1686514550]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(104, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.23137255, 0.18431373, 0.13333334, 1)
+theme_override_colors/font_pressed_color = Color(0.94509804, 0.92156863, 0.85882354, 1)
+theme_override_colors/font_hover_color = Color(0.09, 0.07, 0.05, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = ExtResource("11_warm_n")
+theme_override_styles/pressed = ExtResource("13_warm_p")
+theme_override_styles/hover = ExtResource("12_warm_h")
+theme_override_styles/disabled = ExtResource("14_warm_u")
+text = "就登"

@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dhjoj0y5mw1gk"]
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://blhx3e3wkyepy"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://bqr40ic3x0u66" path="res://art/士兵-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierRally.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bqr40ic3x0u66" path="res://art/photo/士兵-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://ban4mref76q20" path="res://temp/news_backup/InflunceGroup/SoldierRally.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "溃散残部奉命收拢"
-body = "前此溃散之兵，已有残部经沿途收拢归营，人数不及原额之半。枪械多已散失，军装亦不齐备。营官称：尚须数月方能补足编制。"
+headline = "跑了的兵回来了"
+body = "　　先前散走的士兵，这几天陆续回营，枪械也点收了一遍。各营实到已经回到九成上下，东门外两处旧营盘也补回了大半。
+　　军中重新编了队，缺的队长由老兵升补。有个回来的士兵说，回乡帮工不是长久之计，秋后地里没活，商路上又添了匪，倒不如回营吃粮安稳。
+　　也有一百多人索性交了军牌，算是除名。议会说，此后点卯照旧，缺额过两成的营由市政金库另给一笔补人的钱。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")

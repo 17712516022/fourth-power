@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://rqrbl0e6kr5j"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://0krl82khbem3" path="res://art/newphoto/其他-3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://bxqn7l5rb5gsl" path="res://temp/news_backup/InflunceGroup/FarmerUpRisingEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "东境散了，回去种地"
+body = "　　先前聚众的东境已经散了，各乡慢慢恢复正常。带头的几个人由庄园主出面担保领了回去，城卫队没有再追究。
+　　三方谈的记录今天贴在议会门廊上：本季地租减两成，种子钱延到明年秋后，谷仓收粮一律给收条。
+　　谷仓换了个管事，新管事一早把收条簿摆在门口，谁来送粮都当面开条。有位老人说，今年的租清得比往年还顺。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

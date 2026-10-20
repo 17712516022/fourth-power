@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cxchedikbomne"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://db5hx2gpkx10v" path="res://art/photo/政府_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://clkj3exdrwvkm" path="res://Resource/news/InflunceGroup/GovernmentMartial.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "宣布全城戒严"
+body = "　　领主府和驻军营今天联合宣布戒严：日落以后不许出门，集会一律禁止，进出城门要通行证。
+　　街上加了三处岗哨，巡逻队一夜走四趟。违令的先关三天，再按情节办。
+　　天一黑街上就空了，酒馆提前关门。有人说，这么一弄，日子更难过。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

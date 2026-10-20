@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c367nm0pfbvig"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://ch1n52vlprfr5" path="res://art/photo/工人2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://b4syxxl54wd3m" path="res://temp/news_backup/InflunceGroup/GovernmentMassacre.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "驻军开枪，死伤三十多"
+body = "　　昨天傍晚，驻军在北区路口向人群开枪，当场死了六人，伤的有三十多，其中几个怕是熬不过夜。
+　　驻军说，先是有人扔石头、砸了岗亭，警告三次不听才开的枪。在场的人说，人群里多是看热闹的，跑都来不及。
+　　今天北区家家关门，街上没人说话。议会没有出面，只在门廊上贴了一张纸，说此事正在查明。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

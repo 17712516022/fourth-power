@@ -1,19 +1,91 @@
 [gd_scene format=3 uid="uid://cvilsxvd0hppa"]
 
-[ext_resource type="Script" uid="uid://d2x4gpkm0rnbs" path="res://Scripts/AttributeUi.gd" id="1_rj0c7"]
+[ext_resource type="Script" uid="uid://d2x4gpkm0rnbs" path="res://Scripts/Ui/AttributeUi.gd" id="1_rj0c7"]
 [ext_resource type="Theme" uid="uid://b52r5ij0wdme0" path="res://theme/Font2.tres" id="1_y3dm0"]
 [ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="3_4iisb"]
+[ext_resource type="Theme" path="res://theme/UiTheme.tres" id="12_uith"]
+[ext_resource type="Texture2D" uid="uid://d227gwem67ryn" path="res://asserts/图标包/no-padding/64px/white/8-ui/question-mark.png" id="5_help"]
+[ext_resource type="Texture2D" uid="uid://n4m5aanwa1p2" path="res://asserts/图标包/no-padding/64px/white/6-buildings/bank.png" id="6_nhu84"]
+[ext_resource type="Texture2D" uid="uid://ugn7iyiejtx1" path="res://asserts/图标包/no-padding/64px/white/8-ui/settings.png" id="6_setting"]
+[ext_resource type="Texture2D" uid="uid://clva6hvwjyixd" path="res://asserts/图标包/no-padding/64px/white/8-ui/save.png" id="7_save"]
+[ext_resource type="PackedScene" path="res://Scene/AlertDot.tscn" id="8_dot"]
+[ext_resource type="PackedScene" path="res://Scene/FavorRow.tscn" id="9_favor"]
+[ext_resource type="PackedScene" uid="uid://jtijkynii5dy" path="res://Scene/StabilityBar.tscn" id="10_stab"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iconbtn"]
 
 [node name="AttributeUi" type="VBoxContainer" unique_id=1613247297]
+custom_minimum_size = Vector2(152, 0)
+custom_maximum_size = Vector2(152, -1)
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -152.0
 offset_bottom = 501.0
 grow_horizontal = 0
+theme = ExtResource("12_uith")
 script = ExtResource("1_rj0c7")
 
-[node name="TimeUi" type="RichTextLabel" parent="." unique_id=687663030]
+[node name="TopBar" type="HFlowContainer" parent="." unique_id=1920686331]
+layout_mode = 2
+theme_override_constants/h_separation = -20
+theme_override_constants/v_separation = 0
+alignment = 2
+
+[node name="HelpButton" type="Button" parent="TopBar" unique_id=-879934590]
+unique_name_in_owner = true
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.5, 0.5)
+tooltip_text = "帮助"
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.66, 0.28, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.86, 0.5, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iconbtn")
+icon = ExtResource("5_help")
+
+[node name="SettingButton" type="Button" parent="TopBar" unique_id=-879934589]
+unique_name_in_owner = true
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.5, 0.5)
+tooltip_text = "设置"
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.66, 0.28, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.86, 0.5, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iconbtn")
+icon = ExtResource("6_setting")
+
+[node name="SaveButton" type="Button" parent="TopBar" unique_id=-879934588]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.5, 0.5)
+tooltip_text = "存档"
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.66, 0.28, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.86, 0.5, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iconbtn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iconbtn")
+icon = ExtResource("7_save")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=79406644]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TimeUi" type="RichTextLabel" parent="VBoxContainer" unique_id=687663030]
 unique_name_in_owner = true
 layout_mode = 2
 offset_transform_position = Vector2(0, 4)
@@ -24,12 +96,12 @@ theme_override_constants/underline_alpha = 100
 theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "
-[u]Day[/u]"
+[u]Day 33[/u]"
 fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="NewsPaperInflenceUi" type="RichTextLabel" parent="." unique_id=1319679907]
+[node name="NewsPaperInflenceUi" type="RichTextLabel" parent="VBoxContainer" unique_id=1319679907]
 unique_name_in_owner = true
 layout_mode = 2
 offset_transform_position = Vector2(0, 4)
@@ -44,7 +116,7 @@ fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="FarmerStateUi" type="RichTextLabel" parent="." unique_id=1199384130]
+[node name="FarmerStateUi" type="RichTextLabel" parent="VBoxContainer" unique_id=1199384130]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("3_4iisb")
@@ -52,12 +124,12 @@ theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406
 theme_override_constants/outline_size = 9
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
-text = "农民：正常"
+text = "[img=25]res://asserts/图标包/no-padding/64px/white/5-food/bread.png[/img] 农民：正常"
 fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="WorkerStateUi" type="RichTextLabel" parent="." unique_id=1884743468]
+[node name="WorkerStateUi" type="RichTextLabel" parent="VBoxContainer" unique_id=1884743468]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("3_4iisb")
@@ -65,12 +137,12 @@ theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406
 theme_override_constants/outline_size = 9
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
-text = "工人：正常"
+text = "[img=25]res://asserts/图标包/no-padding/64px/white/6-buildings/anvil.png[/img] 工人：正常"
 fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MerchantStateUi" type="RichTextLabel" parent="." unique_id=1182343897]
+[node name="MerchantStateUi" type="RichTextLabel" parent="VBoxContainer" unique_id=1182343897]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("3_4iisb")
@@ -78,12 +150,12 @@ theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406
 theme_override_constants/outline_size = 9
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
-text = "商人：正常"
+text = "[img=25]res://asserts/图标包/no-padding/64px/white/1-game/mana.png[/img] 商人：正常"
 fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SoldierStateUi" type="RichTextLabel" parent="." unique_id=1762769438]
+[node name="SoldierStateUi" type="RichTextLabel" parent="VBoxContainer" unique_id=1762769438]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("3_4iisb")
@@ -91,12 +163,12 @@ theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406
 theme_override_constants/outline_size = 9
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
-text = "士兵：正常"
+text = "[img=25]res://asserts/图标包/no-padding/64px/white/3-gear/pistol.png[/img] 士兵：正常"
 fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="GovernmentStateUi" type="RichTextLabel" parent="." unique_id=1685326206]
+[node name="GovernmentStateUi" type="RichTextLabel" parent="VBoxContainer" unique_id=1685326206]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("3_4iisb")
@@ -104,12 +176,37 @@ theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406
 theme_override_constants/outline_size = 9
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
-text = "政府：观望"
+text = "[img=25]res://asserts/图标包/no-padding/64px/white/6-buildings/bank.png[/img] 政府：观望"
 fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CreateFakeButton" type="Button" parent="." unique_id=2146547914]
+[node name="StabilityBar" parent="VBoxContainer" unique_id=99162549 instance=ExtResource("10_stab")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CreateFakeButton" type="Button" parent="VBoxContainer" unique_id=2146547914]
 unique_name_in_owner = true
 layout_mode = 2
 text = "制造假的新闻"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1988205112]
+layout_mode = 2
+
+[node name="GovernmentButton" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=7891298]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("6_nhu84")
+stretch_mode = 2
+
+[node name="GovernmentDot" parent="VBoxContainer/HBoxContainer/GovernmentButton" unique_id=2058183936 instance=ExtResource("8_dot")]
+layout_mode = 1
+offset_top = 0.0
+offset_right = -12.600021
+offset_bottom = 14.800003
+scale = Vector2(2.5, 2.5)
+key = "government"
+
+[node name="FavorRow" parent="VBoxContainer/HBoxContainer" unique_id=1671316920 instance=ExtResource("9_favor")]
+layout_mode = 2

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ehp6pvti2vt1"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://h8q5kpuxudy" path="res://art/photo/其他_7-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.18
+farmer_angry = 0.22
+farmer_power = 0.1
+worker_fear = 0.12
+worker_angry = 0.18
+merchant_happy = 0.1
+merchant_fear = 0.1
+soldier_angry = 0.12
+
+[resource]
+script = ExtResource("1_news")
+headline = "传狱中在谈条件"
+body = "　　城里今天盛传，狱里的马洛正在跟当局秘密谈条件：以停止抗租、谴责暴力，换释放和旧欠的解决。
+　　这个说法没有任何一方证实。联合会旧部今天分成两派，一派说“绝无此事”，一派说“就算有，也是权宜之计”。
+　　本报向三处求证，两处没有回复，一处说“无可奉告”。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b17_rumor_talks"
+big_effect = SubResource("Resource_eff")

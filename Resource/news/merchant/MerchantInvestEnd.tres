@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dp2yltn4exohx"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://gwu5suxtbslf" path="res://art/photo/商人_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://dul8heeetgta7" path="res://temp/news_backup/InflunceGroup/MerchantInvestEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "投资的事停了"
+body = "　　先前议论投资的那几家，这几天大多收了手。金行放款转紧，新账不批，旧账也催着按季还。
+　　几家已经动工的铺子把工停了，木料堆在院里，纺车也不再往下运。商会的会上，原先递过打算书的那几位都没再提投资。
+　　有个店主说，钱一旦散出去，要收回来就得看别人的脸色。城里今天少了两处工，木匠和泥水匠转去做河堤的杂活。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

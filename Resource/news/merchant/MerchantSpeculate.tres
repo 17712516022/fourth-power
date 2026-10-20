@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b5c5lcs2g2aup"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://5dtlortrjdaf" path="res://art/photo/政府-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://bues46umaqwfi" path="res://temp/news_backup/InflunceGroup/MerchantSpeculateStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "有人投机囤粮"
+body = "　　本城粮价十天内涨了一成多，可各乡新麦进市并没见少。码头今天到的两船麦子，卸货时围了几十个人看，都说不比往年少。
+　　市上传有几家粮行投机，关了仓不卖，等价钱再高些；也有人说是几家联着手做，先收进来，再往外放。这事没人出头告，商会只说了一句：价钱的事，各家自己掂量。
+　　买粮的今天排了长队，有几家小铺挂出限购的牌子，一人只卖两袋。一个妇人从北境一路问到南郊，最后在集市东头买到，价钱比上月多了三成。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

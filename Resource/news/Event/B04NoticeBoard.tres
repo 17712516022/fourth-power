@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b1ykbxob8167k"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://8ag7srrhpkcp" path="res://art/newphoto/其他-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.1
+worker_happy = 0.05
+merchant_happy = 0.12
+soldier_angry = 0.12
+
+[resource]
+script = ExtResource("1_news")
+headline = "通告算新闻还是广告"
+body = "　　全岛土地联盟今天在河口城成立，到会代表四百多人，推议员马洛做主席，回国的达恩做总干事。
+　　散会前，书记处给在场各报送了一份通告，请明天登。本报收到两份，一份给编辑部，一份给广告部。
+　　此后十天，全岛三十七家报纸都登了这份通告，占半版，按广告价收一半钱。广告部说，这一栏已经是本报第三大收入。编辑部今天开会，有人问：这算新闻，还是算广告？"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b04_notice_board"
+big_effect = SubResource("Resource_eff")

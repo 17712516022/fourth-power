@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bbnkhonwytbu4"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://ch1n52vlprfr5" path="res://art/photo/工人2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.24
+farmer_angry = 0.14
+worker_fear = 0.22
+worker_angry = 0.16
+merchant_happy = -0.14
+merchant_fear = 0.3
+soldier_fear = 0.18
+soldier_angry = 0.26
+soldier_power = 0.16
+
+[resource]
+script = ExtResource("1_news")
+headline = "两名官员公园遇刺"
+body = "　　今天傍晚，两名高级官员在总督府外的公园散步时遇刺，都伤在颈部，当场死亡。凶手四个人，已经抓到两个。
+　　凶器是外科手术刀。查下来，刀是从外港一家器械行买的，付钱的是个自称商人的男子，钱从海外汇来。
+　　总督府今天闭门。城里各报社收到通令：这件事“暂缓登载”，等查明再发。本报已经排好版。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b18_park_assassination"
+big_effect = SubResource("Resource_eff")

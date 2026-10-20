@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bvffo0q6o3kmw"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://nkandf67x34g" path="res://art/photo/商人_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://divp08h76ryym" path="res://temp/news_backup/InflunceGroup/GovernmentRetain.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "总督亲自去留人"
+body = "　　总督今天亲自去了参事家里，坐了半个钟头，把人请了回来。这位参事上个月递了辞呈，说干不下去。
+　　谈了什么没人知道。参事下午回了官署，桌上那摞没批的呈子当天批了一半。
+　　官署里的人说，留人是好事，可光留一个人不够。也有人说，肯亲自跑一趟，总比不跑强。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

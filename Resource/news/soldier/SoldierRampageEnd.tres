@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cqb41wgxte26c"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://5dpkpflf6e02" path="res://art/newphoto/士兵-3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://b2h0bgey4wot4" path="res://temp/news_backup/InflunceGroup/SoldierRampageEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "营里收了枪"
+body = "　　先前士兵扰民的事，这几天收敛了。军饷前天已经发下来，各营查明闹事的士兵十一名，各按营规受了鞭刑，其中两名革出营外。
+　　各营下令此后没有命令不得带械进城，进城喝酒要交军牌。枪械收进架子，夜里的巡查添了两班。先前递过控告书的几家，营里另外赔了酒肉钱。
+　　有个队长说，这几天统领住在营里，士兵自然不敢再生事；也有人私下说，等下一个发饷的日子再看。议会宣布：此后军饷按月直接发到队里，不许拖过十天。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

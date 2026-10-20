@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3 uid="uid://unttkk58k4xg"]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 3
+displaying_name = "新闻检查官 柯尔"
+text = "北境那家报社的事，贵报不必置评。主笔在狱中写稿，是他自己的事。贵报若登一个字声援，便是同案。届时去贵报的，不是信，是人。"
+event_id = "b11_editor_arrested"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

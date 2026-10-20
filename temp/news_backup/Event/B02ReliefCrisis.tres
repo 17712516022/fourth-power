@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dvcdckfus0sp"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bthgj1mxmghf2" path="res://art/photo/农民_3-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.18
+farmer_angry = 0.16
+worker_angry = 0.06
+merchant_happy = -0.06
+merchant_fear = 0.08
+soldier_fear = 0.05
+
+[resource]
+script = ExtResource("1_news")
+headline = "西崖饥荒，教区设粥棚"
+body = "西崖沿海各村自入冬起断粮。教区在伊里、克朗两处设粥棚，日济千余人。郡公所拨粮二百石，杯水车薪。本报昨日发起募捐，两日得银四百二十元、粮若干，已交教区。捐款名单将刊于明日副页。有读者来信问：为何不先问一句，粮去了哪里。"
+image = ExtResource("2_img")
+is_big_event = true
+big_effect = SubResource("Resource_eff")

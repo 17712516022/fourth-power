@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://518gtixt546"]
+
+[ext_resource type="Script" uid="uid://dsy8g6v2kjrxt" path="res://Scripts/MessagePanel.gd" id="1_vjism"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="3_font"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_note"]
+bg_color = Color(0.94509804, 0.92156863, 0.85882354, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.34901962, 0.30980393, 0.25490198, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0, 0, 0, 0.34901962)
+shadow_size = 6
+
+[node name="MessagePanel" type="Control" unique_id=1394290257]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_vjism")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=2094547401]
+layout_mode = 0
+offset_right = 368.0
+offset_bottom = 180.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_note")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1786158365]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1203984517]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="TitleLabel" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1203984518]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("3_font")
+theme_override_colors/default_color = Color(0.34901962, 0.27450982, 0.18039216, 1)
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "这一版登出去"
+fit_content = true
+scroll_active = false
+
+[node name="Divider" type="ColorRect" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1203984519]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.41960785, 0.3529412, 0.27058825, 0.45)
+
+[node name="NewsMessage" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=304662963]
+custom_minimum_size = Vector2(340, 0)
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("3_font")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 15
+bbcode_enabled = true
+fit_content = true

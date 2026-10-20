@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dv8dv1a05ywdi"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://db5hx2gpkx10v" path="res://art/photo/政府_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://btj651lgil7k7" path="res://Resource/news/InflunceGroup/GovernmentDraft.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "议会征兵"
+body = "　　议会昨天通过征兵案，二十岁到三十五岁的男子按户抽签，抽中的服一年，可以出钱找人替。
+　　替人服役的价钱定在八十元，由公所登记，私下交易不算。第一批名额三百人，下月初入营。
+　　报名的少，问价的也少。有人算了一笔账：八十元够一家人吃半年，可谁家拿得出八十元。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

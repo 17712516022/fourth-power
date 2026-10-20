@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cupcjaiuqftlo"]
 
-[ext_resource type="Script" uid="uid://ml2nljcdh1ee" path="res://Scripts/PressureUi.gd" id="1_ovauh"]
+[ext_resource type="Script" uid="uid://ml2nljcdh1ee" path="res://Scripts/Ui/PressureUi.gd" id="1_ovauh"]
 [ext_resource type="Texture2D" uid="uid://ducjjhabhgbaa" path="res://asserts/背景包/JPGS/Paper-Texture1-pixelart-2x.png" id="2_l41nh"]
 [ext_resource type="Script" uid="uid://dbyf6rj20sbvd" path="res://Scripts/NewsPaper/NewsPaperGenerate.gd" id="3_3a0s7"]
 [ext_resource type="Texture2D" uid="uid://blqxtwbab20t5" path="res://asserts/背景包/JPGS/Paper-Texture3-pixelart-2x.png" id="3_5avgx"]
@@ -9,13 +9,35 @@
 [ext_resource type="StyleBox" uid="uid://cugkqalimldlt" path="res://theme/ButtonNormal.tres" id="3_onuer"]
 [ext_resource type="StyleBox" uid="uid://dsurvwxjrgiti" path="res://theme/ButtonPressed.tres" id="4_hmk63"]
 [ext_resource type="StyleBox" uid="uid://b4jcb2d6r80nj" path="res://theme/ButtonHover.tres" id="5_d8ff0"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmNormal.tres" id="20_warm_n"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmHover.tres" id="21_warm_h"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmPressed.tres" id="22_warm_p"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmUnable.tres" id="23_warm_u"]
 [ext_resource type="Texture2D" uid="uid://tm7bdej4s6hp" path="res://asserts/图标包/no-padding/64px/white/10-editing/pen.png" id="8_58c2h"]
+[ext_resource type="Texture2D" uid="uid://bwwomy12w2vrf" path="res://temp/第一版.png" id="10_0q1v6"]
+[ext_resource type="Texture2D" uid="uid://c8r6ro8xadcim" path="res://temp/第二版.png" id="11_0q1v6"]
 [ext_resource type="PackedScene" uid="uid://cec4kv28lktiw" path="res://Scene/RawMaterialSlot.tscn" id="11_j8ath"]
 [ext_resource type="PackedScene" uid="uid://d6fcjhojag1k" path="res://Scene/RawMaterial.tscn" id="12_58c2h"]
+[ext_resource type="PackedScene" uid="uid://kde6qwcug27j" path="res://Scene/RawMaterialSlotSmall.tscn" id="14_fwork"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1ggca"]
 texture = ExtResource("2_l41nh")
 modulate_color = Color(0.67206407, 0.67206407, 0.67206407, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n4d1x"]
+bg_color = Color(0.8, 0.776, 0.71999997, 1)
+border_width_left = 12
+border_width_top = 4
+border_width_right = 12
+border_width_bottom = 4
+border_color = Color(0.50686747, 0.44943607, 0.43489045, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+anti_aliasing_size = 10.0
 
 [node name="pressure" type="Control" unique_id=286129864]
 layout_mode = 3
@@ -50,11 +72,10 @@ theme_override_colors/icon_hover_color = Color(1, 0.81666666, 0, 1)
 theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("3_58c2h")
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("3_onuer")
-theme_override_styles/pressed = ExtResource("4_hmk63")
-theme_override_styles/hover = ExtResource("5_d8ff0")
-theme_override_styles/disabled = ExtResource("3_d8ff0")
-toggle_mode = true
+theme_override_styles/normal = ExtResource("20_warm_n")
+theme_override_styles/pressed = ExtResource("22_warm_p")
+theme_override_styles/hover = ExtResource("21_warm_h")
+theme_override_styles/disabled = ExtResource("23_warm_u")
 text = "Decide"
 icon = ExtResource("8_58c2h")
 icon_alignment = 1
@@ -71,6 +92,7 @@ custom_minimum_size = Vector2(1000, 0)
 custom_maximum_size = Vector2(1000, -1)
 layout_mode = 2
 mouse_filter = 2
+theme_override_constants/separation = -6
 
 [node name="TextureRect" type="TextureRect" parent="PanelContainer/HBoxContainer/VBoxContainer" unique_id=210588479]
 custom_maximum_size = Vector2(1000, 500)
@@ -79,6 +101,25 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 texture = ExtResource("3_5avgx")
+
+[node name="第一版" type="TextureRect" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect" unique_id=795948891]
+modulate = Color(1, 1, 1, 0.52156866)
+custom_minimum_size = Vector2(500, 500)
+custom_maximum_size = Vector2(500, 500)
+layout_mode = 0
+offset_left = 500.0
+offset_right = 1000.0
+offset_bottom = 500.0
+texture = ExtResource("10_0q1v6")
+
+[node name="第二版" type="TextureRect" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect" unique_id=285947427]
+modulate = Color(1, 1, 1, 0.52156866)
+custom_minimum_size = Vector2(500, 500)
+custom_maximum_size = Vector2(500, 500)
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 500.0
+texture = ExtResource("11_0q1v6")
 
 [node name="SlotsContainer" type="Control" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect" unique_id=982306929]
 unique_name_in_owner = true
@@ -92,47 +133,47 @@ mouse_filter = 2
 script = ExtResource("3_3a0s7")
 
 [node name="RawMaterialSlot5" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=1488380980 instance=ExtResource("11_j8ath")]
+custom_minimum_size = Vector2(0, 0)
+custom_maximum_size = Vector2(480, 350)
 layout_mode = 0
-offset_left = 532.0
-offset_top = 142.0
-offset_right = 992.0
-offset_bottom = 492.0
+offset_left = 512.0
+offset_top = 139.0
+offset_right = 988.0
+offset_bottom = 489.0
 
-[node name="RawMaterialSlot7" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=2029925539 instance=ExtResource("11_j8ath")]
+[node name="RawMaterialSlotSmall" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=2029925539 instance=ExtResource("14_fwork")]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 282.0
-offset_right = 468.0
-offset_bottom = 632.0
-scale = Vector2(0.5, 0.6)
+offset_left = 14.0
+offset_top = 50.0
+offset_right = 244.0
+offset_bottom = 264.0
 
-[node name="RawMaterialSlot8" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=1980818075 instance=ExtResource("11_j8ath")]
+[node name="RawMaterialSlotSmall2" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=1404686245 instance=ExtResource("14_fwork")]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 57.0
-offset_right = 468.0
-offset_bottom = 407.0
-scale = Vector2(0.5, 0.6)
+offset_left = 14.0
+offset_top = 275.0
+offset_right = 244.0
+offset_bottom = 489.0
 
-[node name="RawMaterialSlot9" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=807710214 instance=ExtResource("11_j8ath")]
+[node name="RawMaterialSlotSmall4" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=1070775316 instance=ExtResource("14_fwork")]
 layout_mode = 0
-offset_left = 246.0
-offset_top = 282.0
-offset_right = 706.0
-offset_bottom = 632.0
-scale = Vector2(0.5, 0.6)
+offset_left = 256.0
+offset_top = 275.0
+offset_right = 486.0
+offset_bottom = 489.0
 
-[node name="RawMaterialSlot10" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=709992137 instance=ExtResource("11_j8ath")]
+[node name="RawMaterialSlotSmall5" parent="PanelContainer/HBoxContainer/VBoxContainer/TextureRect/SlotsContainer" unique_id=147580955 instance=ExtResource("14_fwork")]
 layout_mode = 0
-offset_left = 246.0
-offset_top = 57.000004
-offset_right = 706.0
-offset_bottom = 407.0
-scale = Vector2(0.5, 0.6)
+offset_left = 256.0
+offset_top = 50.0
+offset_right = 486.0
+offset_bottom = 264.0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/HBoxContainer/VBoxContainer" unique_id=1348016744]
+custom_minimum_size = Vector2(0, 150)
 custom_maximum_size = Vector2(1000, -1)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_n4d1x")
 horizontal_scroll_mode = 2
 vertical_scroll_mode = 0
 
@@ -152,10 +193,4 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="RawMaterial4" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer/NewsContainer" unique_id=589163660 instance=ExtResource("12_58c2h")]
-layout_mode = 2
-
-[node name="RawMaterial5" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer/NewsContainer" unique_id=2009396865 instance=ExtResource("12_58c2h")]
-layout_mode = 2
-
-[node name="RawMaterial6" parent="PanelContainer/HBoxContainer/VBoxContainer/ScrollContainer/NewsContainer" unique_id=1483050212 instance=ExtResource("12_58c2h")]
 layout_mode = 2

@@ -1,0 +1,246 @@
+[gd_scene format=3 uid="uid://bk1xvafn26hyt"]
+
+[ext_resource type="Script" uid="uid://meok2stct3rr" path="res://Scripts/HelpPanel.gd" id="1_help"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="2_font"]
+[ext_resource type="StyleBox" uid="uid://crxuy53cuwf6j" path="res://theme/TitlePanel.tres" id="3_title"]
+[ext_resource type="Texture2D" uid="uid://cfx4mwh72itoa" path="res://asserts/图标包/no-padding/64px/white/8-ui/cross.png" id="4_kydpx"]
+[ext_resource type="Texture2D" uid="uid://853ona3o0ua0" path="res://asserts/图标包/no-padding/64px/white/8-ui/arrow-down-02.png" id="5_gre6q"]
+[ext_resource type="Texture2D" uid="uid://42d5mtus4k2m" path="res://asserts/图标包/no-padding/64px/white/8-ui/arrow-down-right-02.png" id="6_kydpx"]
+[ext_resource type="Texture2D" uid="uid://vbox63txtrny" path="res://asserts/图标包/no-padding/64px/white/8-ui/arrow-right-02.png" id="7_gre6q"]
+[ext_resource type="Texture2D" uid="uid://bf1m261qbbkmf" path="res://asserts/图标包/no-padding/64px/white/8-ui/arrow-up-right-02.png" id="8_65dj4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iew50"]
+font_size = 28
+font_color = Color(0.7106516, 0.6595195, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_note"]
+content_margin_left = 12.0
+content_margin_top = 9.0
+content_margin_right = 12.0
+content_margin_bottom = 9.0
+bg_color = Color(0.94509804, 0.92156863, 0.85882354, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.35, 0.31, 0.26, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0, 0, 0, 0.35)
+shadow_size = 6
+
+[node name="HelpPanel" type="Control" unique_id=1539065343]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_help")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=1670011781]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.39607844)
+
+[node name="TitlePanel" type="PanelContainer" parent="." unique_id=645941594]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -158.0
+offset_right = 158.0
+offset_bottom = 70.0
+grow_horizontal = 2
+theme_override_styles/panel = ExtResource("3_title")
+
+[node name="TitleRow" type="HBoxContainer" parent="TitlePanel" unique_id=2095887256]
+layout_mode = 2
+theme_override_constants/separation = -6
+
+[node name="TitleLabel" type="Label" parent="TitlePanel/TitleRow" unique_id=257743040]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_font")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+text = "这块屏幕上是些什么"
+label_settings = SubResource("LabelSettings_iew50")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="CloseButton" type="TextureButton" parent="TitlePanel/TitleRow" unique_id=749958649]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(64, 64)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.5, 0.5)
+theme = ExtResource("2_font")
+texture_normal = ExtResource("4_kydpx")
+
+[node name="NoteSlots" type="RichTextLabel" parent="." unique_id=1675368145]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 56.0
+offset_right = 324.0
+offset_bottom = 164.0
+mouse_filter = 2
+theme = ExtResource("2_font")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_note")
+bbcode_enabled = true
+text = "[b]版面[/b]
+右边的[color=red]大版位[/color]是第一格：同一条新闻放在里面，[color=red]影响能力翻倍[/color]。
+左边四块小版位是常规位。"
+
+[node name="ArrowSlots" type="TextureRect" parent="." unique_id=547616923]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 172.0
+offset_right = 200.0
+offset_bottom = 240.0
+mouse_filter = 2
+texture = ExtResource("5_gre6q")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NotePool" type="RichTextLabel" parent="." unique_id=183651932]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 372.0
+offset_right = 324.0
+offset_bottom = 480.0
+mouse_filter = 2
+theme = ExtResource("2_font")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_note")
+bbcode_enabled = true
+text = "[b]素材池[/b]
+今天世界上发生的事都在这儿。
+[color=red]左键[/color]按住拖去版面；[color=red]右键[/color]看全文。"
+
+[node name="ArrowPool" type="TextureRect" parent="." unique_id=484976407]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 488.0
+offset_right = 200.0
+offset_bottom = 556.0
+mouse_filter = 2
+texture = ExtResource("5_gre6q")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NoteDecide" type="RichTextLabel" parent="." unique_id=547967469]
+layout_mode = 0
+offset_left = 705.0
+offset_top = 470.0
+offset_right = 961.0
+offset_bottom = 564.0
+mouse_filter = 2
+theme = ExtResource("2_font")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_note")
+bbcode_enabled = true
+text = "[b]决定[/b]
+排好了按它：这一天就过去了，收不回来。"
+
+[node name="ArrowDecide" type="TextureRect" parent="." unique_id=1874627252]
+layout_mode = 0
+offset_left = 966.0
+offset_top = 497.0
+offset_right = 1038.0
+offset_bottom = 561.0
+mouse_filter = 2
+texture = ExtResource("6_kydpx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NoteColumn" type="RichTextLabel" parent="." unique_id=27124306]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 200.0
+offset_right = 926.0
+offset_bottom = 275.0
+mouse_filter = 2
+theme = ExtResource("2_font")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_note")
+bbcode_enabled = true
+text = "[b]右边这一栏[/b]
+你可以了解到属性都会写在上面：报纸影响力、群体的状态、总督好感度。"
+
+[node name="ArrowColumn" type="TextureRect" parent="." unique_id=179214296]
+layout_mode = 0
+offset_left = 933.0
+offset_top = 212.0
+offset_right = 977.0
+offset_bottom = 260.0
+mouse_filter = 2
+texture = ExtResource("7_gre6q")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NoteTop" type="RichTextLabel" parent="." unique_id=181797663]
+layout_mode = 0
+offset_left = 662.0
+offset_top = 71.0
+offset_right = 962.0
+offset_bottom = 139.0
+mouse_filter = 2
+theme = ExtResource("2_font")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_note")
+bbcode_enabled = true
+text = "[b]右上角那一排[/b]
+这里是[color=red]帮助，存档，设置[/color]。
+[color=#2b5b8a]总督府来信[/color]点开可以查看消息。"
+
+[node name="ArrowTop" type="TextureRect" parent="." unique_id=801704312]
+layout_mode = 0
+offset_left = 962.0
+offset_top = 59.0
+offset_right = 1006.0
+offset_bottom = 107.0
+mouse_filter = 2
+texture = ExtResource("8_65dj4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NoteFake" type="RichTextLabel" parent="." unique_id=762151826]
+layout_mode = 0
+offset_left = 646.0
+offset_top = 335.0
+offset_right = 927.0
+offset_bottom = 423.0
+mouse_filter = 2
+theme = ExtResource("2_font")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_note")
+bbcode_enabled = true
+text = "[b]制造假的新闻[/b]
+造假：消耗[color=red]影响力[/color]获取虚假的新闻。
+影响力是极其重要的数值，确定了你对世界的推动作用。"
+
+[node name="ArrowFake" type="TextureRect" parent="." unique_id=706349962]
+layout_mode = 0
+offset_left = 936.0
+offset_top = 376.0
+offset_right = 980.0
+offset_bottom = 424.0
+mouse_filter = 2
+texture = ExtResource("7_gre6q")
+expand_mode = 1
+stretch_mode = 5

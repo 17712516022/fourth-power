@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://db5q0cpf3nhkb"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://h8q5kpuxudy" path="res://art/photo/其他_7-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "神殿祭典开五天"
+body = "　　圣光神殿这一届祭典定在本月十八号开始，一共五天。
+　　各乡的朝圣者大多已经上路，神殿前面的摊子也都搭好了，卖吃食、蜡烛和护身符的排了一路。
+　　殿里的祭司说，今年来朝拜的人比往年少一些，也许是路上不好走。城里的旅馆已经住满。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dfo7x0hj310yd"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://ch1n52vlprfr5" path="res://art/工人2-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/WorkerStrikeEnd.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://b1kfeu0lgdk8g" path="res://art/newphoto/工人-3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://b7dnjm1c242q1" path="res://temp/news_backup/InflunceGroup/WorkerStrikeEnd.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "城东纱厂工人已复工"
-body = "城东某纱厂工人停工三日，昨日午后已经复工。据厂中人说，工钱未加，但答应下月起每日缩短工时半小时。此事遂了。"
+headline = "停工的事了了"
+body = "　　东坊停工的事今天了结了。工匠早上陆续进坊，织机从早晨重新转起来，坊门也交还给了坊主。
+　　三条要求议定的结果是：去年答应的工钱分两季补发，第一季当场付清；每天加一餐饭，坊主出七成、市政金库贴三成，先试办三个月；停工那三天不算缺工，一个人也不辞。
+　　工匠代表说，肯签字是因为钱当场拿到了手里。议会宣布：各坊往后一到冬天就得先议工钱，别拖到开春。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")

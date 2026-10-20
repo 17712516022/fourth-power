@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bxxnwp8bgw4el"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dx53uoybdtrxa" path="res://art/photo/工人_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://dnjf2nntkyny4" path="res://Resource/news/InflunceGroup/WorkerDepressionEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "工坊开工，恢复正常"
+body = "　　工坊区渐渐恢复了原样，各坊陆续开工。先前裁掉的三百多工匠已经招回近七成，熄了炉的小坊也重新生火。
+　　坊主说，回暖主要是因为商路通了：城外关卡裁掉两处加派，货运得出去，压着的存货走了大半。也有坊主说，城库平价的粮垫了一阵，工匠有饭吃，才没散到别处去。
+　　行会说，被裁时欠下的半个月工钱已经陆续补清。到傍晚，工坊区的街面上人来人往，跟上月的冷清大不相同。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

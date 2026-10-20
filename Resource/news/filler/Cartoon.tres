@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://xnh24obe8cx"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_8xqk5"]
-[ext_resource type="Texture2D" uid="uid://blsgcketaof38" path="res://art/其他_5-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_8xqk5"]
+[ext_resource type="Texture2D" uid="uid://mfey0upvupwf" path="res://art/newphoto/其他-8-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_8xqk5")
-headline = "讽刺画：新衣"
-body = "本报特约画师绘讽刺画一幅：一人身着簇新长衫立于田埂之上，四围禾苗尽枯，其人犹自低头顾盼衣袖。画下无题字。"
+headline = "讽刺画：新衣服"
+body = "　　本报特约画师这一期画了一幅讽刺画：一个人穿着崭新的礼服站在田埂上，四周的禾苗都枯了，他却低着头看自己的袖口。
+　　画下面一个字也没写，也没有署名，只在角落里盖了个小印章。
+　　画登出来以后，咖啡馆里有人议论，说画的是谁不好讲；也有人笑着说，反正穿新衣服的人不下地。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

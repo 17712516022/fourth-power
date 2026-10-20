@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dtxkrw74p7b5o"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/photo/政府_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://cbtgpfyv34inx" path="res://Resource/news/InflunceGroup/GovernmentInternment.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "城卫队抓了几个"
+body = "　　城卫队昨夜抓了七个人，说他们在茶馆和工坊里鼓动停工，还散传单。
+　　抓人的时候没动手，也没搜屋，只把人带走。城卫队说，关几天，问清楚就放，够不上罪的罚钱。
+　　被抓的人家里今天去送饭，没见着人。工坊里的人说，那几张传单，谁捡到都看两眼。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

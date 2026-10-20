@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://7x7ivjiqigd4"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://by4tytl41mar1" path="res://art/photo/工人_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://tey76n0jfrrh" path="res://temp/news_backup/InflunceGroup/GovernmentInvest.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "总督府出钱办厂"
+body = "　　总督府今天宣布出钱办两处工场，一处在城南做铁件，一处在河边做砖瓦，招工六百人。
+　　钱从市政金库出，占一半股，另一半招商人入股。工钱按天结，做满三个月加一成。
+　　报名的人一早就排到了街口。也有商人说，官家办厂，赔了算谁的。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

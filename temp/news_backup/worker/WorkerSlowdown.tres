@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ccv6st1hudfdc"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://by4tytl41mar1" path="res://art/photo/工人_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://dhkeke464qqp5" path="res://Resource/news/InflunceGroup/WorkerSlowdownStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "工匠怠工，机器转得慢"
+body = "　　这几天各纺织、冶铁工坊的工匠上工倒不迟到，可进了坊多半靠着织机闲谈，机器转得慢，出的布和铁不到平日的一半，这算是怠工。
+　　坊主催他们，就回一句：工钱不动，何必拼命。据行会的册子，各坊报上来的数目比上月少了近两成，上午下午各歇一回，日落就散。
+　　也有工匠私下说，去年冬天答应加的工钱到现在没见着，行会问过两回，坊主只推说账没结清。议会说，先派人查一查各坊的工钱账目。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

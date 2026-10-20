@@ -1,60 +1,42 @@
 class_name FoodManager extends RefCounted
 
-# ============================================================
-# 粮仓
-#
-# 这套系统里第一个"不属于任何人的东西"：
-# 农民产、全城吃、商人看着它涨落发财、工人被它拖垮。
-# 它不属于任何一方，但每一方都活在他的后果里。
-#
-# 外部只能读 value，或者调 scarcity() 问"现在紧不紧"。
-# **怎么变，是这个类自己的事**——所以"粮食从哪来"这个问题
-# 只需要在这一个文件里找答案。
-# ============================================================
+var food_value : float = 0.60
+# 两个基础速率。
+const YIELD : float = 0.080
+const EATEN : float = 0.078
 
-var value : float = 0.60
+const TIGHT : float = 0.40
+const GOOD : float = 0.7
 
+var state : FoodState = FoodState.Normal
 
-# 农民全在种地时，每天入库多少。
-const YIELD : float = 0.020
+enum FoodState{
+	High,Normal,Low
+}
 
-# 全城每天吃掉多少——农民走不走，嘴都还在。
-const EATEN : float = 0.019
+# 开局就按初值算一次：外面（FoodInfluence）第一次读它时要是对的，。
+func _init() -> void:
+	update_food_state()
 
-# 农事状态的产出倍率。
-# 抗租不是"不种地"（人还在村里），是"不好好种"，所以它不是 0；流亡才是 0。
-const FARM_OUTPUT : Array[float] = [1.00, 0.10, 0.00]
+# 收成、吃粮。
+func update() -> void:
+	var final_yield : float = YIELD * Modifer.yield_modifer
+	var final_eaten : float = EATEN * Modifer.eaten_modifer
+	var delta : float =  final_yield - final_eaten
+	food_value = clampf(food_value + delta , 0.0 ,1.0)
+	
+	update_food_state()
 
-# 为什么写成"大产量 + 大消费 + 小差额"，而不是两个小数相加：
-#   正常时两边几乎相抵（净 +0.001），粮仓是稳的；
-#   一旦农民不种地，塌掉的是**产出那一头**，消费那一头纹丝不动。
-#   于是净额从 +0.001 一口气变成 -0.017——**变了十几倍**。
-#   如果两个数都设得很小，抗租的窟窿会被攒起来的库存稀释掉，看不出来。
-
-
-# 粮仓低于这条线，日子就算紧了。
-# 商人和工人用的是**同一条线**——同一条线，相反的反应。
-const TIGHT : float = 0.50
-
-
-# 粮食只有一个来源：**农民在种地**。
-#
-# 这一行里没有"常数产出"，只有农民今天的处境：
-#   正常 → 田有人种，粮照常入库
-#   抗租 → 人在村里，心思不在田里，入库只剩一成
-#   流亡 → 人走了、地荒了，一粒不产；而城里的嘴一张没少
-#
-# 于是"农民闹"第一次有了世界性的后果：**它不经过报纸，不需要谁批准，
-# 粮仓自己就瘪下去。** 后面商人靠它发财、工人被它拖垮，都从这里开始。
-func update(farming : int) -> void:
-	var rate : float = FARM_OUTPUT[clampi(farming, 0, FARM_OUTPUT.size() - 1)]
-	value = clampf(value + YIELD * rate - EATEN, 0.0, 1.0)
+func update_food_state() -> void:
+	if food_value < TIGHT:
+		state = FoodState.Low
+	elif food_value > GOOD:
+		state = FoodState.High
+	else :
+		state = FoodState.Normal
 
 
-# 缺粮程度：0 = 充裕，最高 0.5 = 见底。
-#
-# 放在这里而不是各个群体身上，是因为**读它的人必须读的是同一个数**。
-# 商人从这里读出行情，工人从这里读出活不下去——
-# 同一个 scarcity()，两种意义，那才是我们想要的。
-func scarcity() -> float:
-	return maxf(TIGHT - value, 0.0)
+# 进一笔 / 退一笔，正负都行。
+func add(amount : float) -> void:
+	food_value = clampf(food_value + amount, 0.0, 1.0)
+	update_food_state()

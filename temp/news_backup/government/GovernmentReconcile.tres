@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c81msy8blcvuq"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/photo/政府_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://ctwbdavu2jdsi" path="res://Resource/news/InflunceGroup/GovernmentReconcile.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "三方坐下来谈租子"
+body = "　　领主府今天请地主、农夫和商会的代表到议事厅坐下谈，一共来了十四个人，谈了四个钟头。
+　　谈的是本季的租额、旧欠怎么算、谷仓收粮给不给收条。没有谈成，只说各让一步，三天后再谈。
+　　出来的人说法不一样：地主说已经让到头了，农夫代表说一句实话都没听见。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

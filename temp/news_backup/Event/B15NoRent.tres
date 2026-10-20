@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://eggrvma1rf8g"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://h8q5kpuxudy" path="res://art/photo/其他_7-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.1
+farmer_fear = 0.2
+farmer_angry = 0.3
+farmer_power = 0.18
+worker_angry = 0.16
+worker_power = 0.08
+merchant_happy = -0.16
+merchant_fear = 0.22
+soldier_angry = 0.2
+
+[resource]
+script = ExtResource("1_news")
+headline = "狱中发出“不交租”宣言"
+body = "本报今日收到一份由狱中带出的宣言，署名华莱士及同监诸人，号召全岛农夫自即日起不交租，并回避土地法庭。宣言未提期限，未提善后。带出者称，此稿须于三日内见报。据西部来信，各地已自行响应，无人统一指挥。本报排字房已排好，未上机。"
+image = ExtResource("2_img")
+is_big_event = true
+big_effect = SubResource("Resource_eff")

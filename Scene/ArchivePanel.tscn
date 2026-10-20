@@ -1,0 +1,205 @@
+[gd_scene format=3 uid="uid://d0jqvba3volk"]
+
+[ext_resource type="Script" uid="uid://dk7n25nfbeqex" path="res://Scripts/Archive/ArchivePanel.gd" id="1_panel"]
+[ext_resource type="StyleBox" uid="uid://br4mr4i8oqk35" path="res://theme/materialpanel.tres" id="2_paper"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="3_font"]
+[ext_resource type="StyleBox" path="res://theme/ButtonSageNormal.tres" id="7_sage_n"]
+[ext_resource type="StyleBox" path="res://theme/ButtonSageHover.tres" id="8_sage_h"]
+[ext_resource type="StyleBox" path="res://theme/ButtonSagePressed.tres" id="9_sage_p"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmNormal.tres" id="10_warm_n"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmHover.tres" id="11_warm_h"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmPressed.tres" id="12_warm_p"]
+[ext_resource type="StyleBox" path="res://theme/ButtonVioletNormal.tres" id="13_violet_n"]
+[ext_resource type="StyleBox" path="res://theme/ButtonVioletHover.tres" id="14_violet_h"]
+[ext_resource type="StyleBox" path="res://theme/ButtonVioletPressed.tres" id="15_violet_p"]
+
+[node name="ArchivePanel" type="Control" unique_id=1444010363]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_panel")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=730166940]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.04, 0.04, 1)
+
+[node name="Center" type="CenterContainer" parent="." unique_id=913477650]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Paper" type="PanelContainer" parent="Center" unique_id=1441168773]
+custom_minimum_size = Vector2(920, 620)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_paper")
+
+[node name="Margin" type="MarginContainer" parent="Center/Paper" unique_id=1298664200]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 22
+
+[node name="Column" type="VBoxContainer" parent="Center/Paper/Margin" unique_id=1424306216]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Header" type="HBoxContainer" parent="Center/Paper/Margin/Column" unique_id=1022856166]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Center/Paper/Margin/Column/Header" unique_id=902926470]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_font")
+theme_override_colors/font_color = Color(0.1, 0.08, 0.06, 1)
+theme_override_font_sizes/font_size = 30
+text = "报 馆 档 案"
+
+[node name="Spacer" type="Control" parent="Center/Paper/Margin/Column/Header" unique_id=1595647363]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Close" type="Button" parent="Center/Paper/Margin/Column/Header" unique_id=251592912]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_font")
+theme_override_colors/font_color = Color(0.13, 0.11, 0.09, 1)
+theme_override_styles/normal = ExtResource("7_sage_n")
+theme_override_styles/pressed = ExtResource("9_sage_p")
+theme_override_styles/hover = ExtResource("8_sage_h")
+text = "关 闭"
+
+[node name="Tabs" type="HBoxContainer" parent="Center/Paper/Margin/Column" unique_id=1152565588]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="NewsTab" type="Button" parent="Center/Paper/Margin/Column/Tabs" unique_id=870923809]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_font")
+theme_override_colors/font_color = Color(0.13, 0.11, 0.09, 1)
+theme_override_styles/normal = ExtResource("10_warm_n")
+theme_override_styles/pressed = ExtResource("12_warm_p")
+theme_override_styles/hover = ExtResource("11_warm_h")
+text = "新 闻"
+
+[node name="EndingTab" type="Button" parent="Center/Paper/Margin/Column/Tabs" unique_id=1895065438]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_font")
+theme_override_colors/font_color = Color(0.13, 0.11, 0.09, 1)
+theme_override_styles/normal = ExtResource("13_violet_n")
+theme_override_styles/pressed = ExtResource("15_violet_p")
+theme_override_styles/hover = ExtResource("14_violet_h")
+text = "结 局"
+
+[node name="Progress" type="Label" parent="Center/Paper/Margin/Column" unique_id=955590303]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_font")
+theme_override_colors/font_color = Color(0.32, 0.29, 0.26, 1)
+theme_override_font_sizes/font_size = 16
+text = "已登 0 / 87"
+
+[node name="NewsPage" type="HBoxContainer" parent="Center/Paper/Margin/Column" unique_id=137468582]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="ShelfBox" type="VBoxContainer" parent="Center/Paper/Margin/Column/NewsPage" unique_id=1293995405]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(118, 0)
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="NewsScroll" type="ScrollContainer" parent="Center/Paper/Margin/Column/NewsPage" unique_id=1282700692]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="NewsGrid" type="GridContainer" parent="Center/Paper/Margin/Column/NewsPage/NewsScroll" unique_id=1949779806]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 4
+
+[node name="EndingPage" type="ScrollContainer" parent="Center/Paper/Margin/Column" unique_id=751189034]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="EndingBox" type="VBoxContainer" parent="Center/Paper/Margin/Column/EndingPage" unique_id=16218049]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 14
+
+[node name="Detail" type="PanelContainer" parent="Center" unique_id=1404744407]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(620, 380)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_paper")
+
+[node name="DMargin" type="MarginContainer" parent="Center/Detail" unique_id=1673772627]
+layout_mode = 2
+theme_override_constants/margin_left = 26
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 26
+theme_override_constants/margin_bottom = 20
+
+[node name="DColumn" type="VBoxContainer" parent="Center/Detail/DMargin" unique_id=186049247]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="DetailTitle" type="Label" parent="Center/Detail/DMargin/DColumn" unique_id=1820021273]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_font")
+theme_override_colors/font_color = Color(0.1, 0.08, 0.06, 1)
+theme_override_font_sizes/font_size = 24
+text = "标题"
+
+[node name="DetailImage" type="TextureRect" parent="Center/Detail/DMargin/DColumn" unique_id=1288089107]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 140)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DetailBody" type="RichTextLabel" parent="Center/Detail/DMargin/DColumn" unique_id=1740639874]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_font")
+theme_override_colors/default_color = Color(0.13, 0.11, 0.09, 1)
+theme_override_font_sizes/normal_font_size = 17
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="DetailClose" type="Button" parent="Center/Detail/DMargin/DColumn" unique_id=1031287684]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_font")
+theme_override_colors/font_color = Color(0.13, 0.11, 0.09, 1)
+theme_override_styles/normal = ExtResource("7_sage_n")
+theme_override_styles/pressed = ExtResource("9_sage_p")
+theme_override_styles/hover = ExtResource("8_sage_h")
+text = "关 闭"

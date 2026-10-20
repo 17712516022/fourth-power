@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dhxqjr5pbttbj"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://mmgprr4trvml" path="res://art/photo/其他_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "织坊招六十女工"
+body = "　　城东织坊新添了一批纺机，现在要再招六十名女工、四十名杂工。
+　　女工每天一角二分银币，杂工一角。中午管一顿饭，工房可以住，住的每月扣两角房钱。
+　　报名时间是每天下午两点到六点，在织坊门口，带上身份证明就行。手脚快的另有计件工资。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

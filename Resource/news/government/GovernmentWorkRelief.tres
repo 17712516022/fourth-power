@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cjkrtekt53402"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://0otkxv2jqeqm" path="res://art/photo/其他_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://bkr4ug5c4r2hl" path="res://temp/news_backup/InflunceGroup/GovernmentWorkRelief.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "开工修堤铺路"
+body = "　　总督府昨天开了两处工地，一处在南郊河堤，一处在通北区的路上，专收没活干的人。
+　　工钱按天结，一天十五铜币，管一顿午饭。上工要先在所在区登记，领一块木牌，凭牌上工。
+　　头一天到了四百多人，多是从坊里停下来的和南郊的穷户。有人说，这钱挣得慢，可总比坐着强。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

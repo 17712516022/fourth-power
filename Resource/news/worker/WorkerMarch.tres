@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ccfpje2fuxn4o"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://mmgprr4trvml" path="res://art/photo/其他_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://y7f3mvytptmv" path="res://temp/news_backup/InflunceGroup/WorkerMarchStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "工匠上街示威"
+body = "　　下午有一千多工匠结队示威，街上堵住了。队伍从东郊工坊区出来，沿大道往西，走到议会门前才停住，前后占了半条街。
+　　前排举着几幅粗布横幅，上面写的就是两件事：加工钱、减工时。沿途有人跟着加进来，也有店家关门歇业。
+　　城卫队只在两边跟着走，没有拦，也没见扔石头动手。议会的书记官到门口接了三名代表的请愿书，说今天便议。队伍到下午自己散了。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

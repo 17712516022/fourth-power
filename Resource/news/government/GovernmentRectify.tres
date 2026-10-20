@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ba3xavbcjwipl"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://h8q5kpuxudy" path="res://art/photo/其他_7-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://ccbj6uh3jrx4e" path="res://temp/news_backup/InflunceGroup/GovernmentRectify.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "官署里整顿风气"
+body = "　　总督府今天发文整顿各署：上班不许迟到早退，办事要限期回话，收钱要有单据。
+　　各署门口挂了一个木箱，谁被刁难就把状子投进去，每十天开一次。查实的，轻的罚薪，重的撤职。
+　　来办事的人今天说，窗口里的人客气了些。也有人说，过一个月再看。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

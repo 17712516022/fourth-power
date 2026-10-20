@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 3
+displaying_name = "新闻检查官 柯尔"
+text = "店铺歇业，是商民自便，与报章无涉。贵报若把「两边各警告过一次」登出来，商会必要来问本处。这一期先不登。若登了，往后商会的事，贵报自己去问。"
+event_id = "b09_shops_closed"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

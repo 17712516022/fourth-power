@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ubymbbxocf3f"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://blsgcketaof38" path="res://art/photo/其他_5-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.22
+farmer_angry = 0.26
+farmer_power = 0.1
+worker_fear = 0.16
+worker_angry = 0.22
+merchant_happy = -0.1
+merchant_fear = 0.24
+soldier_happy = 0.12
+
+[resource]
+script = ExtResource("1_news")
+headline = "华莱士被捕，联合会宣布解散"
+body = "议员华莱士今日在河口城寓所被捕，押往西郊监狱。同日，总干事戴维及各地支会负责人三十余人一并被捕。总督府宣布联合会为非法组织，即日解散。城中未发生聚集。本报今日头版留白一栏，未填。至夜，有人在该栏位置贴了一张手写的纸，写的是华莱士去年在安桥郡说过的一句话。"
+image = ExtResource("2_img")
+is_big_event = true
+big_effect = SubResource("Resource_eff")

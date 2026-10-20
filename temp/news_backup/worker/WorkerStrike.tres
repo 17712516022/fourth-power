@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://d1xums5gar13i"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dx53uoybdtrxa" path="res://art/photo/工人_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://bau0wynee0rus" path="res://Resource/news/InflunceGroup/WorkerStrikeStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "东坊停工"
+body = "　　东坊的纺织工坊从昨天起停了工。据行会的册子，参与停工的工匠约四百人，织机全停了，坊门由工匠自己看着，坊主和管事不许进。
+　　工匠推了三名代表，给坊主递了一张纸，提了三条：补发去年冬天答应加的工钱、每天加一餐饭、不许因为停工辞退一个人。
+　　坊主说，补发工钱还能商量，加饭和不辞退这两条得议会点头。议会今天已经派人去调解，一边劝工匠先开机器，一边劝坊主先付一半工钱。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

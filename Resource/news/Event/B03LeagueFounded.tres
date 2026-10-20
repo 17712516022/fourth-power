@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://28k27ejq0or8"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://gwu5suxtbslf" path="res://art/photo/商人_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.12
+worker_angry = 0.04
+merchant_fear = 0.08
+soldier_angry = 0.1
+
+[resource]
+script = ExtResource("1_news")
+headline = "农夫联盟成立"
+body = "　　梅里郡的农夫今天在石堡镇成立土地联盟，到会代表二百多人，推达恩做书记。
+　　会章三条：减租、护佃、拒绝驱逐。会址在旧粮行楼上，楼下还堆着空麻袋。达恩说，这不是请愿的团体，是办事的团体。
+　　散会前，书记处给各报送了一份会章和通告，请明天登。当天郡里就有十一个村报名入会。郡办事处派了个书记来旁观，从头到尾一个字没记。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b03_league_founded"
+big_effect = SubResource("Resource_eff")

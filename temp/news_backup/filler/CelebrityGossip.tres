@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cjyoghq751pfu"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_n3m4f"]
+[ext_resource type="Texture2D" uid="uid://sn1iqam33npq" path="res://art/photo/其他_9-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_n3m4f")
+headline = "歌手露西闭门不出"
+body = "　　本城有名的歌手露西，月初演完《湖上骑士》以后就一直闭门不见客。看门的人只说她不太舒服，别的一句不多讲。
+　　外头传她要去外国，也有人说她已经答应去城东一座宅子唱堂会，价钱开得很高。这两种说法都没人拿得出证据。
+　　她家的仆人昨天见到本报记者，笑了笑没说话，把门关上了。剧院那边说，下个月的场次还给她留着。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

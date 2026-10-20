@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://6egudfro7h2n"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bqr40ic3x0u66" path="res://art/photo/士兵-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://c2f0pq4g02hhl" path="res://temp/news_backup/InflunceGroup/GovernmentArmyLaw.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "军营贴出军令七条"
+body = "　　城外的驻军营今天在营门和各城门贴出军令七条，写明士兵犯事怎么办，老百姓告士兵又该找谁。
+　　七条里说，士兵不得强买、不得进民宅、不得在街上喝酒闹事；犯了的人先打二十鞭，再按情节送军法处。
+　　城里人围着看，有人说写得挺硬，就看做不做得到。军营说，头一批已经罚了三个。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

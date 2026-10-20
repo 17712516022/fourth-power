@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://o6fdf167dqxb"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://c0v345ykan040" path="res://art/士兵_1-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/SoldierMutinyStart.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bpp5lb0bp846k" path="res://art/photo/士兵_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://hexd3j1c6pmp" path="res://temp/news_backup/InflunceGroup/SoldierMutinyStart.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "驻西郊某营哗变"
-body = "驻西郊步队某营于昨夜间哗变，士兵结队出营，声言索饷。营官避匿，城中戒严。至发稿时，该营尚未归队。"
+headline = "兵营哗变，西郊闹饷"
+body = "　　驻西郊的步兵某营昨天夜里哗变，营里一片混乱，士兵结队出营，说是要饷。哗变的约三百人。
+　　起因是昨天早上发饷：军饷按旧例扣了两成，说是补营里的亏空，士兵不服。先是十几个人拥到统领帐前，随后全营大半跟了出来，夺了军械库的钥匙，把统领扣在帐里。
+　　议会已经调留守的两个营去西郊围住，另派一名书记官到营门外喊话，答应先把扣掉的两成补发。城中从今天下午起戒严，日落后不许通行。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ld1jmgiryjmc"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://nkandf67x34g" path="res://art/photo/商人_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://d4enhen8rlm8j" path="res://temp/news_backup/InflunceGroup/MerchantInvestStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "商人议论投资"
+body = "　　这几天城里的商人都在议论投资：有人说要添纺车，把工坊里那两排旧木架换下来；有人说要在车站旁边开分号，专做来往客商的生意。
+　　两家金行说，这一阵放出去的款子比前三个月多，期限也肯放到一年，利息降了半分。商会今天收了几份打算书，说下月再议。
+　　也有做了几十年的老商人提醒，别把本钱全压在纺车上：人手接不上、料进不来，机器就是一堆铁。这话在会场上得了几个人点头。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

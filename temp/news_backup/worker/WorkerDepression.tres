@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b2a88ppqwo7nd"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dx53uoybdtrxa" path="res://art/photo/工人_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://twp1sd211apk" path="res://Resource/news/InflunceGroup/WorkerDepressionStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "工坊萧条，开始裁人"
+body = "　　这几天工坊区冷清得很，一片萧条。据行会的册子，各纺织、冶铁工坊裁掉的工匠一共三百多个，几处小坊干脆熄了炉，只留一两个人看守。
+　　坊主说，今年布价连跌两个月，货栈里压着卖不出去，工钱又是要现付的，只好先减人。被裁的工匠多在附近租房，一时回不了乡下。
+　　白天酒馆门前聚的人比往日多。议会在今天的会上说，先由城库出粮平价卖给失业的工匠，同时派人查一查商路上关卡的加派。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

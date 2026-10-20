@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ceptlqw6bf5n3"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://d2i2c1c00b4bm" path="res://art/newphoto/工人-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://bda7buanwob35" path="res://temp/news_backup/InflunceGroup/WorkerMarchEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "示威的散了"
+body = "　　连着几天结队的工匠，前天晚上散了，各坊照常开工。今天早上起，大道上再没有结队的人，东郊的早班钟照旧在天亮前响。
+　　议会今天把那三名代表递的请愿书逐条议过：补发工钱照东坊的成例，分两季结清；平价的粮由市政金库每月出两回，凭行会的册子领；各坊往后按月公布工钱。
+　　有代表说，肯散是因为书记官当场签了字，不是空口应付。也有商家说，示威那半天门开着，生意白丢了，好在没砸东西。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

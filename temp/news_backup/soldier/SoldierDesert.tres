@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bkysh27fm6lnr"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dc0xb0y25wsns" path="res://art/photo/士兵_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://0sybx2tgpkgd" path="res://Resource/news/InflunceGroup/SoldierDesert.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "点名只到六成八"
+body = "　　这几天各营点卯，到的不到七成，眼看要溃散。各营合起来数下来，实到只剩六成八，缺得最多的两营在东门外的旧营盘，缺的已经过了三成。
+　　有队长说，走的士兵多是把军牌留在床头，人回乡下帮工去了，秋收过了再回来；也有往南边商路上给人押货的，那边一天给的工钱比军里一月的饷还多。
+　　营里夜里不上锁，军械也有丢在营房的。驻军统领说：饷不到手，喊不住人。议会说，先让各营把缺额报齐，再定是补人还是裁营。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

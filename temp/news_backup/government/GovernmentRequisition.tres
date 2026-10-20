@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://clgqiw3fv834g"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://5dtlortrjdaf" path="res://art/photo/政府-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://n550scmav4aq" path="res://Resource/news/InflunceGroup/GovernmentRequisition.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "要各乡出车出马"
+body = "　　领主府今天发出征用令，要各乡各坊出车出马，运河堤的石料和军粮，用完按日给钱。
+　　一共要车一百二十辆、马八十匹，三天内到城南集合，牲口要能拉得动。不给现钱的，可以抵税。
+　　有车主说，抵税抵的是明年的，眼下还得自己贴草料。也有人说，总比白征强。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

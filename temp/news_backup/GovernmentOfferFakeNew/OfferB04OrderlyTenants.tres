@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dy48f68rl54rh"]
+
+[ext_resource type="Script" uid="uid://vm70pl4x7rdw" path="res://Resource/InflunceGroupResource.gd" id="1_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/photo/政府_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_infl"]
+script = ExtResource("1_infl")
+farmer_happy = 0.05
+farmer_fear = -0.04
+farmer_angry = -0.08
+worker_happy = 0.02
+worker_angry = -0.03
+merchant_happy = 0.04
+merchant_fear = -0.03
+
+[resource]
+script = ExtResource("1_news")
+headline = "总督府说农夫签了字"
+body = "　　总督府新闻处今天发布消息，说各郡农夫已经在承诺书上签了字，答应遵守法令，秋租按老规矩交，没有任何减租的安排。新闻处同时否认了此前流传的“农夫联合会通告”，说那是少数人冒用名义散出去的，事情已经查明。
+　　据郡公所上报，西部各郡签字的人已经超过九成，剩下的这几天也能办完。官员说，各村的签字簿都送到郡里存档，名字、地块、租额一项项登记在册，往后有争执就照簿子对。新闻处还提到，今年秋收不错，粮价平稳，城里乡下都安定。
+　　西崖有个农夫说，他们村里没人上门让他签字，“簿子上有没有我的名字，我也说不准”。这类说法没有得到官方回应。商会这边倒是松了口气，说租额定下来，秋后的账才好算。"
+image = ExtResource("2_img")
+influnce = SubResource("Resource_infl")
+event_id = "b04_notice_board"

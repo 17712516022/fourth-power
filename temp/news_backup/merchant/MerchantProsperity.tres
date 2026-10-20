@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://6fq3txei77ne"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bxfalxkceb1fl" path="res://art/photo/商人_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://1isgy42ngv8d" path="res://Resource/news/InflunceGroup/MerchantProsperityStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "市面繁荣起来了"
+body = "　　入秋以来，本城市面一下子繁荣起来。各号货栈进出不断，丝绸、药材、海外货三行最盛，码头的船日夜不停。
+　　商会有个人说，这是十年没见过的旺月：收成不坏，河堤又在修，工钱按天结，手上有几个钱的人比往年多。
+　　也有老商人提醒，旺月里最容易把账放得太宽，赊出去的比收进来的多，等旺月过去才难受。不过这两天说这话的人少，听得进去的更少。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

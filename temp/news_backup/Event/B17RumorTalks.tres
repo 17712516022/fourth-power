@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ehp6pvti2vt1"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://sn1iqam33npq" path="res://art/photo/其他_9-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.18
+farmer_angry = 0.22
+farmer_power = 0.1
+worker_fear = 0.12
+worker_angry = 0.18
+merchant_happy = 0.1
+merchant_fear = 0.1
+soldier_angry = 0.12
+
+[resource]
+script = ExtResource("1_news")
+headline = "传狱中正与当局议条件"
+body = "城中今日盛传，狱中华莱士正与当局秘密议条件：以停止不交租、谴责暴力，换取释放与旧欠之解决。此说未见任何一方证实。联合会旧部今日分裂为两派，一派称“绝无此事”，一派称“若有，亦是权宜”。本报已向三处求证，两处未复，一处称“无可奉告”。"
+image = ExtResource("2_img")
+is_big_event = true
+big_effect = SubResource("Resource_eff")

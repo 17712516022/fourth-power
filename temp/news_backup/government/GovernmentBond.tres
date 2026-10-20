@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ddu5o1wejmkkt"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/photo/政府_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://6abw60ybbkwk" path="res://Resource/news/InflunceGroup/GovernmentBond.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "议会发债券"
+body = "　　议会昨天发行了一批债券，说要拿这笔钱修河堤、补路，还有一部分给城库周转。
+　　债券分五元、十元、五十元三种，年利六个点，三年还本。商会的柜台和两家金行代卖。
+　　头一天就卖出去三成。也有商人说，钱收得痛快，可账目得公开，不然下回没人买。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

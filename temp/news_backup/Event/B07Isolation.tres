@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://mwujb0ttqv6l"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://gwu5suxtbslf" path="res://art/photo/商人_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.18
+farmer_power = 0.16
+worker_angry = 0.1
+worker_power = 0.24
+merchant_fear = 0.18
+merchant_power = 0.26
+soldier_fear = 0.1
+soldier_angry = 0.2
+
+[resource]
+script = ExtResource("1_news")
+headline = "全郡与一名管事绝往来"
+body = "安桥郡一名庄园管事奉令驱逐十一名农夫。此后全郡与他断绝一切往来：雇工不耕其田，店铺不售其物，邮差不送其信，教堂里他两侧的座位空着。据当地人说，这办法是几个村的头人私下议定的，已行了七日。本报记者在报道中用了“孤立”二字——此前各地说的是“不与他往来”，太长了，说不顺口。"
+image = ExtResource("2_img")
+is_big_event = true
+big_effect = SubResource("Resource_eff")

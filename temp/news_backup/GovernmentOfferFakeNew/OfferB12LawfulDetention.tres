@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cjfvn0yajeta4"]
+
+[ext_resource type="Script" uid="uid://vm70pl4x7rdw" path="res://Resource/InflunceGroupResource.gd" id="1_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://db5hx2gpkx10v" path="res://art/photo/政府_1-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_infl"]
+script = ExtResource("1_infl")
+farmer_fear = 0.05
+farmer_angry = -0.08
+worker_fear = 0.04
+worker_angry = -0.08
+merchant_happy = 0.03
+merchant_fear = -0.02
+
+[resource]
+script = ExtResource("1_news")
+headline = "议员华莱士被拘押"
+body = "　　议员华莱士因涉嫌煽动，已按法律程序拘押，现在关在西郊监狱。
+　　监狱方面说，他的待遇不差，一天三顿饭，家属可以来探视。狱吏称，他已经表示后悔，愿意签字承诺不再参与集会的事。同案的三十多人还在讯问中，查清一个处理一个，案卷都留在郡法院。
+　　华莱士的家人昨天去探视过一次，出来没对守在外面的记者说话。他的几位同僚在议会里要求公开案卷，议长回答说会按程序办，别的事不便多讲。"
+image = ExtResource("2_img")
+influnce = SubResource("Resource_infl")
+event_id = "b12_leader_arrested"

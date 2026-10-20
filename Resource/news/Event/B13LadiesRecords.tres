@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://6apgu2c3aiql"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://blsgcketaof38" path="res://art/photo/其他_5-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.12
+farmer_angry = 0.14
+worker_fear = 0.1
+worker_angry = 0.18
+merchant_fear = 0.14
+soldier_fear = 0.12
+
+[resource]
+script = ExtResource("1_news")
+headline = "女子记下四百多起驱逐"
+body = "　　联合会解散以后，女子部另外立了“女子联合会”，专门记录驱逐。
+　　据她们自己印的表格，两个月里已经记下四百三十七起，一条条写明郡、村、户主、人口和日期。表格分送各报和外埠。
+　　组织的人说，这不是请愿，是记账。总督府今天没有评论。本报已经收到第三批，一共一百一十二页。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b13_ladies_records"
+big_effect = SubResource("Resource_eff")

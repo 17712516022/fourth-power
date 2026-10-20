@@ -6,8 +6,9 @@
 [ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="3_yuu4k"]
 [ext_resource type="StyleBox" uid="uid://blith5qtrktn8" path="res://theme/TitleLabel.tres" id="4_hhlxo"]
 [ext_resource type="StyleBox" uid="uid://bplckx62iew2h" path="res://theme/PhotoPanel.tres" id="7_mcq3a"]
+[ext_resource type="Texture2D" uid="uid://dlhbl84rifbh3" path="res://art/photo/报纸-pixelart-2x.png" id="7_yuu4k"]
 [ext_resource type="Theme" uid="uid://b52r5ij0wdme0" path="res://theme/Font2.tres" id="8_48lt1"]
-[ext_resource type="Texture2D" uid="uid://dr877cns63msw" path="res://art/其他-pixelart-2x.png" id="8_qi3np"]
+[ext_resource type="StyleBox" uid="uid://bm04epxgskg0w" path="res://theme/RAWmaterialbord.tres" id="8_yuu4k"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_48lt1"]
 texture = ExtResource("1_ao6ot")
@@ -24,10 +25,10 @@ script = ExtResource("1_0y1ls")
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=54662296]
 layout_mode = 2
 mouse_filter = 2
-theme_override_constants/margin_left = 5
+theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 5
-theme_override_constants/margin_bottom = 5
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=505631298]
 layout_mode = 2
@@ -48,7 +49,7 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 9
 theme_override_font_sizes/font_size = 12
 theme_override_styles/normal = ExtResource("4_hhlxo")
-text = "Big hellom"
+text = "开发者日志08"
 horizontal_alignment = 1
 uppercase = true
 
@@ -58,7 +59,7 @@ mouse_filter = 2
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 4
-theme_override_constants/margin_bottom = 8
+theme_override_constants/margin_bottom = 6
 
 [node name="Panel" type="PanelContainer" parent="MarginContainer/VBoxContainer/MarginContainer" unique_id=1939380447]
 layout_mode = 2
@@ -68,12 +69,16 @@ theme_override_styles/panel = ExtResource("7_mcq3a")
 [node name="RawMaterialTextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/Panel" unique_id=2029459175]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(128, 72)
-custom_maximum_size = Vector2(128, 72)
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 2
-texture = ExtResource("8_qi3np")
+texture = ExtResource("7_yuu4k")
 expand_mode = 1
+
+[node name="Panel" type="Panel" parent="." unique_id=1266335333]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("8_yuu4k")
 
 [node name="Control" type="Control" parent="." unique_id=1965827764]
 layout_mode = 2

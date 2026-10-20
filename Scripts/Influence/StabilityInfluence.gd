@@ -1,24 +1,19 @@
 class_name StabilityInfluence extends RefCounted
 
-# ============================================================
-# 稳定度 -> 所有人
-#
-# 这是六个影响里**唯一一个不挑对象**的。
-#
-# 前面几个都要区分"这条对谁意味着什么"——粮荒商人笑工人哭、
-# 兵少商人慌农民也慌。但"世道乱"这件事本身，对所有人体感是一样的：
-# **外面不安全。**
-#
-# 所以它只有一条 all()，由 Group._read_world() 统一调用，
-# 每个群体每天都读一遍，不需要各自写。
-# ============================================================
 
-# 稳定度低于这条线，就算乱世了。
-const TIGHT : float = 0.40
+# 乱世：人人怕、日子难过、**底气被熬干**（闹久了人也没力气了）。
+const CHAOS_FEAR  : float = 0.015
+const CHAOS_HAPPY : float = 0.015
+const CHAOS_POWER : float = 0.02
 
+const CALM_POWER  : float = 0.02
 
-# 谁都怕。这里的"都"是字面意思——不分群体、不分阶层。
-# 乱世里没有受益者，只有跑得快和跑得慢的。
+# 没有受益者
 static func all(stability : StabilityManager) -> Dictionary:
-	var chaos : float = maxf(TIGHT - stability.value, 0.0)
-	return {"fear" : chaos * 0.006}
+	match stability.state:
+		StabilityManager.StabilityState.Low:
+			return {"fear" : CHAOS_FEAR, "happy" : -CHAOS_HAPPY, "power" : -CHAOS_POWER}
+		StabilityManager.StabilityState.High:
+			return {"power" : CALM_POWER}
+		_:
+			return {}

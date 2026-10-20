@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bbuvbxss6ir5v"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bdnb6nqvkmo31" path="res://art/newphoto/其他-7-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.16
+farmer_angry = 0.12
+worker_fear = 0.18
+worker_angry = 0.24
+worker_power = 0.1
+merchant_fear = 0.14
+soldier_fear = 0.1
+
+[resource]
+script = ExtResource("1_news")
+headline = "女子联合会被取缔"
+body = "　　总督府今天宣布女子联合会为非法组织，理由是她们的“记录行为足以妨害治安”。
+　　会址昨天被搜查，表格、名册、印刷机具一起没收。在场的人说，搜查时屋里只有六个人，都在抄写。
+　　其中一个问：抄写也犯法吗。没有人回答。同一天，另有两处支会被查。城里各报今天都没有评论。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b14_ladies_banned"
+big_effect = SubResource("Resource_eff")

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://d01bfv681vswj"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://fpt0r1jf0tti" path="res://art/photo/其他_6-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "城卫队发防疫通知"
+body = "　　眼下正是换季的时候，城卫队通知各条街巷：沟渠要天天疏通，井水里要加石灰，有人得了疫病马上报告所在区的公所。
+　　通知里还说，卖瓜果的要洗干净，不干净的一律不许卖；摊子收市以后要用水冲一遍地面。
+　　城卫队说，城里现在只报了几例，都在西区，已经隔开。街坊大多照着办。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

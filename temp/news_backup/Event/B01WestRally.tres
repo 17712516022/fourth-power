@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dw6t7t0g4haky"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://c1ctrn8qwbv8n" path="res://art/photo/农民_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.12
+farmer_angry = 0.22
+farmer_power = 0.14
+worker_angry = 0.06
+merchant_happy = -0.08
+merchant_fear = 0.05
+soldier_angry = 0.05
+
+[resource]
+script = ExtResource("1_news")
+headline = "西崖千人集会，抗租与驱逐"
+body = "西崖连续两年歉收，农夫聚于伊里镇外的荒地。据在场者说，到者约三千人，携家带口。集会提出三条：租金减四成、停止驱逐、地主不得再收旧欠。地方巡防队在场，未干涉。散后人群沿官道走回各村，一路唱旧调。本报记者昨夜才搭运煤车西行，今日午后抵伊里镇，集会已散，地上留着火堆的灰。"
+image = ExtResource("2_img")
+is_big_event = true
+big_effect = SubResource("Resource_eff")

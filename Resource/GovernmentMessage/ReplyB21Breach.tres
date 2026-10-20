@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3 uid="uid://b10oy6hl3llmr"]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 4
+displaying_name = "新闻检查官 柯尔"
+text = "贵报把北港的汇款单登在第二版。今日有三家银行来问本处：这笔钱算不算外国资助。本处答：去问报社。"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

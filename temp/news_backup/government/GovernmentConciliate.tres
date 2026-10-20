@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bk8abuanhpmqa"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/photo/政府_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://cuobthtoax2b0" path="res://Resource/news/InflunceGroup/GovernmentConciliate.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "执政官请客"
+body = "　　执政官昨晚在官邸设宴，请了商会的头面人物、行会的几位师傅，还有两个地主的代理人，一共二十来人。
+　　席上说了什么，外面不得而知。散席时执政官送到门口，只说大家坐下来谈，总比在街上吵好。
+　　有赴宴的人说，谈的是工钱和租子，没谈出结果，只说下回再聚。也有人不高兴，说请客不能当政令使。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

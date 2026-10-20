@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://blb3sn1qfc7ie"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://blsgcketaof38" path="res://art/其他_5-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://5dtlortrjdaf" path="res://art/photo/政府-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "善后彩票本期开彩"
-body = "善后彩票第七十三期昨日下午三时在商会当众开彩。头彩号码为三四二八七，得洋二千元，闻系城西一杂货铺所购。二彩三名，各得洋三百元。"
+headline = "彩券开奖，头奖两千"
+body = "　　赈济彩券第七十三期昨天下午三点在商会开奖，中头奖的号码是三四二八七，奖金两千银币。
+　　二等奖三名，各三百银币；三等奖二十名，各二十银币。开奖的时候台下挤了三四百人。
+　　听说中头奖的那张是城西一家杂货铺买的，铺子老板今天没开门。商会说，这一期卖出的钱一半留作赈济。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

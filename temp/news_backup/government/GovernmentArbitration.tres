@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cllypwm447puc"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://b386ntge28go" path="res://art/photo/政府-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://c04ftfmgcdnjt" path="res://Resource/news/InflunceGroup/GovernmentArbitration.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "议会成立仲裁所"
+body = "　　城里的工钱和地租纠纷拖了很久，议会昨天宣布成立仲裁所，让商会和行会各出三名代表，再请两名地方法官到场。
+　　工钱、地租、学徒合同这几类争执，双方都可以递状子，请仲裁所调解。每月开庭两次，结果贴在议会门廊上。
+　　商会愿意照办，但要求不翻旧账；行会要求裁决公开，还得有工匠签字。第一批案子已经收了十四起。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

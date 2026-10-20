@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c6scthc7wgtyw"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://fpt0r1jf0tti" path="res://art/其他_6-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bxh7dmmqtp5j2" path="res://art/newphoto/商人-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "英商老晋隆洋行启事"
-body = "本行新到各式洋货：钟表、呢绒、洋烛、煤油、洋钉、颜料。另有缝纫机器数架，价廉物美。批发零售，格外从廉。铺址：本埠大马路第一百二十八号。"
+headline = "霍尔商行到外国货"
+body = "　　大街一百二十八号的霍尔商行，这两天刚到了一批外国货，有座钟、呢绒、蜡烛、灯油、铁钉和颜料，还有几台织布机。
+　　东西不贵，做得也结实，整批买还能再便宜一点。存货不多，座钟和呢绒都只剩十几件，卖完得等下一班船。
+　　店里批发零售都做，早上八点开门，天黑以前关门。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

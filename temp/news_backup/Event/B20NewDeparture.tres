@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bx8nr3goa0sf3"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://ij6qmho02s0k" path="res://art/photo/其他_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.04
+farmer_fear = 0.06
+worker_fear = 0.02
+merchant_fear = 0.04
+soldier_happy = 0.08
+
+[resource]
+script = ExtResource("1_news")
+headline = "传联盟与共和派密议「新出发」"
+body = "城中近日传出一说：联盟的戴维与共和派旧人德沃在城外见过两面，议的是「新出发」——共和派不再单干，改与土地运动合流；联盟则答应在议会里替狱中的人说话。此说未见任何一方证实。戴维今日在会址门口被问起，只说：我们只谈租子。德沃那边没有人出面。本报记者查到，两人确实在同一家客栈住过一夜，房钱各付各的。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b20_new_departure"
+big_effect = SubResource("Resource_eff")

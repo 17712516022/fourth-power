@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://caegrgnm0w7lk"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/photo/政府_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://c0lusj44e82yu" path="res://Resource/news/InflunceGroup/GovernmentExhort.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "议会劝大家别闹"
+body = "　　议会今天发了一封公开信，劝各乡各坊的人安分守己，别听外头的话，别聚众，别闹事。
+　　信里说，租子和工钱的事都在议，急不得；谁要趁乱生事，按治安法办。信印了五千份，贴在各街口。
+　　看信的人不少，说话的少。有个老工匠念完，说了一句：劝我们等，总得给个日子。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

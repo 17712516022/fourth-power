@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://f0pogdquglf5"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bxfalxkceb1fl" path="res://art/photo/商人_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://bkeyrsan0je0f" path="res://Resource/news/InflunceGroup/MerchantReturn.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "走了的商人回来了"
+body = "　　先前带着本钱出去的商人，这几天有几家回城重新开业。听说是因为外邦生意也淡，房租和人工都比本城贵，本城的地价反倒落了。
+　　回来的几家多半先修铺面、再进货，不敢一上手就把摊子铺大。有一家只租了半间铺面，门口挂的是新刻的招牌。
+　　商会今天在门廊贴了张纸条，写明回城开业的铺号可以登记，前三个月行会费减半，登记的已经有四家。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

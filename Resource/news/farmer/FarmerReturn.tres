@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dxq4864okdcpa"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://bthgj1mxmghf2" path="res://art/农民_3-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/FarmerReturn.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://c1ctrn8qwbv8n" path="res://art/photo/农民_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://ygc0x0nu2km3" path="res://temp/news_backup/InflunceGroup/FarmerReturn.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "四乡渐有归户"
-body = "前此弃田出走之户，近日渐有回籍者。所归不过十之一二，田亩依然荒着，草已没膝。里正称：归户多无种子耕具，今年仍难下种。"
+headline = "走了的人回来了"
+body = "　　先前逃亡走掉的农夫，这几天陆续有人回来。各村册子上记了三十多户，还不到走掉的一两成。田还荒着，草长到膝盖。
+　　回来的人说，城里也找不到活，工坊的杂工一天只收几十个，抢不上；住在亲戚家蹭饭，终究不是长法。长老说，回来的人多半没有种子和农具。
+　　议会今天说，回籍的农夫可以到村办事处登记，凭登记领一张种子和农具的借用单，秋后按收成折还。今天登记了三十一户，领走种子单二十九张。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")

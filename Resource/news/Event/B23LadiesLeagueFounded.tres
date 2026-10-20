@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://jt74m8h5ckyt"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dkntget1xuvqw" path="res://art/newphoto/其他-4-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.1
+worker_happy = 0.08
+merchant_fear = 0.02
+soldier_angry = 0.06
+
+[resource]
+script = ExtResource("1_news")
+headline = "女子土地联盟成立"
+body = "　　女子土地联盟今天在都城成立，到会二百多人，多是农夫的妻女和城里的女工。艾娜·马洛任书记。
+　　会章说，男子被抓以后，记录驱逐、募集救济、传递消息这些事，由女子接手。会址在旧书商行三楼，桌上摆着七本空账簿。
+　　艾娜说，他们可以把人关起来，关不住纸和笔。当场有人认捐，一共认下三十七户的救济。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b23_ladies_league_founded"
+big_effect = SubResource("Resource_eff")

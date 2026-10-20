@@ -1,11 +1,11 @@
 class_name Group extends Node
 
-# 真相：他们实际处在什么境地。日子本身在改它，**报纸碰不到它**。
-# 初值由子类的 initial_attribute() 提供
+# 真相：他们实际处在什么境地。
 var attribute : Dictionary = {}
 
-const RANDOM_CHANGE : int = 5
-const BASE_PUSH : float = 0.05
+# 每天的随机扰动幅度：(randf() − 0.5) / 10 = **±0.05**（均匀分布，见 _drift）。
+const RANDOM_CHANGE : int = 10
+
 var push : Dictionary = {
 	"happy" : 0.0,
 	"fear" : 0.0,
@@ -13,7 +13,7 @@ var push : Dictionary = {
 	"power" : 0.0,
 }
 
-# 政府。由 World 在开局时注入。
+# 政府。
 var government : Government = null
 
 # 在 _init 里就备好，比等到 _ready 更稳（万一以后有游离不进树的群体）。
@@ -24,40 +24,48 @@ func step(newspaper : NewsPaper) -> void:
 	read_newspaper(newspaper)
 
 func read_newspaper(_newspaper : NewsPaper) -> void:
-	pass #子类重写
+	pass
 
-# --- 子类只需要填这两个钩子 ---
+# 我是谁。
+func my_kind() -> GroupData.READERS:
+	return GroupData.READERS.FARMER
+
 # 这个群体的初值。
 func initial_attribute() -> Dictionary:
 	return {"happy" : 0.0, "angry" : 0.0, "fear" : 0.0, "power" : 0.0}
-	#子类重写
+	# 子类重写
 
-# 他们走到极端（逃荒 / 外逃 / 溃散）时报的那条新闻。没有这一档的（工人）返回 -1。
-func finale_type() -> int:
-	return -1
-
-# --- 报纸：只改门槛 ---
-# 所以这里只碰 push，一个字典。状态机拿它去抬线或压线。
+# 报纸：推阈值 + 大事件改四维
 func _read_paper(newspaper : NewsPaper) -> void:
-	# 先清零。
-	for i in push.keys():
-		push[i] = 0.0
-	
 	if newspaper == null:
 		return
-	
+
 	# 一份报纸说的话有多少分量，取决于它自己有多少信誉。
 	var weight : float = NewsPaperManager.get_influence() / 100
-	for item in newspaper.events:
-		if item == null :
-			continue               # 天气、连载、漫画也改变任何人的想法
-		
-		for i in push.keys():
-			push[i] += _push_of(item,i) * weight
+	for i in newspaper.events.size():
+		var item : NewsResource = newspaper.events[i]
+		if item == null:
+			continue
 
-# 每天读一遍"世界的公共部分"。
-func _read_world() -> void:
-	_absorb(attribute, StabilityInfluence.all(government.asset.stability))
+		# 第一格是大版位，读者注意力更集中——效果整体翻倍，其他按 1.0。
+		var mult : float = 2.0 if i == 0 else 1.0
+
+		# 大事件：**只改四维，不推阈值**（它的推量四条应留 0）。
+		if item.big_effect != null:
+			var eff : BigEventEffect = item.big_effect
+			var who : String = _who_am_i()
+			attribute["happy"] = clampf(attribute["happy"] + float(eff.get(who + "_happy")) * mult, 0.0, 1.0)
+			attribute["fear"]  = clampf(attribute["fear"]  + float(eff.get(who + "_fear"))  * mult, 0.0, 1.0)
+			attribute["angry"] = clampf(attribute["angry"] + float(eff.get(who + "_angry")) * mult, 0.0, 1.0)
+			attribute["power"] = clampf(attribute["power"] + float(eff.get(who + "_power")) * mult, 0.0, 1.0)
+
+		for k in push.keys():
+			push[k] += _push_of(item,k) * weight * mult
+
+# 今天的报纸已经并进各状态的阈值了：push 归零。
+func _clear_push() -> void:
+	for key in push.keys():
+		push[key] = 0.0
 
 # 每天的随机扰动
 const MOOD_KEYS : Array[String] = ["happy", "angry", "fear", "power"]
@@ -69,20 +77,30 @@ func _drift() -> void:
 		attribute[key] = clampf(
 			attribute[key] + (randf()-0.5) / RANDOM_CHANGE, 0.0, 1.0)
 
-# 读一条消息，返回它把 push 推多少。
+# 读一条消息，返回**我这个群体**被推多少。
 func _push_of(item : NewsResource , push_name : String) -> float:
-	var influence_group : InfluenceGroup = item.influnce
-	match push_name:
-		"happy" :
-			return influence_group.happy_influnce
-		"angry" :
-			return influence_group.angry_influnce
-		"fear" :
-			return influence_group.fear_influnce
-		_ :
-			return influence_group.power_influnce
+	var influence_group : InfluenceGroup = PolicyPush.influence_of(item)
+	if influence_group == null:
+		return 0.0
+	return float(influence_group.get("%s_%s" % [_who_am_i(), push_name]))
 
-# 把一组增量打进某个属性表。
-func _absorb(target : Dictionary, effects : Dictionary, weight : float = 1.0) -> void:
+
+# 我在那十六条里叫什么。
+func _who_am_i() -> String:
+	match my_kind():
+		GroupData.READERS.WORKER:
+			return "worker"
+		GroupData.READERS.MERCHANT:
+			return "merchant"
+		GroupData.READERS.SOLDIER:
+			return "soldier"
+		_:
+			return "farmer"
+
+# 把一组增量打进属性表。
+func _absorb(target : Dictionary, effects : Dictionary) -> void:
 	for key in effects:
-		target[key] = clampf(target[key] + effects[key] * weight, 0.0, 1.0)
+		target[key] = clampf(target[key] + effects[key], 0.0, 1.0)
+
+func resource_influence() -> void:
+	pass

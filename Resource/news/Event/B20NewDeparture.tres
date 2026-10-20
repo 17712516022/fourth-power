@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://bx8nr3goa0sf3"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://nkandf67x34g" path="res://art/photo/商人_3-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.04
+farmer_fear = 0.06
+worker_fear = 0.02
+merchant_fear = 0.04
+soldier_happy = 0.08
+
+[resource]
+script = ExtResource("1_news")
+headline = "传联盟与共和派合流"
+body = "　　城里最近传出一说：联盟的达恩和共和派旧人杜维在城外见过两次面，谈的是“新出发”——共和派不再单干，跟土地运动合流；联盟答应在议会里替狱里的人说话。
+　　这个说法没有任何一方证实。达恩今天在会址门口被问起，只说：我们只谈租子。杜维那边没有人出面。
+　　本报记者查到，两个人确实在同一家旅店住过一夜，房钱各付各的。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b20_new_departure"
+big_effect = SubResource("Resource_eff")

@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://xpsey1e23oi6"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://blsgcketaof38" path="res://art/其他_5-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://blsgcketaof38" path="res://art/photo/其他_5-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "旧家字画出让"
-body = "本埠西街某旧家以家用不给，出其先世所藏字画二十余件求售。中有明人山水一轴，索价颇昂。闻沪上藏家已有函询。"
+headline = "西街卖祖传旧画"
+body = "　　西街有户人家手头紧，把祖上传下来的画拿出来卖，一共二十多件，昨天送进了拍卖行。
+　　最值钱的是一幅老画师画的山水，开价很高。拍卖行的人说，全城出得起这个价的人没几个。
+　　听说外城已经有收藏家写信来问，要先看画，再谈价钱。这户人家不肯说姓名，只说急着用钱。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

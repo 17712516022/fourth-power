@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dy48f68rl54rh"]
+
+[ext_resource type="Script" uid="uid://vm70pl4x7rdw" path="res://Resource/InflunceGroupResource.gd" id="1_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://8ag7srrhpkcp" path="res://art/newphoto/其他-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_infl"]
+script = ExtResource("1_infl")
+farmer_happy = 0.05
+farmer_fear = -0.04
+farmer_angry = -0.08
+worker_happy = 0.02
+worker_angry = -0.03
+merchant_happy = 0.04
+merchant_fear = -0.03
+
+[resource]
+script = ExtResource("1_news")
+headline = "总督府说农夫签了字"
+body = "　　总督府新闻处今天说，各郡农夫已经在承诺书上签了字，答应守法，秋租照旧交，没有减租这回事。新闻处同时否认了“农夫联合会通告”，说那是少数人冒名散出去的，已经查清。
+　　郡办事处报称，西部各郡签字的人超过九成，剩下这几天办完。签字簿送到郡里存档，名字、地块、租额都登记在册，往后有争执照簿子对。
+　　西崖有个农夫说，村里没人上门让他签字，“簿子上有没有我的名字，我说不准”。商会倒是松了口气，说租额定下来，秋后的账才好算。"
+image = ExtResource("2_img")
+influnce = SubResource("Resource_infl")
+event_id = "b04_notice_board"

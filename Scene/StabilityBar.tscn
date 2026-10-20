@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://jtijkynii5dy"]
+
+[ext_resource type="Script" uid="uid://cjkyd2pb2nblg" path="res://Scripts/Ui/StabilityBar.gd" id="1_stab"]
+[ext_resource type="Texture2D" uid="uid://2iemoyo88w1x" path="res://asserts/ui包/UI_TravelBook_BookCover01a.png" id="2_cover"]
+[ext_resource type="Texture2D" uid="uid://byxqh6q6tovf0" path="res://asserts/图标包/no-padding/64px/white/1-game/diamonds.png" id="3_8gb75"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_frame"]
+texture = ExtResource("2_cover")
+modulate_color = Color(0.6148089, 0.8334115, 0.47918475, 1)
+
+[sub_resource type="Gradient" id="Gradient_fill"]
+interpolation_mode = 2
+interpolation_color_space = 2
+offsets = PackedFloat32Array(0, 0.70258623, 1)
+colors = PackedColorArray(0.95227927, 0, 0.17302424, 1, 0.88706434, 0.811689, 0, 1, 0, 1, 0.26666665, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fill"]
+gradient = SubResource("Gradient_fill")
+
+[sub_resource type="Gradient" id="Gradient_s7wh4"]
+colors = PackedColorArray(0.77, 0.616, 0.69299996, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_co6qv"]
+gradient = SubResource("Gradient_s7wh4")
+width = 3
+height = 3
+fill_from = Vector2(0, 1)
+
+[sub_resource type="Gradient" id="Gradient_n1nbm"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yddip"]
+gradient = SubResource("Gradient_n1nbm")
+
+[sub_resource type="Curve" id="Curve_cxmk6"]
+_data = [Vector2(0, 0.50375944), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_w7t7a"]
+curve = SubResource("Curve_cxmk6")
+
+[sub_resource type="Curve" id="Curve_cxgsp"]
+_data = [Vector2(0, 0.50375944), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_gjxql"]
+curve = SubResource("Curve_cxgsp")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vkqoe"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(0, -0.5, 0)
+emission_shape = 3
+emission_box_extents = Vector3(1, 7.5, 1)
+direction = Vector3(0, 0, 0)
+spread = 180.0
+initial_velocity_max = 6.0
+linear_accel_min = -15.000002
+linear_accel_max = 22.859997
+scale_min = 0.79999995
+scale_max = 1.1999999
+scale_curve = SubResource("CurveTexture_gjxql")
+color_ramp = SubResource("GradientTexture1D_yddip")
+emission_curve = SubResource("CurveTexture_w7t7a")
+hue_variation_min = -0.14000002
+hue_variation_max = 0.17999998
+
+[node name="StabilityBar" type="PanelContainer" unique_id=127500207]
+offset_right = 156.0
+offset_bottom = 26.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_frame")
+script = ExtResource("1_stab")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1398072339]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 3
+
+[node name="Bar" type="TextureProgressBar" parent="MarginContainer" unique_id=1126182278]
+layout_mode = 2
+tooltip_text = "稳定度"
+max_value = 12.0
+value = 5.0
+nine_patch_stretch = true
+stretch_margin_top = 20
+stretch_margin_right = 144
+texture_progress = SubResource("GradientTexture2D_fill")
+
+[node name="DangerLine" type="ColorRect" parent="MarginContainer/Bar"]
+unique_name_in_owner = true
+offset_left = 72.0
+offset_top = 0.0
+offset_right = 74.0
+offset_bottom = 20.0
+mouse_filter = 2
+color = Color(0.08, 0.05, 0.05, 0.9)
+
+[node name="ParticleTextureBar" type="Sprite2D" parent="." unique_id=1679113468]
+unique_name_in_owner = true
+self_modulate = Color(0.060000002, 0.40466678, 1, 0.64705884)
+position = Vector2(41.5, 13)
+scale = Vector2(0.17187501, 0.3125)
+texture = ExtResource("3_8gb75")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="ParticleTextureBar" unique_id=498315483]
+show_behind_parent = true
+position = Vector2(-8, 2.133335)
+scale = Vector2(15.999992, 4.2666664)
+amount = 50
+texture = SubResource("GradientTexture2D_co6qv")
+randomness = 1.0
+trail_lifetime = 0.01
+process_material = SubResource("ParticleProcessMaterial_vkqoe")

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ylmcmuqre5p2"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://gwu5suxtbslf" path="res://art/photo/商人_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.06
+worker_happy = 0.02
+merchant_fear = 0.04
+merchant_angry = 0.1
+soldier_angry = 0.04
+
+[resource]
+script = ExtResource("1_news")
+headline = "纽约汇来款项，联盟账目未明"
+body = "本报查到，联盟在纽约设了一个委员会，专收侨民捐款，数月来汇回本岛的款项共四笔，最大一笔折银一千二百元。汇款单上写的是「书款」。联盟书记处说，这是侨民的心意，用来替被逐的人家买粮买煤。海关的人说，账目不清，查也无从查起。城中已有报纸质问：一个替农夫说话的团体，钱从外国来，算不算受人指使。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b21_american_fund"
+big_effect = SubResource("Resource_eff")

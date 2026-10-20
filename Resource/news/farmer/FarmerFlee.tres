@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cbbk7r5cs1rsq"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://c1ctrn8qwbv8n" path="res://art/农民_2-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/FarmerFlee.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://t1osssftk770" path="res://art/newphoto/其他-6-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://6nlc2r24mln8" path="res://temp/news_backup/InflunceGroup/FarmerFlee.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "南乡农户弃田出走"
-body = "南乡一带近有整户农民弃田出走，所遗田亩无人耕种，草已没膝。据里正报称，逃户约百余家，本年田赋恐难如数征收。"
+headline = "农夫逃亡，丢下地"
+body = "　　南境好几个村的农夫整家逃亡，田没人种，草长到膝盖。庄园主起先以为只是过了农忙，等到要犁地，才发现人早就不在村里。
+　　村里的册子上，报明迁走的一百四十多户，多半是欠着上一季地租、又借了种子钱的人家。走的时候只带走牲口和铺盖，门窗敞着，锅灶冷着。
+　　这几天大路上天天有人推车背包往银钟城去。一个老农说，去年还能打短工补上地租，今年到处减工，补不上，索性不种了。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")

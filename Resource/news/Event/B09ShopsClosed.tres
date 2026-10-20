@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ddies238ufsbe"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://brjc6vval6wqd" path="res://art/newphoto/商人-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_power = 0.1
+worker_power = 0.14
+merchant_happy = -0.18
+merchant_fear = 0.26
+soldier_angry = 0.14
+
+[resource]
+script = ExtResource("1_news")
+headline = "抵制波及店铺"
+body = "　　安桥、黑石两郡的抵制波及到店铺。郡商会统计，因为参与抵制或者拒绝参与而关门的有十一户，其中三家是祖上传下来的铺子。
+　　一个杂货店主说，他被两边各警告过一次：一边说再跟某地主做生意，就“连他一起孤立”；一边说再不停手，就按“妨害治安”报官。
+　　他今天关了门，去了外港。本报广告栏今天少了两家。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b09_shops_closed"
+big_effect = SubResource("Resource_eff")

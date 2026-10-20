@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dxadfg2tf3v5m"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://c1ctrn8qwbv8n" path="res://art/photo/农民_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.18
+farmer_angry = 0.28
+farmer_power = 0.1
+worker_angry = 0.12
+merchant_fear = 0.12
+soldier_fear = 0.06
+soldier_angry = 0.1
+
+[resource]
+script = ExtResource("1_news")
+headline = "驱逐令贴到村口"
+body = "　　安桥郡昨天发出驱逐通知一百零七份，牵涉农夫四百多人。各村在路口垒起石墙，妇女站在最前面。
+　　到下午，三处发生推挤，没有开枪。郡治安官说，驱逐是依法办的，阻拦的按妨害公务论。
+　　村里的神父出面调停，没成。入夜后石墙外点起火堆，一直烧到天亮。驱逐定在三天后执行。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b05_evictions"
+big_effect = SubResource("Resource_eff")

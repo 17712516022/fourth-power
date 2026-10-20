@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3 uid="uid://coqy811da03f7"]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 4
+displaying_name = "新闻检查官 柯尔"
+text = "一简讯，够了。本处已把贵报的意思转给郡治安官，石墙那边暂缓三日。这三天，本处也只能争到三天。"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

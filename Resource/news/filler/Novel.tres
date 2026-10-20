@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b82lekap80vw6"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_sa4ai"]
-[ext_resource type="Texture2D" uid="uid://fpt0r1jf0tti" path="res://art/其他_6-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_sa4ai"]
+[ext_resource type="Texture2D" uid="uid://jk3s24o2d6w3" path="res://art/newphoto/其他-5-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_sa4ai")
-headline = "连载小说《月落时分》第七回"
-body = "上回说到陈生辞别故里，独自往城里去。这一回且说他行至城门，盘缠只剩三枚铜元，守门那两个兵正拿眼上上下下打量他。明日续登。"
+headline = "小说连载第七回"
+body = "　　上一回说到乔里告别家乡，一个人往城里去。这一回，他走到了城门口，钱袋里只剩三个铜板。
+　　守门的两个士兵上下打量他，问他叫什么、从哪儿来、进城干什么。乔里答得慢，一只手一直按在钱袋上。
+　　后面排队的人开始催，其中一个士兵忽然笑了，摆摆手让他过去。乔里走进城门，天正好黑下来。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

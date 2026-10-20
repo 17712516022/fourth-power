@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dstswyfkr7yb"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bqfdpsflhett3" path="res://art/newphoto/其他-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://bgohfadjkawa7" path="res://temp/news_backup/InflunceGroup/MerchantProsperityEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "繁荣过去了"
+body = "　　先前兴旺的市面，这几天渐渐淡了。各号出入货少，店员闲坐在门口晒太阳，柜上压着几张没结的账单。
+　　商人说，旺月过去了，只求不出岔子。堤上的活收尾，按天结的工钱停了；外城来的客商少了；秋后粮价上来，余钱先拿去买粮。
+　　也有铺子趁这时候清库房，把陈货折价出手，腾地方备过冬的货。集市今天收摊比上月早一个钟头，几个常来的外乡客商没露面。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

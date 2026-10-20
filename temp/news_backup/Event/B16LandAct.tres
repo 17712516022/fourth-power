@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dxipeliusn21s"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://5dtlortrjdaf" path="res://art/photo/政府-2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.26
+farmer_angry = 0.06
+worker_angry = 0.2
+merchant_happy = 0.18
+merchant_fear = 0.06
+soldier_happy = 0.12
+
+[resource]
+script = ExtResource("1_news")
+headline = "土地法通过，准减租与固定佃权"
+body = "《土地法》今日通过：租金由法庭核定，佃权固定，农夫可自由出售其权。领主府称此系“三事俱备”，此后无复租佃之争。联合会旧部号召农夫暂不交租、暂不赴土地法庭，称此法“未及旧欠，未及劳工”。西部响应者众，东部者少。郡议会今日开会，议长说，这是三十年来最好的一部法。"
+image = ExtResource("2_img")
+is_big_event = true
+big_effect = SubResource("Resource_eff")

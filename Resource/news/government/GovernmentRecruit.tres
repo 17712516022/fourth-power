@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://uwgeycyh68ds"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bl7w8u8temqwb" path="res://art/newphoto/士兵-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://wwh33np25vij" path="res://temp/news_backup/InflunceGroup/GovernmentRecruit.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "招募民团和巡逻员"
+body = "　　总督府今天招募民团和巡逻员，民团三百人，巡逻员一百二十人，按月发饷。
+　　民团要求二十到三十岁、身家清白，自带铺盖；巡逻员不限年纪，认得字优先。报名在旧操场。
+　　报名的多是找不到活的短工。也有人说，这身衣服穿上，往后见了街坊不好说话。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

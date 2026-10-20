@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://desmlout1rpim"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://mmgprr4trvml" path="res://art/photo/其他_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://dgp35dbtic7ed" path="res://Resource/news/InflunceGroup/FarmerUpRisingStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "东境农夫围了谷仓"
+body = "　　东境一带闹起动乱，几百个农夫拿着锄头铁叉闯进城外的谷仓，说不交这一季的地租。管事被围在屋里，窗上打碎两块玻璃，仓门的锁被砸开。
+　　城卫队和守备军先后赶到，把人劝开。双方僵了约四个钟头，没有人受伤，粮袋也退回仓里。议会派人念了缓征两成的告示，众人还是不肯散。
+　　到傍晚，聚着的人退到石板路两边，人数没见少，邻近两个村也传出有人要响应。夜里东境的路上点起了篝火。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

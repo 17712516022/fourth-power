@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ubymbbxocf3f"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://sn1iqam33npq" path="res://art/photo/其他_9-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.22
+farmer_angry = 0.26
+farmer_power = 0.1
+worker_fear = 0.16
+worker_angry = 0.22
+merchant_happy = -0.1
+merchant_fear = 0.24
+soldier_happy = 0.12
+
+[resource]
+script = ExtResource("1_news")
+headline = "马洛被捕，联盟解散"
+body = "　　议员马洛今天在河口城的寓所被捕，押往西郊监狱。同一天，总干事达恩和各地支会负责人三十多人一起被抓。
+　　总督府宣布联合会是非法组织，即日解散。城里没有出现聚集。
+　　本报今天的头版留了一栏空白，没有填。到夜里，有人在那块地方贴了一张手写的纸，写的是马洛去年在安桥郡说过的一句话。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b12_leader_arrested"
+big_effect = SubResource("Resource_eff")

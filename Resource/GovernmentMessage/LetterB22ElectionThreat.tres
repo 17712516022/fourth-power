@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 3
+displaying_name = "新闻检查官 柯尔"
+text = "大选已毕。只报投票平静、计票无误。马洛三区当选，不必做成标题。一个名字在一张报纸上出现三次，读者会记住，总督府也会记住。"
+event_id = "b22_election"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

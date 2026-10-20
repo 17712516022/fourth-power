@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cwwrr5ct7sqxq"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://b386ntge28go" path="res://art/photo/政府-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://blttcj7q2q6tr" path="res://Resource/news/InflunceGroup/GovernmentSuppress.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "军警进北区抓人"
+body = "　　军警今天凌晨进北区，抓了四十多人，砸了两个聚会的院子，收走几十捆传单。
+　　城卫队说，抓的都是带头的，其余的问过就放。北区今天加了岗，进出要查证件。
+　　被抓的人家里在门口站着，不敢多问。工坊里今天到工的人少了一半，机器开得稀稀拉拉。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

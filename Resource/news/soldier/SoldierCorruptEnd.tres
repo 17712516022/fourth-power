@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dssgvcx5rmt3f"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://5dtlortrjdaf" path="res://art/photo/政府-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://dgp6urvl566i5" path="res://temp/news_backup/InflunceGroup/SoldierCorruptEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "军饷补发了"
+body = "　　先前积欠的军饷已经陆续补发，各营重新点验军装和马匹，账目逐一核对。拖欠的部分补了大半，剩下的分两季结清。
+　　缺的一百多件皮甲和长枪由市政金库拨款买的铁料补齐，簿册另换了一本重记。书记官说，查出来的是几道经手的人各扣一点，没有大股侵吞，那几个人已经革职逐出营外。
+　　队长说，饷一到手，士兵脸色好看了许多，点卯也没人再托病。议会宣布：此后军饷由市政金库直接发到队里，军械每季点验一回。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

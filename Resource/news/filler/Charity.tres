@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dtar8rw55xfsv"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://dr877cns63msw" path="res://art/其他-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dtb0v036c28ck" path="res://art/newphoto/其他-10-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "红十字会设所施粥"
-body = "本埠红十字会于城隍庙前设厂施粥，每日上午八时至十时，每人一大碗，老弱另给米半升。会中声明经费支绌，尚望各界慨助。"
+headline = "教团免费发汤"
+body = "　　治愈教团在教堂前面搭了个棚子，每天上午八点到十点免费发汤，一人一大碗。老人和身体弱的，另外给半袋麦子。
+　　教团说，今年来的人比去年多，粮食和柴火快用完，钱也紧，希望城里人帮一把。账目会贴在棚子旁边，谁都可以看。
+　　昨天上午排队的一百多人，队伍从棚子一直排到教堂的台阶底下。一个领汤的老人说，这一碗能顶半天力气。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

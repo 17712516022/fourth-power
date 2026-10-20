@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cvcvxir1qlrpm"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bxh7dmmqtp5j2" path="res://art/newphoto/商人-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://20ahv7hjbpaa" path="res://temp/news_backup/InflunceGroup/GovernmentExcise.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "消费税加了两成"
+body = "　　总督府昨天公告，从下月初起加征消费税，酒、糖、盐、灯油和布，一律按售价加两成。
+　　税在铺子里收，买家付钱时就带上；铺子每月十五把税银交到办事处，账目要贴出来。瞒报的罚一倍。
+　　铺子老板说，加两成，买的人只会少。也有人说，盐和灯油是家家要用的，别又加到穷人头上。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 3
+displaying_name = "新闻检查官 柯尔"
+text = "狱中带出来的那份东西，本处已经见过。不交租三个字，一个字也不许上报纸。贵报排字房已经排好，本处也知道。今夜之前撤版，还来得及。"
+event_id = "b15_no_rent"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

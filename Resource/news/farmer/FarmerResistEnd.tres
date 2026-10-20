@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b58qrm4j16n4v"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://868tmktpcu16" path="res://art/农民-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/FarmerResistEnd.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://868tmktpcu16" path="res://art/photo/农民-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://c0vg4x0g422sb" path="res://temp/news_backup/InflunceGroup/FarmerResistEnd.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "四乡租事渐息"
-body = "前传四乡佃户延不缴租一节，近日据各乡来人言，租米已陆续送仓，旧欠亦多有补缴。前说或系一时之讹传。"
+headline = "南境恢复正常了"
+body = "　　前些天传南境农夫约好抗租不交，这几天各村来人说，租金已经陆续送进谷仓，旧欠也补了不少，有几家连零头都清了。
+　　农夫说，议会既然缓征两成，庄园主又把种子钱延到明年秋天，硬拖下去对自己没好处。谷仓管事起初不肯收旧欠，怕惹是非，后来收了，还开了收条。
+　　粮行说，租金一清，明春的种子钱就放得出来。今天收进四百多袋，管事说照这个势头，本季的租十天之内能清完。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")

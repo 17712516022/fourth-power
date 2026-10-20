@@ -32,9 +32,7 @@ custom_maximum_size = Vector2(1000, 648)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -1.0
 offset_right = -152.0
-offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_lhcsd")
@@ -70,16 +68,14 @@ layout_mode = 2
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer" unique_id=957272985]
 custom_minimum_size = Vector2(1000, 566)
 layout_mode = 2
-theme_override_constants/margin_left = 26
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 26
-theme_override_constants/margin_bottom = 12
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 11
 
 [node name="Panel" type="HFlowContainer" parent="VBoxContainer/ScrollContainer/MarginContainer" unique_id=1615240124]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/h_separation = 32
+theme_override_constants/h_separation = 18
 theme_override_constants/v_separation = 18
 
 [node name="RawMaterial" parent="VBoxContainer/ScrollContainer/MarginContainer/Panel" unique_id=710184364 instance=ExtResource("2_eb3jj")]

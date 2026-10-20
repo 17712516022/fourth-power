@@ -1,50 +1,53 @@
 class_name FoodInfluence extends RefCounted
 
-# ============================================================
 # 粮仓 -> 各个群体
-#
-# 为什么单独拎出来：**同一个数字，对不同的人意义相反。**
-#
-#   粮仓见底：商人读出的是行情，工人读出的是活不下去。
-#
-# 这种"一物多义"是涌现的关键。但如果每家各写各的，
-# 就没人看得出它们读的是同一个数——散在两个 _live() 里的时候，
-# 你只会觉得"商人有个回血项、工人有个掉血项"，看不出它们是同一件事的两面。
-# 放在一起，对照关系是**一眼可见**的。
-#
-# 这里只做"粮仓 -> 心情"。**不做"心情 -> 行为"。**
-# 商人高兴之后会不会去囤积、工人难过之后会不会闹，是各自状态机的事。
-# 这一层只管把世界翻译成感受，怎么反应不归它管。
-# ============================================================
+
+# 粮荒时每天的增量：商人多高兴、工人多难过。
+const MERCHANT_HAPPY : float = 0.015
+const MERCHANT_POWER : float = 0.02
+const WORKER_HAPPY   : float = -0.015
+const WORKER_ANGRY   : float = 0.015
+
+# 好账（满仓那一支）减半、压到底线**：仓里满着这件事，比不上一个荒年重。
+const HIGH_MOOD  : float = 0.01
+const HIGH_POWER : float = 0.020
 
 
-# --- 商人 ---
-#
-# 粮荒是行情。仓里有货的人，越缺粮越值钱——**他什么都不用做，等着就行。**
-# 所以这里给的是正数：越缺粮，越高兴、底气越足。
+# 商人
 static func merchant(food : FoodManager) -> Dictionary:
-	var s : float = food.scarcity()
-	return {
-		"happy" : s * 0.006,
-		"power" : s * 0.004,
-	}
+	match food.state:
+		FoodManager.FoodState.Low:
+			return {"happy" : MERCHANT_HAPPY, "power" : MERCHANT_POWER}
+		FoodManager.FoodState.High:
+			# 谷贱也伤囤货的：仓里的货不值钱了。
+			return {"happy" : -HIGH_MOOD, "power" : -HIGH_POWER}
+		_:
+			return {}
 
-
-# --- 工人 ---
-#
-# 粮食是工人开销里最大的一块。粮价一涨，工钱等于白涨。
-# 同一个粮仓，工人读到的是日子过不下去。
+# 工人
 static func worker(food : FoodManager) -> Dictionary:
-	var s : float = food.scarcity()
-	return {
-		"happy" : -s * 0.008,
-	}
+	match food.state:
+		FoodManager.FoodState.Low:
+			return {"happy" : WORKER_HAPPY, "angry" : WORKER_ANGRY}
+		FoodManager.FoodState.High:
+			return {"happy" : HIGH_MOOD, "angry" : -HIGH_MOOD}
+		_:
+			return {}
 
+# 士兵
+const SOLDIER_HAPPY : float = -0.015
+const SOLDIER_FEAR  : float = -0.015
+const SOLDIER_ANGRY : float = 0.015
 
-# --- 农民 / 士兵 ---
-#
-# 这两家暂时不读粮仓，位置留在这里：
-#   农民：既产粮也吃粮，两头挨。但它的压力已经写在 angry 的日常涨落里了，
-#         再接一条粮荒通路会重复计一次，等 angry 那套调稳了再回头接。
-#   士兵：军粮是政府供给的。粮仓空了军心最先松——但"发饷"那条路还没通，
-#         先挂着。
+# 满仓对兵只是"管得住"（怕涨、火降），不额外添高兴——否则士兵的 happy 会被顶死在 1.0。
+const SOLDIER_HIGH_HAPPY : float = 0.0
+
+static func soldier(food : FoodManager) -> Dictionary:
+	match food.state:
+		FoodManager.FoodState.Low:
+			return {"happy" : SOLDIER_HAPPY, "fear" : SOLDIER_FEAR, "angry" : SOLDIER_ANGRY}
+		FoodManager.FoodState.High:
+			# 仓里满的时候反过来：吃得饱、管得住、也懒得动火（同样减半）。
+			return {"happy" : SOLDIER_HIGH_HAPPY, "fear" : HIGH_MOOD, "angry" : -HIGH_MOOD}
+		_:
+			return {}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://jqug5cackx2x"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dxp1f010f4sfh" path="res://art/newphoto/政府-3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://cc76kiyu5g4su" path="res://temp/news_backup/InflunceGroup/GovernmentDrift.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "一堆事都没下文"
+body = "　　河堤的款子拨了三个月，堤上还没见一块新石头；说要修的桥，图纸画好了，木料没到；北区的巡逻队，名册报了，人没招齐。
+　　各署的说法都差不多：等上面批，等钱到，等别家先动。
+　　街上的人说，官署里天天有人上班，就是不见事情办成。议会的书记官说，下月的会上一并问。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dfc51bwp86ua6"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://fpt0r1jf0tti" path="res://art/photo/其他_6-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://bacuxwg4y0ffo" path="res://temp/news_backup/InflunceGroup/GovernmentHelpless.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "总督府说没办法"
+body = "　　总督府今天发了一纸说明，说市政金库空虚、商路不通、各乡又在闹租，眼下实在没有好办法。
+　　说明里列了几笔账：欠军饷两个月，河堤的款子还差一半，本月收上来的税只够发官署里的薪水。
+　　看的人说，头一回见官署自己说没办法。也有人冷笑，说没钱的时候才想起说老实话。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

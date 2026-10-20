@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b6a6g13147ons"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dp0so26mb5bii" path="res://art/newphoto/农民-3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://dcn0ug2ck0uhx" path="res://temp/news_backup/InflunceGroup/GovernmentFarming.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "减了租，还借种子"
+body = "　　总督府今天公布劝农三件事：减两成本季地租，种子钱延到明年秋后，各村设一名农事员教轮种和选种。
+　　公告说，减租只算本季，明年再议；种子钱不收利，秋后按收成折还。农事员由乡里推，办事处发工钱。
+　　农夫说，减两成不算多，可是头一回见着纸上写明白。也有庄园主说，减租可以，税也得跟着减。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cpkjrgomvw52j"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://djil3psm2jhl8" path="res://art/photo/工人3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://b8aemdtc7w7d3" path="res://Resource/news/InflunceGroup/WorkerUpRisingStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "工坊动乱，工匠占坊"
+body = "　　昨天夜里，东郊两处大坊的工匠跟城卫队起了冲突，闹成一场动乱，伤了几个人。工匠夺了门岗的器械，占了坊屋，封住路口。
+　　据城卫队的急件，守住坊门的一千多人把门从里面顶上，把坊主和管事赶了出去，器械房里的铁棍和锤子全取了出来，另有一百多人守在工坊区西头的桥口。
+　　议会今天早上调了两个小队去东郊，又从城外调了一部驻军接应，还没有打起来。工坊区从今天起戒严，日落后不许通行。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

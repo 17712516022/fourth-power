@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cts7dg34edf8s"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://fpt0r1jf0tti" path="res://art/photo/其他_6-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = -0.04
+farmer_angry = 0.06
+worker_angry = 0.12
+merchant_happy = 0.02
+soldier_happy = 0.04
+
+[resource]
+script = ExtResource("1_news")
+headline = "华莱士获释后解散女子土地联盟"
+body = "华莱士获释回到都城后第三日，女子土地联盟在会址开了一次短会。到会者说，华莱士没有来，只送来一封信，说运动已入新阶段，女子联盟的事暂且收束，账簿与名册移交男会。安娜当场把七本账簿抱走，说要留个底。此后三日，各郡支会的女书记陆续收到同样的通知。有人把通知贴在门上，旁边写了一行小字：抄写也犯法，如今不抄了。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b24_ladies_league_dissolved"
+big_effect = SubResource("Resource_eff")

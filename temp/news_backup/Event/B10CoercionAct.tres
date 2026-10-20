@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b1h26010aswgu"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://db5hx2gpkx10v" path="res://art/photo/政府_1-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.2
+farmer_angry = 0.1
+worker_fear = 0.16
+worker_angry = 0.18
+merchant_happy = -0.1
+merchant_fear = 0.26
+soldier_happy = 0.14
+
+[resource]
+script = ExtResource("1_news")
+headline = "治安法通过，可不经审判捕人"
+body = "《治安法》今日通过。凡“有合理嫌疑”者，可不经审判拘押；集会、结社、张贴，皆须许可；联合会及各地方支会一并取缔。法案通过后，城中三家报馆停刊，两家称机器检修，一家未说明。本报今日收到通知一份，请于三日内将印刷机具造册报备。造册表格共十一页。"
+image = ExtResource("2_img")
+is_big_event = true
+big_effect = SubResource("Resource_eff")

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://0mwuglje6gre"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dlhbl84rifbh3" path="res://art/photo/报纸-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.12
+worker_fear = 0.14
+worker_angry = 0.2
+merchant_happy = -0.12
+merchant_fear = 0.28
+soldier_fear = 0.08
+
+[resource]
+script = ExtResource("1_news")
+headline = "报社被封，主笔被捕"
+body = "　　北境一家地方报的主笔昨天被捕，报社被查封，铅字被熔了。
+　　他妻子说，他在狱里还是每天写稿，由她带出来，署名换了一个。稿子写的是本郡的驱逐数目，一条一条列出来，没有一句评论。
+　　查封那天，报社门口聚了一百多人，一直没散。同一天，全岛另有四家报社收到同样的通知。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b11_editor_arrested"
+big_effect = SubResource("Resource_eff")

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dvcdckfus0sp"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dtb0v036c28ck" path="res://art/newphoto/其他-10-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.18
+farmer_angry = 0.16
+worker_angry = 0.06
+merchant_happy = -0.06
+merchant_fear = 0.08
+soldier_fear = 0.05
+
+[resource]
+script = ExtResource("1_news")
+headline = "西崖断粮，教区发汤"
+body = "　　西崖沿海几个村入冬就断了粮。教区在柳溪和黑石搭了两个棚子发汤，一天一千多人来领。
+　　郡办事处拨了二百袋粮，摊到各村，根本不够。本报前天发起募捐，两天收了四百二十枚银币，还有一批粮，已经交给教区。
+　　捐款名单明天登在副页上。今天有读者来信问：为什么不先问一句，粮到底去了哪里。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b02_relief_crisis"
+big_effect = SubResource("Resource_eff")

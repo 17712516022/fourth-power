@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dj0e5dy6v8rrc"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://5dtlortrjdaf" path="res://art/photo/政府-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://pt5w7jxyq21b" path="res://Resource/news/InflunceGroup/GovernmentReform.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "新政五条"
+body = "　　领主府今天公布新政五条：减租两成、缓征旧欠、设仲裁所、开工修堤、北区设夜学。
+　　五条都写了期限：减租从本季算，修堤下月动工，夜学冬天开学。钱从城库和债券里出。
+　　街上贴出来半天，围看的人换了好几拨。有人说，五条都听着好，就怕一条也办不成。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://d0kw7cexl0bew"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bpp5lb0bp846k" path="res://art/photo/士兵_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://cnfwg4bdrpc1n" path="res://Resource/news/InflunceGroup/SoldierRampageStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "士兵横行街市"
+body = "　　这几天城区一带常有士兵三五成群，在街上横行，强赊强买，商人不敢跟他们争。从昨天起，街面上酒后闹事的士兵已经有十几起，多在城东的酒馆和货栈一带。
+　　有赊账不付的，有平白掀翻摊子的，也有把店家拦在门里索要酒肉钱的。几名店家到城卫队递了控告书，城卫队只说士兵的事归营里管，不便拿人。
+　　有个队长说，各营的饷还没发下来，士兵手里空，又闲着，才生出这些事。到傍晚，城东的酒馆大多提早关门，店家说，宁可少做半天生意。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

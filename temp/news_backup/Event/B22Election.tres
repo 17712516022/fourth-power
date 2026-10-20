@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://0rh8e0y78muk"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://b386ntge28go" path="res://art/photo/政府-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.12
+worker_happy = 0.04
+merchant_happy = 0.08
+soldier_fear = 0.06
+
+[resource]
+script = ExtResource("1_news")
+headline = "大选揭晓，华莱士三区同时当选"
+body = "本土议会解散后的大选今日揭晓。华莱士在三个选区同时当选，按例只能择一，其余两区须补选。联盟各郡支会通夜点票，河口城会址门口挤了三百多人。执政党失去多数，自由党席次大增。郡内几处地主票仓多半弃权，据说是懒得走这一趟。本报记者在计票所外站到天亮，看见华莱士本人没有来，只派了一个书记。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b22_election"
+big_effect = SubResource("Resource_eff")

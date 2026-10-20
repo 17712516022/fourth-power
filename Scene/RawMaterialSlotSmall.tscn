@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://kde6qwcug27j"]
+
+[ext_resource type="StyleBox" uid="uid://8bobrcv7hrwd" path="res://theme/RawMaterialSlot.tres" id="1_lo4p7"]
+[ext_resource type="Script" uid="uid://cckgc5pgsua3x" path="res://Scripts/RawMaterial/RawMaterialSlot.gd" id="2_uvaua"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="3_afcom"]
+[ext_resource type="Texture2D" uid="uid://bpp5lb0bp846k" path="res://art/photo/士兵_3-pixelart-2x.png" id="3_lo4p7"]
+[ext_resource type="StyleBox" uid="uid://dfd0exvhpfmh8" path="res://theme/SoltsPicture.tres" id="5_ss0ul"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vkqoe"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7, 0.7, 0.7, 0.5137255)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwyow"]
+bg_color = Color(0.6715552, 0.5819639, 0.50486726, 0.36078432)
+skew = Vector2(0.2, 0)
+border_width_top = 5
+border_width_bottom = 5
+border_color = Color(0.66, 0.66, 0.66, 1)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 3
+
+[node name="RawMaterialSlotSmall" type="PanelContainer" unique_id=2029925539]
+self_modulate = Color(0.63529414, 1, 1, 1)
+custom_minimum_size = Vector2(230, 214)
+custom_maximum_size = Vector2(230, 214)
+offset_right = 266.0
+offset_bottom = 197.0
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("1_lo4p7")
+script = ExtResource("2_uvaua")
+
+[node name="Panel" type="Panel" parent="." unique_id=1503722040]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vkqoe")
+
+[node name="VBoxContainer" type="Control" parent="." unique_id=1026344308]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="SlotTexture" type="TextureRect" parent="VBoxContainer" unique_id=190409683]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -113.0
+offset_top = -74.0
+offset_right = 94.0
+offset_bottom = 57.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.4
+mouse_filter = 2
+texture = ExtResource("3_lo4p7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="VBoxContainer/SlotTexture" unique_id=667245025]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.5
+offset_right = 105.5
+offset_bottom = 133.0
+grow_horizontal = 2
+theme_override_styles/panel = ExtResource("5_ss0ul")
+
+[node name="SlotColumns" type="Control" parent="VBoxContainer" unique_id=1738563685]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.6
+mouse_filter = 2
+
+[node name="SlotColumn1" type="Label" parent="VBoxContainer/SlotColumns" unique_id=1041223877]
+custom_minimum_size = Vector2(75, 167)
+custom_maximum_size = Vector2(98, 167)
+clip_contents = true
+layout_mode = 0
+offset_left = 13.0
+offset_top = 34.0
+offset_right = 111.0
+offset_bottom = 201.0
+size_flags_horizontal = 3
+theme = ExtResource("3_afcom")
+theme_override_constants/line_spacing = 2
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 10
+text = "一二三四五六七八九
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3"
+autowrap_mode = 1
+
+[node name="SlotColumn2" type="Label" parent="VBoxContainer/SlotColumns" unique_id=51789213]
+custom_minimum_size = Vector2(98, 100)
+clip_contents = true
+layout_mode = 0
+offset_left = 118.0
+offset_top = 35.0
+offset_right = 216.0
+offset_bottom = 135.0
+size_flags_horizontal = 3
+theme = ExtResource("3_afcom")
+theme_override_constants/line_spacing = 2
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 10
+text = "一二三四五六千八九
+2
+3
+4
+5
+6
+7
+8"
+autowrap_mode = 1
+
+[node name="Panel" type="Panel" parent="VBoxContainer" unique_id=1013164770]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 6.0
+offset_top = 1.0
+offset_right = -6.0
+offset_bottom = 27.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vwyow")
+
+[node name="TitleSlotLabel" type="Label" parent="VBoxContainer" unique_id=1820034751]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -128.0
+offset_top = 2.0
+offset_right = 128.0
+offset_bottom = 26.0
+grow_horizontal = 2
+theme = ExtResource("3_afcom")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 18
+text = "开发者日志06"
+horizontal_alignment = 1
+vertical_alignment = 1

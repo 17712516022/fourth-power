@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+[ext_resource type="Resource" path="res://Resource/news/GovernmentOfferFakeNew/OfferB16LandAct.tres" id="2_offer"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 0
+displaying_name = "新闻检查官 柯尔"
+text = "《土地法》已行，三事俱备。这是三十年来未有的事。贵报素主减租，今日正当为文称之。本处备稿一份，请登。若此时还说它不敷，读者要问：贵报到底要什么？"
+event_id = "b16_land_act"
+offer = ExtResource("2_offer")
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

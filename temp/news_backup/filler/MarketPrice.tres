@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c82h1d2s17rhu"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dr877cns63msw" path="res://art/photo/其他-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "今日粮价"
+body = "　　本城粮市今天开盘，上等白麦每袋四银币二角，比昨天涨了一角；次等三银币九角，跟昨天一样。
+　　面粉每袋一银币八角，没动。杂粮价钱不稳，买卖清淡，问价的多，掏钱的少。
+　　粮行的伙计说，白麦涨这一角，是因为前两天下雨，路上不好走，进城的车少了。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

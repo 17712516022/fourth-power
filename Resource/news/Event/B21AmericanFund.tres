@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ylmcmuqre5p2"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://5dtlortrjdaf" path="res://art/photo/政府-2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.06
+worker_happy = 0.02
+merchant_fear = 0.04
+merchant_angry = 0.1
+soldier_angry = 0.04
+
+[resource]
+script = ExtResource("1_news")
+headline = "北港汇来四笔钱"
+body = "　　本报查到，联盟在北港设了个委员会，专门收侨民捐款。几个月来汇回本岛的钱一共四笔，最大的一笔折合银币一千二百枚。
+　　汇款单上写的是“书款”。联盟书记处说，这是侨民的心意，用来给被逐的人家买粮买煤。
+　　海关的人说，账目不清，查也无从查起。城里已经有报纸质问：一个替农夫说话的团体，钱从外国来，算不算受人指使。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b21_american_fund"
+big_effect = SubResource("Resource_eff")

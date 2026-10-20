@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 4
+displaying_name = "新闻检查官 柯尔"
+text = "两份并排，读者自会分辨。这话是本处说的，如今看来不错。往后本处有要宣的，还是先送到贵报。"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

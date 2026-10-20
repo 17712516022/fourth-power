@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c82h1d2s17rhu"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://dr877cns63msw" path="res://art/其他-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://brjc6vval6wqd" path="res://art/newphoto/商人-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "本日米粮行情"
-body = "本埠米市今日开盘，上白粳每石报洋四元二角，较昨日涨一角；次白粳三元九角，平。面粉每袋一元八角。杂粮行情散漫，成交清淡。"
+headline = "今日粮价"
+body = "　　本城粮市今天开盘，上等白麦每袋四银币二十铜币，比昨天涨了十铜币；次等三银币九十铜币，跟昨天一样。
+　　面粉每袋一银币八十铜币，没动。杂粮价钱不稳，买卖清淡，问价的多，掏钱的少。
+　　粮行的店员说，白麦涨这一角，是因为前两天下雨，路上不好走，进城的车少了。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

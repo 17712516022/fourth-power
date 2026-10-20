@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3 uid="uid://ccdww4n2jnd1h"]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 1
+displaying_name = "新闻检查官 柯尔"
+text = "西崖的施食站已经在设，粮也在拨，只是路上走得慢。贵报若把饿死的人数登出来，商路一断，粮更进不来。请勿铺陈，只报「赈济已开」四字，于人于己都有好处。"
+event_id = "b02_relief_crisis"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

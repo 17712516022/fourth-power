@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cts7dg34edf8s"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://jk3s24o2d6w3" path="res://art/newphoto/其他-5-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = -0.04
+farmer_angry = 0.06
+worker_angry = 0.12
+merchant_happy = 0.02
+soldier_happy = 0.04
+
+[resource]
+script = ExtResource("1_news")
+headline = "女子联盟收了摊"
+body = "　　马洛获释回到都城第三天，女子土地联盟在会址开了个短会。
+　　到会的人说，马洛没有来，只送来一封信，说运动进了新阶段，女子联盟的事先收一收，账簿和名册交给男会。
+　　艾娜当场把七本账簿抱走，说要留个底。此后三天，各郡支会的女书记陆续收到同样的通知。有人把通知贴在门上，旁边写了一行小字：抄写也犯法，如今不抄了。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b24_ladies_league_dissolved"
+big_effect = SubResource("Resource_eff")

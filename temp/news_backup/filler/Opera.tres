@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b771kkpbxlovc"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://h8q5kpuxudy" path="res://art/photo/其他_7-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "剧院今晚开演"
+body = "　　同乐剧院从今晚起演全本《断剑与蔷薇》，连演三天，每晚七点半开演。
+　　剧场里新装了几盏符文灯，散场以后还加开夜场。票价包厢四角，正厅二角，站票一角。
+　　剧院说，包厢已经订出去大半，头一晚只剩两边几个。想坐正厅的，最好提前半个钟头去排队。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

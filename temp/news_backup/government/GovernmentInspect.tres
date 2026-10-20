@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://d134eh5p2a86j"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://db5hx2gpkx10v" path="res://art/photo/政府_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://cmydyiv1cb3gg" path="res://Resource/news/InflunceGroup/GovernmentInspect.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "领主府派人查账"
+body = "　　领主府今天派了六个查账的人，分头进驻税所、谷仓和河堤工地，账本一律封存。
+　　领头的说，查的是这三年的进出，谁经手、谁签字，一笔一笔对。查完会把结果贴在门廊上。
+　　税所的人今天脸色不好看，谷仓的管事请了假。街上说，早该查了。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

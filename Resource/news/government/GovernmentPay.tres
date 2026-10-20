@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://csupio7pg2yns"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://db5hx2gpkx10v" path="res://art/photo/政府_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://digdmei4e08iy" path="res://temp/news_backup/InflunceGroup/GovernmentPay.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "补发欠薪和抚恤"
+body = "　　总督府今天补发欠下的薪饷，官署、巡逻队和河堤工地的人先领，一共发了两个月。
+　　上月在北区冲突里死伤的人家另外发抚恤：死的八十银币，伤的按伤势分二十到四十银币。
+　　领钱的人排了长队，有人数完钱一句话没说就走了。也有人说，钱是钱，人不回来。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

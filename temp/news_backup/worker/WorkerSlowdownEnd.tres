@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c4s5eit8prenf"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://by4tytl41mar1" path="res://art/photo/工人_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://blgaj5f0mnp2m" path="res://Resource/news/InflunceGroup/WorkerSlowdownEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "怠工停了，机器又转"
+body = "　　先前各坊工匠磨洋工的事，这几天已经好了。早钟一响，机声接连响起来，出的布和铁渐渐恢复到平日的数目。
+　　坊主说，慢的那一阵主要是工钱账目没理清，如今去年冬天答应加的工钱补发了大半，剩下的说好分两季结清，工匠这才肯多干。
+　　坊里的人说，工钱虽没全加，人心总算定了。行会说，工钱的事今冬要早议，免得又拖到明年。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

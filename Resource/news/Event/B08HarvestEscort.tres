@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c4pvyox5pe45m"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dc0xb0y25wsns" path="res://art/photo/士兵_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.16
+farmer_angry = 0.24
+worker_angry = 0.14
+merchant_fear = 0.14
+soldier_angry = 0.18
+soldier_power = 0.14
+
+[resource]
+script = ExtResource("1_news")
+headline = "军队护着五十人割麦"
+body = "　　安桥郡的收割在驻军护送下开始了。五十名外地雇工由两连士兵送进郡里，白天夜里都有人守，粮车结队走。
+　　随行的军官说，这是保护“自愿劳动者”。当地的农夫站在田埂上，没有拦，也没有说话。
+　　本报记者拍到一张：田里在割麦，田埂上站着一排人，都不出声。照片已经制版。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b08_harvest_escort"
+big_effect = SubResource("Resource_eff")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dh771jx6ooohg"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/photo/政府_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://dp6hhlwqcpbch" path="res://Resource/news/InflunceGroup/GovernmentRelief.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "搭棚发粥救济"
+body = "　　领主府今天在南门和西市搭了两个棚子，每天中午发一顿粥，一人一碗，孩子加半块饼。
+　　发粥的钱从城库出，教团出人帮忙。每天限两千碗，发完为止；领粥要排队，不许插队，不许带走。
+　　头一天不到中午就排满了，有人天没亮就来。领到的人说，一顿顶不了什么，可总比没有强。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

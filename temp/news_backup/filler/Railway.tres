@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://fvbcnqjkj3fm"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://ij6qmho02s0k" path="res://art/photo/其他_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "班车加开两趟"
+body = "　　这条驿路从本月十六号起，每天加开两班车，早上七点一班，下午四点一班。
+　　三等座位票价不变，头等和二等照规矩加价。车到本城大约要走一小时四十分钟。
+　　驿站说，加开班次是因为入秋以后来往的客商多了，原来的班次常常坐满。车票当天卖，不接受预订。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cw4xgljbtekc7"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bxfalxkceb1fl" path="res://art/photo/商人_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://vyvnd4xcp8n1" path="res://temp/news_backup/InflunceGroup/MerchantAbroad.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "钱往外邦走"
+body = "　　城里几家老字号近来陆续收账，把钱汇往海港城市和外邦的分号，有的还在那边租下铺面，只留本城一处招牌撑门面。
+　　金行的会计说，本月汇出的款子比往常多出好几倍，最大的一笔来自一家丝绸庄，收款人是外邦的一家联号。
+　　问起为什么走，说法各样：有的说本城地租和税两头紧，生意做不出利；有的说外面船期密、货走得快。有个店员私下说，走得动的都是本钱厚的，小号只配在本城熬着。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

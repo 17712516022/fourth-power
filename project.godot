@@ -13,16 +13,26 @@ config_version=5
 config/name="权利"
 run/main_scene="uid://c0rmycd4q6n0m"
 config/features=PackedStringArray("4.7", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://icon.png"
 
 [autoload]
 
+Settings="*res://Scripts/Settings/Settings.gd"
+AudioManager="*res://Scripts/AudioManager.gd"
 Modifer="*uid://b8lpvde0h2dq"
 GroupData="*uid://cbrrv44ei3cwc"
 EventBus="*uid://cmaxutt8dwpvu"
+BadgeManager="*res://Scripts/Dot/BadgeManager.gd"
 NewsData="*uid://dab36mk8pf80s"
 RawMaterialGenerater="*uid://bvaaa57jgj3a"
+GovernmentMessageData="*res://Data/GovernmentMessageData.gd"
+GovernmentFavor="*res://Scripts/Government/GovernmentFavor.gd"
 NewsPaperManager="*uid://dexv8bt1gwwi8"
+StateChangeData="*uid://wok0tkknb73h"
+GovernmentActionData="*uid://cwq80x5365y5n"
+SaveManager="*uid://dfdm6nwgxtfr5"
+EndingManager="*res://Scripts/Ending/EndingManager.gd"
+ArchiveManager="*res://Scripts/Archive/ArchiveManager.gd"
 
 [display]
 

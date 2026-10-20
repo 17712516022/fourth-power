@@ -1,11 +1,14 @@
 class_name NewsPaper extends RefCounted
 
-# 排到版面上的东西。一格一条，**数组的顺序就是版面上的位置顺序**。
+# 排到版面上的东西。
 var events : Array[NewsResource] = []
 
-func _init(today : Array[NewsResource] = []) -> void:
-	events = today.duplicate()
+# 和 events 一一对应：这一格排的是不是假新闻。
+var fakes : Array[bool] = []
 
-# 空版面是合法的——**报纸不必填满**。哪天没人排，那天就是一份空报。
-func is_empty() -> bool:
-	return events.is_empty()
+func _init(today : Array[NewsResource] = [], fake_flags : Array[bool] = []) -> void:
+	events = today.duplicate()
+	fakes = fake_flags.duplicate()
+
+func is_fake(index : int) -> bool:
+	return index >= 0 and index < fakes.size() and fakes[index]

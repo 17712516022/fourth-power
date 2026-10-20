@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://v3gbxdwkwbef"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_tjmaw"]
-[ext_resource type="Texture2D" uid="uid://cfpyqoicen5fo" path="res://art/其他_4-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_tjmaw"]
+[ext_resource type="Texture2D" uid="uid://ij6qmho02s0k" path="res://art/photo/其他_2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_tjmaw")
-headline = "连日阴雨，街市泥泞"
-body = "本埠自入秋以来阴雨连绵，城南数处街面积水未消，行人往来多持油伞。四乡农事亦受牵累，田亩待晴方得收割。"
+headline = "雨下不停，秋收往后拖"
+body = "　　本城入秋以来一直在下雨，城南好几处街上的积水没干过，走路的人大多打着油纸伞。
+　　车马一过就溅一身泥。有两段路已经垫了碎石，郡办事处说等天晴了再彻底翻修。
+　　各乡的农活也受了影响，田里的庄稼要等天晴才能收。有个老农说，再下三五天，麦子就要在地里发芽了。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

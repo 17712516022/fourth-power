@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b1ykbxob8167k"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dlhbl84rifbh3" path="res://art/photo/报纸-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.1
+worker_happy = 0.05
+merchant_happy = 0.12
+soldier_angry = 0.12
+
+[resource]
+script = ExtResource("1_news")
+headline = "全国土地联盟成立，各报竞登通告"
+body = "全岛土地联盟今日在河口城成立，到会代表四百余人，推举议员华莱士为主席，归国流亡者戴维为总干事。散会前，书记处向在场各报分送通告一份，请于明日刊登。本报收到两份：一份给编辑部，一份给广告部。此后十日，全岛已有三十七家报纸登出这份通告，占半版，按广告价收半费。本报广告部称，此栏已为本报第三大收入。编辑部今日开会，有人问：这算新闻，还是算广告？"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b04_notice_board"
+big_effect = SubResource("Resource_eff")

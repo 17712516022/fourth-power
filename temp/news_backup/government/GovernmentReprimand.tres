@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://rod0pex02rty"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://db5hx2gpkx10v" path="res://art/photo/政府_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://dnelgpqrn634j" path="res://Resource/news/InflunceGroup/GovernmentReprimand.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "领主当众骂人"
+body = "　　领主今天把几个属员叫到议事厅，当着办事的人训了一顿，说河堤的款子拖了两个月，问谁该担。
+　　训了半个钟头，两个人当场撤了差，一个降了薪。领主说，往后谁再拖，就照这个办。
+　　在场的人说，头一回见这么大火。也有人说，骂完了，堤上的石头还是没到。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

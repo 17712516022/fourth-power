@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cyk2hmk3a6uui"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://cfpyqoicen5fo" path="res://art/其他_4-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://cfpyqoicen5fo" path="res://art/photo/其他_4-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "城南火警，焚屋十余间"
-body = "昨晚十一时，城南草鞋巷某小户遗火于灶，风急延烧，焚去平房十余间，幸未伤人。水会驰救至天明始熄。起火之由尚在查究。"
+headline = "铁匠巷起火"
+body = "　　昨晚十一点左右，城南铁匠巷有户人家的灶上着了火。夜里风大，火顺着屋檐烧开，十多间平房全烧没了。
+　　救火队赶到的时候，半条巷子已经在烧，水车来回跑了七八趟，到天亮才把火扑灭。没有死人，只有两个人被烟呛到。
+　　起火的原因还在查。巷口已经封了，住在那一带的人暂时挤到附近的旅店里。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

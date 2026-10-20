@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://drcyniano68up"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://0otkxv2jqeqm" path="res://art/其他_1-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://cp5no4r3uflrq" path="res://art/newphoto/政府-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "县立两等小学堂招考插班"
-body = "本县小学堂定于下月初一甄别插班生，额收四十名。年自八岁至十四岁，须认字略多者方准报名。学费每学期一元二角，贫寒子弟准予酌减。"
+headline = "学院招插班生"
+body = "　　本城学院定在下个月一号招收插班生，一共四十名，年龄八岁到十四岁。
+　　报名要求认得一些字，当天先考一场，考识字和算术。学费每学期一银币二十铜币，家里困难的可以少收。
+　　学院说，今年报名的人比去年多，名额有限，考完三天之内放榜。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

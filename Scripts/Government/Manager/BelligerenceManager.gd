@@ -1,22 +1,14 @@
 class_name BelligerenceManager extends RefCounted
 
-# ============================================================
 # 好战度 —— 政府的脾气
-#
-# 长期高压把它推硬，长期太平把它泡软。
-#
-# 平衡点在 threat = 0.20——**只要骚乱没彻底断根，政府就一天比一天硬。**
-# 这条线就是政策分叉的燃料：安抚着安抚着，它自己会翻脸。
-# 没有谁逼它，是它自己的脾气涨过了 HARD_LINE。
-#
-# 这是政府唯一"自己长出来"的东西——其余五项全部来自世界上的别人。
-# ============================================================
-
-var value : float = 0.40
-
-const GAIN  : float = 0.020   # 骚乱把脾气推硬的速度
-const DECAY : float = 0.004   # 太平把脾气泡软的速度
+var value : float = 0.5
 
 
-func update(threat : float) -> void:
-	value = clampf(value + threat * GAIN - DECAY, 0.0, 1.0)
+# 每天照一遍。
+func mirror(soldier_power : float, money : float) -> void:
+	# 兵与钱的差本来只有 ±0.05（两边都顶在 1.0 附近），除以 2 之后几乎不动，
+	# 政府永远卡在 0.5 的中性档。这里做两件事：
+	#   1) 把差放大两倍，同样的差能真正推过 0.55 / 0.45；
+	#   2) 每天只朝目标走三成，政策倾向是"拐"过去的，不是每天跳。
+	var target : float = clampf(0.5 + (soldier_power - money) * 2.0, 0.0, 1.0)
+	value = lerpf(value, target, 0.30)

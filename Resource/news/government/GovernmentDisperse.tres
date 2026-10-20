@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://deehhigvngs82"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bpp5lb0bp846k" path="res://art/photo/士兵_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://cm46ttsiuo67g" path="res://temp/news_backup/InflunceGroup/GovernmentDisperse.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "卫兵赶散了聚会"
+body = "　　昨天下午，东市口聚了三四百人，听几个人讲工钱的事。卫兵来了两趟，第二趟带着棍子，把人群从街心赶到两侧。
+　　城卫队说，集会没有申请，按规定得散，全程没有抓人。有几个被推倒的，自己爬起来走了。
+　　摆摊的说，收摊早了半天，亏了点钱。也有人嘀咕：讲两句话都不许，下回是不是连站都不许站。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://beg1oqtbd83n7"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://nkandf67x34g" path="res://art/photo/商人_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://cqobqpmpmr4ed" path="res://Resource/news/InflunceGroup/MerchantHollowStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "铺子被蛀空了"
+body = "　　城里几家大号近来只剩仓房，铺面半掩着，店员散了大半，柜台上摊着账本，落了薄薄一层灰。
+　　货在仓里，价还在涨，街上就是不见买主。商会有个人说，这不是别家抢走的，是自己蛀空的：先前人人囤货，等要用现钱的时候，铺子里拿不出一笔活钱。
+　　有几家的门缝里塞着催账的单子，风一吹就抖。商会明天的例会照开，据说头一件事就是问这几家还撑不撑得住。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

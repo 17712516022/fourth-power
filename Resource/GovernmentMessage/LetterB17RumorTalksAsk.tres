@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 1
+displaying_name = "新闻检查官 柯尔"
+text = "狱中议条件的说法，是谣言。贵报若登，谈判怕要断；谈判一断，牢里那些人还要多坐几年。这一层，请贵报自量。本处不劝，只把话说明白。"
+event_id = "b17_rumor_talks"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

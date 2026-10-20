@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://btb6o60el0p4n"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dp0so26mb5bii" path="res://art/newphoto/农民-3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://11twrouxthn5" path="res://temp/news_backup/InflunceGroup/FarmerSlowDownEnd.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "各乡恢复正常"
+body = "　　前些天慢下来的农活，这几天恢复了。天还没亮，田里就有人声，牛犁走遍各村，该翻的田都翻了。
+　　乡里人说，租减了两成，工钱改成十天一结，出力总算有了着落；庄园主那边也说，这一季没误农时。
+　　粮行今天挂出的新价比上月略低，说是新粮快上市，先让一点。谷仓今天开仓收粮，头一天收了七十多袋。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

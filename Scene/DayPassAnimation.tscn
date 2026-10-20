@@ -1,0 +1,289 @@
+[gd_scene format=3 uid="uid://bjtihha458tp3"]
+
+[ext_resource type="Script" uid="uid://4drr6qq55evi" path="res://Scripts/DayPass/DayPassAnimation.gd" id="1_daypass"]
+[ext_resource type="Texture2D" uid="uid://bmdu5jpdib1y0" path="res://asserts/背景包/background.png" id="2_6sjo5"]
+[ext_resource type="Texture2D" uid="uid://cikols77vqjtl" path="res://asserts/过场/roller_surface.png" id="2_surface"]
+[ext_resource type="Texture2D" uid="uid://cwd10rbwb07ky" path="res://asserts/背景包/city1plan.png" id="3_clad6"]
+[ext_resource type="Texture2D" uid="uid://nq15v4e436y8" path="res://asserts/背景包/city2plan.png" id="4_5u4yp"]
+[ext_resource type="Texture2D" uid="uid://cuiqxt70vxuwe" path="res://asserts/过场/roller_shadow.png" id="4_shadow"]
+[ext_resource type="Script" uid="uid://5r8x5fs0gw38" path="res://Scripts/DayPass/EmojiParticles.gd" id="5_c6tsx"]
+[ext_resource type="Shader" uid="uid://dmm677gnd3yxy" path="res://shaders/daypass_roller.gdshader" id="5_shade"]
+[ext_resource type="Texture2D" uid="uid://de22yji4e1r64" path="res://asserts/背景包/city3plan.png" id="5_wc12q"]
+[ext_resource type="Texture2D" uid="uid://drod5trxstr5d" path="res://asserts/背景包/city4plan.png" id="6_4om28"]
+[ext_resource type="Texture2D" uid="uid://drbkn8527radb" path="res://asserts/过场/工人.png" id="6_csxpt"]
+[ext_resource type="Texture2D" uid="uid://cy28mk6bvis72" path="res://asserts/过场/农民.png" id="6_rrocs"]
+[ext_resource type="Texture2D" uid="uid://dbvfrw76wrm1r" path="res://asserts/图标包/no-padding/64px/white/11-symbols/emoji-02.png" id="6_xo6lg"]
+[ext_resource type="Texture2D" uid="uid://hk88dghh25v8" path="res://asserts/背景包/smog2.png" id="7_5u4yp"]
+[ext_resource type="Texture2D" uid="uid://d30axqvb76pfl" path="res://asserts/过场/士兵.png" id="7_jv87j"]
+[ext_resource type="Texture2D" uid="uid://b7ujui7fkhj6d" path="res://asserts/过场/商界.png" id="7_ugwjj"]
+[ext_resource type="PackedScene" uid="uid://d6fcjhojag1k" path="res://Scene/RawMaterial.tscn" id="9_jv87j"]
+[ext_resource type="Material" uid="uid://bo0cfn4wn62sw" path="res://theme/emoji_particle.tres" id="12_6sjo5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_shade"]
+shader = ExtResource("5_shade")
+shader_parameter/base = 0.55
+shader_parameter/sheen = 0.75
+shader_parameter/sheen_at = 0.16
+shader_parameter/sheen_wide = 0.26
+shader_parameter/falloff = 0.62
+shader_parameter/rim_at = 0.87
+shader_parameter/rim_wide = 0.025
+shader_parameter/rim_gain = 1.6
+shader_parameter/side_dark = 0.35
+shader_parameter/lip = 0.055
+shader_parameter/lip_wave = 0.5
+
+[node name="DayPassAnimation" type="Control" unique_id=424801174]
+z_index = 1000
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_daypass")
+
+[node name="BackGrond" type="Control" parent="." unique_id=273659663]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="BackGrond1" type="TextureRect" parent="BackGrond" unique_id=1459060321]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -578.0
+offset_right = 578.0
+offset_bottom = 250.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("2_6sjo5")
+expand_mode = 1
+
+[node name="BackGrond2" type="TextureRect" parent="BackGrond" unique_id=1220827109]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -578.0
+offset_right = 578.0
+offset_bottom = 250.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("6_4om28")
+expand_mode = 1
+
+[node name="BackGrond3" type="TextureRect" parent="BackGrond" unique_id=57907003]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -578.0
+offset_right = 578.0
+offset_bottom = 250.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("5_wc12q")
+expand_mode = 1
+
+[node name="BackGrond4" type="TextureRect" parent="BackGrond" unique_id=2027810360]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -578.0
+offset_right = 578.0
+offset_bottom = 250.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("4_5u4yp")
+expand_mode = 1
+
+[node name="BackGrond5" type="TextureRect" parent="BackGrond" unique_id=851102229]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -578.0
+offset_right = 578.0
+offset_bottom = 250.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("3_clad6")
+expand_mode = 1
+
+[node name="BackGrond6" type="TextureRect" parent="BackGrond" unique_id=532145414]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -578.0
+offset_right = 578.0
+offset_bottom = 250.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("7_5u4yp")
+expand_mode = 1
+
+[node name="Roller" type="Control" parent="." unique_id=250819337]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -8.0
+offset_top = 250.0
+offset_right = 8.0
+offset_bottom = 440.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Window" type="Control" parent="Roller" unique_id=1742830937]
+unique_name_in_owner = true
+clip_contents = true
+anchors_preset = 0
+anchor_right = 1.0
+offset_bottom = 190.0
+mouse_filter = 2
+
+[node name="Surface" type="TextureRect" parent="Roller/Window" unique_id=1525553350]
+unique_name_in_owner = true
+texture_repeat = 2
+layout_mode = 0
+anchor_right = 1.0
+offset_bottom = 254.0
+mouse_filter = 2
+texture = ExtResource("2_surface")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Shade" type="ColorRect" parent="Roller" unique_id=1688192076]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_shade")
+layout_mode = 0
+anchor_right = 1.0
+offset_bottom = 190.0
+mouse_filter = 2
+
+[node name="Silhouettes" type="Control" parent="Roller" unique_id=1633029248]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 62.0
+offset_top = -223.0
+offset_right = 62.0
+offset_bottom = -161.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("5_c6tsx")
+
+[node name="农民" type="Sprite2D" parent="Roller/Silhouettes" unique_id=187312676]
+position = Vector2(49, 164)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_rrocs")
+
+[node name="EmojiPartcle" type="GPUParticles2D" parent="Roller/Silhouettes/农民" unique_id=1813823731]
+unique_name_in_owner = true
+position = Vector2(0, -86.66669)
+scale = Vector2(3.3333333, 3.3333333)
+emitting = false
+amount = 20
+texture = ExtResource("6_xo6lg")
+lifetime = 1.5
+one_shot = true
+process_material = ExtResource("12_6sjo5")
+
+[node name="工人" type="Sprite2D" parent="Roller/Silhouettes" unique_id=1602728590]
+position = Vector2(217, 166)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_csxpt")
+
+[node name="EmojiPartcle2" type="GPUParticles2D" parent="Roller/Silhouettes/工人" unique_id=1026719908]
+unique_name_in_owner = true
+position = Vector2(0.00012207031, -86.66669)
+scale = Vector2(3.3333333, 3.3333333)
+emitting = false
+amount = 20
+texture = ExtResource("6_xo6lg")
+lifetime = 1.5
+one_shot = true
+process_material = ExtResource("12_6sjo5")
+
+[node name="士兵·" type="Sprite2D" parent="Roller/Silhouettes" unique_id=1099353459]
+position = Vector2(812, 167)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_jv87j")
+flip_h = true
+
+[node name="EmojiPartcle3" type="GPUParticles2D" parent="Roller/Silhouettes/士兵·" unique_id=365598314]
+unique_name_in_owner = true
+position = Vector2(0, -90)
+scale = Vector2(3.3333333, 3.3333333)
+emitting = false
+amount = 20
+texture = ExtResource("6_xo6lg")
+lifetime = 1.5
+one_shot = true
+process_material = ExtResource("12_6sjo5")
+
+[node name="商人" type="Sprite2D" parent="Roller/Silhouettes" unique_id=1083154750]
+position = Vector2(985.00006, 169)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_ugwjj")
+flip_h = true
+
+[node name="EmojiPartcle4" type="GPUParticles2D" parent="Roller/Silhouettes/商人" unique_id=1152613093]
+unique_name_in_owner = true
+position = Vector2(0, -96.666626)
+scale = Vector2(3.3333333, 3.3333333)
+emitting = false
+amount = 20
+texture = ExtResource("6_xo6lg")
+lifetime = 1.5
+one_shot = true
+process_material = ExtResource("12_6sjo5")
+
+[node name="RawMaterialPreView" parent="Roller/Silhouettes" unique_id=710184364 instance=ExtResource("9_jv87j")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 355.0
+offset_top = -185.0
+offset_right = 519.0
+offset_bottom = -38.0
+scale = Vector2(2, 2)
+
+[node name="Shadow" type="TextureRect" parent="." unique_id=482251877]
+unique_name_in_owner = true
+texture_repeat = 2
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -8.0
+offset_top = 440.0
+offset_right = 8.0
+offset_bottom = 472.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("4_shadow")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Blocker" type="Control" parent="." unique_id=60997220]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dxq4sv1dewi7h"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dn7lj3sabu3fx" path="res://art/newphoto/商人-3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://b2txdcdfqrcgo" path="res://temp/news_backup/InflunceGroup/GovernmentFavor.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "北区工匠领到东西"
+body = "　　总督府今天在北区发放东西，一户领一袋面、两磅油，有孩子的人家再加一床棉被。
+　　发东西的地点在旧操场，凭住址登记和工牌领，从早上发到天黑，一共发了一千一百多户。
+　　排队的人说，东西不多，是个意思。也有人说，上个月说要开工的坊，到现在还没动静。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

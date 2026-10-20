@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3 uid="uid://cvli8ynseanyq"]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 3
+displaying_name = "新闻检查官 柯尔"
+text = "安桥郡的驱逐，系依法执行。贵报若以「妇女立于最前」为题，各郡怕要误会。这一期不许渲染，照郡治安官的通报登一简讯。标题里若再有那六个字，贵报就不必出了。"
+event_id = "b05_evictions"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

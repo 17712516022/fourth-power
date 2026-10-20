@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cjyoghq751pfu"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_n3m4f"]
-[ext_resource type="Texture2D" uid="uid://sn1iqam33npq" path="res://art/其他_9-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_n3m4f"]
+[ext_resource type="Texture2D" uid="uid://dkntget1xuvqw" path="res://art/newphoto/其他-4-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_n3m4f")
-headline = "名伶柳月仙闭门谢客"
-body = "本埠名伶柳月仙自月初演罢《玉簪记》即闭门谢客，门房只说身子不适。坊间传其将赴上海，亦有言其已许了城东某公馆的堂会。其家仆对本报记者笑而不答。"
+headline = "歌手洛茜闭门不出"
+body = "　　本城有名的歌手洛茜，月初演完《湖上骑士》以后就一直闭门不见客。看门的人只说她不太舒服，别的一句不多讲。
+　　外头传她要去外国，也有人说她已经答应去城东一座宅子唱私人演出，价钱开得很高。这两种说法都没人拿得出证据。
+　　她家的仆人昨天见到本报记者，笑了笑没说话，把门关上了。剧院那边说，下个月的场次还给她留着。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

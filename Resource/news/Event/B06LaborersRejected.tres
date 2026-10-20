@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c1v66ubm1mnft"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dp0so26mb5bii" path="res://art/newphoto/农民-3-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_angry = 0.08
+worker_fear = 0.1
+worker_angry = 0.22
+worker_power = 0.1
+merchant_fear = 0.04
+soldier_angry = 0.05
+
+[resource]
+script = ExtResource("1_news")
+headline = "农夫请愿，只答暂缓"
+body = "　　西崖二百多农夫今天到联合会会址请愿，要求把工钱写进会章。
+　　书记处只答“暂缓”，说眼下最要紧的是减租，工钱的事以后再议。请愿的人在门外坐到黄昏，散了。
+　　一个没有地的农夫说：减租减的是有田人的租，我们没有田，减了也跟我们不相干。他口述了一封信，今天送到本报，请我们登出来。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b06_laborers_rejected"
+big_effect = SubResource("Resource_eff")

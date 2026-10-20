@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c4pvyox5pe45m"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://c0v345ykan040" path="res://art/photo/士兵_1-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_fear = 0.16
+farmer_angry = 0.24
+worker_angry = 0.14
+merchant_fear = 0.14
+soldier_angry = 0.18
+soldier_power = 0.14
+
+[resource]
+script = ExtResource("1_news")
+headline = "军队护送五十人入郡收割"
+body = "安桥郡的收割在军警护送下开始。五十名外地雇工由两连巡防队护送入郡，日夜守卫，粮车结队而行。据随行军官说，此举系保护“自愿劳动者”。当地农夫立于田埂，未阻拦，未言语。本报记者拍得一张：田里在割麦，田埂上站着一排人，都不说话。照片已制版。"
+image = ExtResource("2_img")
+is_big_event = true
+big_effect = SubResource("Resource_eff")

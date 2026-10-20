@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 4
+displaying_name = "新闻检查官 柯尔"
+text = "「新出发」三个字，贵报一个字也没有提。本处记下了。有些话，登出来就成了事实。"
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

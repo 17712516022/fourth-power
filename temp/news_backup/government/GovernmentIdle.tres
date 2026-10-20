@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b8dqf03ml4f15"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bopirt18w1i55" path="res://art/photo/政府_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://drewto0bvey23" path="res://Resource/news/InflunceGroup/GovernmentIdle.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "领主府没人管事"
+body = "　　领主府这些天门开着，里面没什么动静。来办事的人在廊下等半天，出来一个书吏，只说管事的不在。
+　　递上去的呈子堆了一摞，落款的日子一天比一天早；河堤的工停了，巡夜的班也没人排。
+　　街面上的人说，上头大概是出了事。公所的人不肯讲，只说再过几天就好。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

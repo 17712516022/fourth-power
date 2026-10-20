@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://eggrvma1rf8g"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://c36aoccy5a4d3" path="res://art/newphoto/其他-9-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.1
+farmer_fear = 0.2
+farmer_angry = 0.3
+farmer_power = 0.18
+worker_angry = 0.16
+worker_power = 0.08
+merchant_happy = -0.16
+merchant_fear = 0.22
+soldier_angry = 0.2
+
+[resource]
+script = ExtResource("1_news")
+headline = "狱中传出不交租宣言"
+body = "　　本报今天收到一份从狱里带出来的宣言，署名是马洛和同监的几个人，号召全岛农夫从今天起不交租，也不去土地法庭。
+　　宣言没提期限，也没提以后怎么办。带信的人说，这稿子三天内必须见报。
+　　西部来信说，各地已经自己响应，没有人统一指挥。本报排字房已经排好，还没有上机。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b15_no_rent"
+big_effect = SubResource("Resource_eff")

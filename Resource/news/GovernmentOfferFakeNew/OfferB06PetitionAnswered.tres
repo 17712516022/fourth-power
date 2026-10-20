@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c3bdb1j8ae1bm"]
+
+[ext_resource type="Script" uid="uid://vm70pl4x7rdw" path="res://Resource/InflunceGroupResource.gd" id="1_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/photo/政府_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_infl"]
+script = ExtResource("1_infl")
+farmer_happy = 0.01
+farmer_angry = -0.02
+worker_happy = 0.03
+worker_fear = -0.02
+worker_angry = -0.09
+merchant_happy = 0.02
+
+[resource]
+script = ExtResource("1_news")
+headline = "农夫请愿转到议会"
+body = "　　西崖农夫前些天递的请愿书，已经转到议会。议会今天答复说，工钱牵动全郡农事，得让地主、农夫和短工三方坐下来谈，不是一两天能定的。
+　　秘书说，请愿书上一共七百多个签名，已经登记编号，先交农业委员会审，再排进议程。三方会谈什么时候开，秘书只说“秋收之后”。代表已经散了，各自回村。
+　　郡办事处说，农夫提的要求本来就在日程上，谈不上“拒绝”。可西崖的代表不认：他们要的是一天多少工钱的一句话，不是一句“正在议”。"
+image = ExtResource("2_img")
+influnce = SubResource("Resource_infl")
+event_id = "b06_laborers_rejected"

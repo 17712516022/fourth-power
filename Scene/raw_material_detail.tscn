@@ -8,14 +8,30 @@
 [ext_resource type="StyleBox" uid="uid://c1x6r1ewypcr3" path="res://theme/TextPanel.tres" id="6_dl881"]
 [ext_resource type="StyleBox" uid="uid://c1j1ppf3cvdn3" path="res://theme/TextLabel.tres" id="7_yfggo"]
 [ext_resource type="StyleBox" uid="uid://bplckx62iew2h" path="res://theme/PhotoPanel.tres" id="8_3rt2u"]
-[ext_resource type="Texture2D" uid="uid://gwu5suxtbslf" path="res://art/商人_2-pixelart-2x.png" id="9_ugy3l"]
+[ext_resource type="Texture2D" uid="uid://gwu5suxtbslf" path="res://art/photo/商人_2-pixelart-2x.png" id="9_ugy3l"]
 [ext_resource type="StyleBox" uid="uid://cugkqalimldlt" path="res://theme/ButtonNormal.tres" id="10_ugy3l"]
 [ext_resource type="StyleBox" uid="uid://dsurvwxjrgiti" path="res://theme/ButtonPressed.tres" id="11_dl881"]
 [ext_resource type="StyleBox" uid="uid://b4jcb2d6r80nj" path="res://theme/ButtonHover.tres" id="12_yfggo"]
 [ext_resource type="StyleBox" uid="uid://0k65olt1yrrb" path="res://theme/ButtonUnable.tres" id="13_3rt2u"]
 [ext_resource type="Theme" uid="uid://b52r5ij0wdme0" path="res://theme/Font2.tres" id="14_dl881"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmNormal.tres" id="15_warm_n"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmHover.tres" id="16_warm_h"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmPressed.tres" id="17_warm_p"]
+[ext_resource type="StyleBox" path="res://theme/ButtonWarmUnable.tres" id="18_warm_u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fpkcc"]
+
+[sub_resource type="Gradient" id="Gradient_dl881"]
+offsets = PackedFloat32Array(0.86633664, 1)
+colors = PackedColorArray(0, 0, 0, 0.08627451, 0.5209606, 0.7186452, 0.56306463, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_yfggo"]
+gradient = SubResource("Gradient_dl881")
+fill = 2
+fill_from = Vector2(0.5100671, 0.5067114)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dl881"]
+texture = SubResource("GradientTexture2D_yfggo")
 
 [node name="RawMaterialDetail" type="Panel" unique_id=2015462683]
 self_modulate = Color(0.36, 0.36, 0.36, 0.827451)
@@ -27,16 +43,33 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_fpkcc")
 script = ExtResource("1_40664")
 
+[node name="Panel2" type="Panel" parent="." unique_id=1201158599]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -315.0
+offset_top = -325.0
+offset_right = 310.0
+offset_bottom = 356.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="Panel" type="Panel" parent="." unique_id=1779210319]
 layout_mode = 1
 anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -267.0
-offset_right = 266.0
+offset_left = -277.0
+offset_top = 36.0
+offset_right = 277.0
+offset_bottom = -36.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_dl881")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1344922148]
 layout_mode = 1
@@ -82,6 +115,7 @@ horizontal_alignment = 1
 uppercase = true
 
 [node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=842471261]
+custom_maximum_size = Vector2(-1, 140)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("6_dl881")
 
@@ -129,17 +163,18 @@ layout_mode = 2
 theme = ExtResource("4_f553q")
 theme_override_colors/font_color = Color(0.6595192, 0.92426866, 0.99999994, 1)
 theme_override_constants/outline_size = 5
-theme_override_styles/normal = ExtResource("10_ugy3l")
-theme_override_styles/pressed = ExtResource("11_dl881")
-theme_override_styles/hover = ExtResource("12_yfggo")
-theme_override_styles/disabled = ExtResource("13_3rt2u")
+theme_override_styles/normal = ExtResource("15_warm_n")
+theme_override_styles/pressed = ExtResource("17_warm_p")
+theme_override_styles/hover = ExtResource("16_warm_h")
+theme_override_styles/disabled = ExtResource("18_warm_u")
 text = "我知道了"
 
-[node name="Control" type="Control" parent="PanelContainer" unique_id=1186262820]
+[node name="IsFakeDetail" type="Control" parent="PanelContainer" unique_id=1186262820]
+unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 2
 
-[node name="IsFake" type="RichTextLabel" parent="PanelContainer/Control" unique_id=812358402]
+[node name="IsFake" type="RichTextLabel" parent="PanelContainer/IsFakeDetail" unique_id=812358402]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0

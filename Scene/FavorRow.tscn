@@ -1,0 +1,17 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://clfmonl7inx33" path="res://Resource/FavorRow.gd" id="1_favor"]
+[ext_resource type="Theme" uid="uid://c8a0gcodyccb1" path="res://theme/font.tres" id="2_font"]
+
+
+[node name="FavorRow" type="RichTextLabel"]
+theme = ExtResource("2_font")
+theme_override_colors/font_outline_color = Color(0.35406289, 0.35406289, 0.35406286, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[img=25]res://asserts/图标包/no-padding/64px/white/1-game/heart.png[/img] 好感 50/100"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_favor")

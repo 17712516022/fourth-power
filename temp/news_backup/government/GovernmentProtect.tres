@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dkdmc5dohqia6"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://b386ntge28go" path="res://art/photo/政府-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://bsfg8ok0rcghp" path="res://Resource/news/InflunceGroup/GovernmentProtect.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "贴告示，护商人"
+body = "　　领主府今天在城门和市集贴出告示，说商货进出，任何人不得拦阻、抽税、勒索。
+　　告示上说，被拦的商人可以到公所告，公所三天内要回话；拦路的人按抢劫办。
+　　商人说，告示贴得挺快，就盼着管用。跑外路的车队今天照旧结伴走，不敢单行。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

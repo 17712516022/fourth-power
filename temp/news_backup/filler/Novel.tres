@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b82lekap80vw6"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_sa4ai"]
+[ext_resource type="Texture2D" uid="uid://fpt0r1jf0tti" path="res://art/photo/其他_6-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_sa4ai")
+headline = "小说连载第七回"
+body = "　　上一回说到约翰告别家乡，一个人往城里去。这一回，他走到了城门口，钱袋里只剩三个铜板。
+　　守门的两个士兵上下打量他，问他叫什么、从哪儿来、进城干什么。约翰答得慢，一只手一直按在钱袋上。
+　　后面排队的人开始催，其中一个士兵忽然笑了，摆摆手让他过去。约翰走进城门，天正好黑下来。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")
+is_filler = true

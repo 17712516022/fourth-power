@@ -1,38 +1,55 @@
 class_name MoneyInfluence extends RefCounted
 
-# ============================================================
 # 国库 -> 各个群体
-#
-# 钱袋子瘪下去，最先感觉到的是两种人：
-#   士兵  ——军饷发不出来
-#   穷人  ——赈济停了
-#
-# 而商人不在名单里。国库空对商人**不是坏事**——政府买不起东西的时候，
-# 让价的反而是卖方。这一栏空着，是有意的。
-#
-# 这里只做"国库 -> 心情"。不做"心情 -> 行为"。
-# ============================================================
 
-# 国库低于这条线，就算见底了。
-const TIGHT : float = 0.30
+# 国库见底时每天的增量：兵有多怒（欠饷）、穷人有多难过（赈济停、工钱欠）。
+const SOLDIER_ANGRY : float = 0.01
+const SOLDIER_HAPPY : float = -0.01
 
+# 国库充盈时兵的那一笔：饷不跟着涨，愁反倒慢慢攒起来（满仓的兵不会更高兴）。
+const SOLDIER_ANGRY_HIGH : float = -0.005
+const SOLDIER_HAPPY_HIGH : float = -0.005
+const POOR_HAPPY    : float = -0.012
+const POOR_ANGRY    : float = 0.01
+const POOR_FEAR     : float = 0.012
+const HIGH_MOOD     : float = 0.01
 
-static func lack(money : MoneyManager) -> float:
-	return maxf(TIGHT - money.value, 0.0)
-
-
-# --- 士兵 ---
-#
-# **欠饷。** 政府没钱的时候，兵是最先知道的——因为他们的饷银按月发，
-# 而别的东西还能拖。所以这里给的是怒，不是怕：
-# 拿不到钱的人不会怕，会火。
+# 士兵
 static func soldier(money : MoneyManager) -> Dictionary:
-	return {"angry" : lack(money) * 0.008}
+	match money.state:
+		MoneyManager.MoneyState.Low:
+			return {"angry" : SOLDIER_ANGRY, "happy" : SOLDIER_HAPPY}
+		MoneyManager.MoneyState.High:
+			return {"angry" : SOLDIER_ANGRY_HIGH, "happy" : SOLDIER_HAPPY_HIGH}
+		_:
+			return {}
 
+# 农民
+static func farmer(money : MoneyManager) -> Dictionary:
+	match money.state:
+		MoneyManager.MoneyState.Low:
+			return {"happy" : POOR_HAPPY, "angry" : POOR_ANGRY}
+		MoneyManager.MoneyState.High:
+			return {"happy" : -HIGH_MOOD, "angry" : HIGH_MOOD}
+		_:
+			return {}
 
-# --- 农民 / 工人 ---
-#
-# 赈济停了。国库空的时候，义仓、施粥、平粜这些最先被砍掉——
-# 而这些东西平时没什么用，一到荒年就是穷人的命。
-static func poor(money : MoneyManager) -> Dictionary:
-	return {"happy" : -lack(money) * 0.006}
+# 工人
+static func worker(money : MoneyManager) -> Dictionary:
+	match money.state:
+		MoneyManager.MoneyState.Low:
+			return {"happy" : POOR_HAPPY, "angry" : POOR_ANGRY, "fear" : POOR_FEAR}
+		MoneyManager.MoneyState.High:
+			return {"happy" : -HIGH_MOOD, "angry" : HIGH_MOOD, "fear" : HIGH_MOOD}
+		_:
+			return {}
+
+# 商人
+const MERCHANT_ANGRY : float = 0.005
+
+static func merchant(money : MoneyManager) -> Dictionary:
+	match money.state:
+		MoneyManager.MoneyState.High:
+			return {"angry" : MERCHANT_ANGRY}
+		_:
+			return {}

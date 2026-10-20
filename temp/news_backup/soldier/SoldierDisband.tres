@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://c2bbpwm3vnoph"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bqr40ic3x0u66" path="res://art/photo/士兵-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://poiabvqngpkx" path="res://Resource/news/InflunceGroup/SoldierDisband.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "一个营空了"
+body = "　　西郊步队某营自从哗变过，就名存实亡了。编制是四百人，实到只剩一百一十多个，三处营房空了两处。
+　　军械库里的长枪一半生了锈，弩弦也多半断了，剩下的士兵多是老弱，白天替城里人家挑水劈柴，赚几枚铜币贴补。
+　　有个老卒说，这个营从三年前城外那场疫病之后就没补过人，统领一个月倒有半个月住在城里亲戚家。议会里意见分成两路：一派要拨款补人，一派要干脆裁了这个营，还没议出结果。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

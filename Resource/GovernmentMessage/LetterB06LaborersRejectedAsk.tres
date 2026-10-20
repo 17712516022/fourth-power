@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+[ext_resource type="Resource" path="res://Resource/news/GovernmentOfferFakeNew/OfferB06PetitionAnswered.tres" id="2_offer"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 0
+displaying_name = "新闻检查官 柯尔"
+text = "雇农请愿被拒一事，贵报可登，而且应当登。这正见所谓联合会者，只顾有田的人。本处另拟一稿，述其章程未及雇工之弊，请贵报择要登出。此事于贵报无损，于本处有益。"
+event_id = "b06_laborers_rejected"
+offer = ExtResource("2_offer")
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

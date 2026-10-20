@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://cfqpdjwh0gej8"]
+
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://cmujwwnsfinr1" path="res://art/photo/农民_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://7ii4gaqqi84l" path="res://temp/news_backup/InflunceGroup/FarmerSlowDownStart.tres" id="2_infl"]
+
+[resource]
+script = ExtResource("1_news")
+headline = "农夫怠工，农活慢"
+body = "　　入秋以来，各村的农夫开始怠工，农活慢了下来。农夫太阳出来才起，太阳还没偏西就歇手，田埂上的草长到膝盖，几处该翻的田还没翻。
+　　问起为什么，说法都一样：地租没减，工钱又薄，多干也落不到自己手里，干脆干慢点。有庄园主抱怨，雇来的人一天只干半天，说了也不听。
+　　集市上卖菜的说，菜价比上月高了点，因为园子里收得慢。村办事处只回一句：先把工钱结清。"
+image = ExtResource("2_img")
+influnce = ExtResource("2_infl")

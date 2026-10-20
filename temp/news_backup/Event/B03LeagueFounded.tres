@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://28k27ejq0or8"]
+
+[ext_resource type="Script" uid="uid://82oeiksqmc8a" path="res://Resource/BigEventEffect.gd" id="1_eff"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://vxx8pflwop8r" path="res://art/photo/政府_2-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_eff"]
+script = ExtResource("1_eff")
+farmer_happy = 0.12
+worker_angry = 0.04
+merchant_fear = 0.08
+soldier_angry = 0.1
+
+[resource]
+script = ExtResource("1_news")
+headline = "梅奥郡土地联盟成立，戴维任书记"
+body = "梅奥郡农夫今日在卡斯尔镇成立土地联盟，到会代表二百余人，推举戴维为书记。会章三条：减租、护佃、拒驱逐。会址设在一间旧粮行的楼上，楼下还堆着空麻袋。戴维说，这不是请愿的团体，是办事的团体。散会前，书记处向各报分送会章与通告一份，请于明日刊登。散会时，郡内已有十一个村报名入会。郡公所派了一个书记来旁观，从头到尾没有记一个字。"
+image = ExtResource("2_img")
+is_big_event = true
+event_id = "b03_league_founded"
+big_effect = SubResource("Resource_eff")

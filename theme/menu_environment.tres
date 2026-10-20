@@ -1,0 +1,7 @@
+[gd_resource type="Environment" format=3 uid="uid://h8io6jgqmqck"]
+
+[resource]
+background_mode = 3
+adjustment_enabled = true
+adjustment_contrast = 1.05
+adjustment_saturation = 1.04

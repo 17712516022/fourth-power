@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://dhxqjr5pbttbj"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://mmgprr4trvml" path="res://art/其他_3-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://by4tytl41mar1" path="res://art/photo/工人_1-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "城东纱厂添招女工"
-body = "城东纱厂因添置纺机，添招女工六十名，粗工四十名。女工日给洋一角二分，粗工一角。管午饭一顿，工房可寄宿。每日午后二时至六时在厂门口报名。"
+headline = "织坊招六十女工"
+body = "　　城东织坊新添了一批纺机，现在要再招六十名女工、四十名杂工。
+　　女工每天十二铜币，杂工十铜币。中午管一顿饭，工房可以住，住的每月扣二十铜币房钱。
+　　报名时间是每天下午两点到六点，在织坊门口，带上身份证明就行。手脚快的另有计件工资。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

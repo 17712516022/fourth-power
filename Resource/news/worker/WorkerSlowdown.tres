@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://b8emhpb0spbkv"]
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://ccv6st1hudfdc"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://djil3psm2jhl8" path="res://art/工人3-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/WorkerSlowdownStart.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://dx53uoybdtrxa" path="res://art/photo/工人_3-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://dhkeke464qqp5" path="res://temp/news_backup/InflunceGroup/WorkerSlowdownStart.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "闻各厂工人多有怠惰"
-body = "据厂内传出消息，近日各纱厂工人多有意减工，出纱较往日短少数成，然机器未曾停歇，管事者亦难指实。此说未得厂主证实。"
+headline = "工匠怠工，机器转得慢"
+body = "　　这几天各纺织、冶铁工坊的工匠上工倒不迟到，可进了坊多半靠着织机闲谈，机器转得慢，出的布和铁不到平日的一半，这算是怠工。
+　　坊主催他们，就回一句：工钱不动，何必拼命。据行会的册子，各坊报上来的数目比上月少了近两成，上午下午各歇一回，日落就散。
+　　也有工匠私下说，去年冬天答应加的工钱到现在没见着，行会问过两回，坊主只推说账没结清。议会说，先派人查一查各坊的工钱账目。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")

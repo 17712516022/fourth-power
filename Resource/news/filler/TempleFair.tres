@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://db5q0cpf3nhkb"]
 
-[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/news/NewsResource.gd" id="1_news"]
-[ext_resource type="Texture2D" uid="uid://h8q5kpuxudy" path="res://art/其他_7-pixelart-2x.png" id="2_img"]
-[ext_resource type="Resource" path="res://Resource/news/InflunceGroup/Filler.tres" id="2_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://cp5no4r3uflrq" path="res://art/newphoto/政府-2-pixelart-2x.png" id="2_img"]
+[ext_resource type="Resource" uid="uid://raawksffl40c" path="res://temp/news_backup/InflunceGroup/Filler.tres" id="2_infl"]
 
 [resource]
 script = ExtResource("1_news")
-headline = "东岳庙会期已定"
-body = "东岳庙本届庙会定于本月十八日起，会期五日。四乡香客多已启程，庙前摊贩棚席业经搭齐。庙祝称今年进香者较往年略减。"
+headline = "教堂节庆开五天"
+body = "　　圣光教堂这一届节庆定在本月十八号开始，一共五天。
+　　各乡的信徒大多已经上路，教堂前面的摊子也都搭好了，卖吃食、蜡烛和圣牌的排了一路。
+　　教堂的牧师说，今年来礼拜的人比往年少一些，也许是路上不好走。城里的旅馆已经住满。"
 image = ExtResource("2_img")
 influnce = ExtResource("2_infl")
 is_filler = true

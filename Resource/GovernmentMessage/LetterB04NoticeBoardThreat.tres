@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GovernmentMessageResource" format=3]
+
+[ext_resource type="Script" uid="uid://y5yg40g8v8a2" path="res://Resource/GovernmentMessage/GovernmentMessage.gd" id="1_msg"]
+[ext_resource type="Resource" path="res://Resource/news/GovernmentOfferFakeNew/OfferB04OrderlyTenants.tres" id="2_offer"]
+
+[resource]
+script = ExtResource("1_msg")
+type = 2
+displaying_name = "新闻检查官 柯尔"
+text = "各报都登了联合会的通告，贵报也在其中。本处另拟了一份，明日同一个版位登出，不得删改。稿子随信奉上。版位是贵报的，这封信却不是商量。"
+event_id = "b04_notice_board"
+offer = ExtResource("2_offer")
+metadata/_custom_type_script = "uid://y5yg40g8v8a2"

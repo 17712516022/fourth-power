@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="NewsResource" format=3 uid="uid://crwhx3tpo8plk"]
+
+[ext_resource type="Script" uid="uid://vm70pl4x7rdw" path="res://Resource/InflunceGroupResource.gd" id="1_infl"]
+[ext_resource type="Script" uid="uid://beaf251thx4fa" path="res://Resource/NewsResource.gd" id="1_news"]
+[ext_resource type="Texture2D" uid="uid://bopirt18w1i55" path="res://art/photo/政府_3-pixelart-2x.png" id="2_img"]
+
+[sub_resource type="Resource" id="Resource_infl"]
+script = ExtResource("1_infl")
+farmer_happy = 0.02
+farmer_angry = 0.1
+worker_happy = 0.02
+worker_angry = 0.07
+merchant_happy = 0.05
+
+[resource]
+script = ExtResource("1_news")
+headline = "土地法生效了"
+body = "　　《土地法》已经生效：租金改由法庭核定，佃权固定下来，农夫可以自由出售自己的佃权。当局说，这三件事都做到了。
+　　从此租佃争执可以走法庭，西部各郡已经开始照着办。土地法庭今天开庭，第一批案子九十多起，全都安排在十天内审完。法庭门口一早排了长队，书记官按郡分栏收状纸。
+　　也有联合会的旧人说，这部法没提旧欠，也没提劳工，只解决了一半。郡议会回应说，这是三十年来最好的一部法，不能因为一时的议论就废掉。"
+image = ExtResource("2_img")
+influnce = SubResource("Resource_infl")
+event_id = "b16_land_act"

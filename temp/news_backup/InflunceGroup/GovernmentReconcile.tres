@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="InfluenceGroup" format=3 uid="uid://ctwbdavu2jdsi"]
+
+[ext_resource type="Script" uid="uid://vm70pl4x7rdw" path="res://Resource/InflunceGroupResource.gd" id="1_infl"]
+
+[resource]
+script = ExtResource("1_infl")
+farmer_happy = 0.036
+farmer_power = -0.054
+worker_happy = 0.036
+worker_power = -0.054
+merchant_happy = 0.036
+merchant_power = -0.054
+soldier_happy = 0.036
+soldier_power = -0.054
